@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<heading>
+		<h4>
+			Interesting Links
+		</h4>
+	</heading>
+
+	<entries>
+		<entry>
+			<title>Dr. Chip's Vim Page</title>
+			<link>http://www.drchip.org/astronaut/vim/index.html</link>
+		</entry>
+		<entry>
+			<title>Topic Modeling by David M. Blei, Princeton</title>
+			<link>http://www.cs.princeton.edu/~blei/topicmodeling.html</link>
+		</entry>
+		<entry>
+			<title>Many Useful Information at One Place</title>
+			<link>http://dmoztools.net/Science/</link>
+		</entry>
+	</entries>
+</data>

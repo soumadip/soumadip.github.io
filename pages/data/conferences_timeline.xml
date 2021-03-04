@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<heading>
+		<h4>
+			Conferences
+		</h4>
+	</heading>
+
+	<entries>
+		<entry>
+			<paper>
+				A Framework for eNB Load Balancing in Dense LTE Networks
+			</paper>
+			<authors>
+				S. Biswas, A. Gupta, S. Chakraborty
+			</authors>
+			<conference>
+				IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)
+			</conference>
+			<year>
+				2019
+			</year>
+			<venue>
+				Istanbul, Turkey
+			</venue>
+			<keywords>
+				LTE; Load balance; Handover; Dense LTE
+			</keywords>
+			<bibtex>
+				1570544227
+			</bibtex>
+		</entry>
+		
+		<entry>
+			<paper>
+				Reducing Spurious Handovers in Dense LTE Networks based on Signal Strength Look-ahead
+			</paper>
+			<authors>
+				S. Biswas, S. Chakraborty, A. Gupta 
+			</authors>
+			<conference>
+				IEEE International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob)
+			</conference>
+			<year>
+				2018
+			</year>
+			<venue>
+				Limassol, Cyprus
+			</venue>
+			<keywords>
+				LTE; Cellular Networks; Dense LTE
+			</keywords>
+			<bibtex>
+				1570474459
+			</bibtex>
+		</entry>
+	</entries>
+</data>

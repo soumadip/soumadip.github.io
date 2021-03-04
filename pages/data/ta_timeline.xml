@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<heading>
+		<h4>
+			Teaching Assistance Timeline
+		</h4>
+	</heading>
+
+	<entries>
+		<entry>
+			<period>
+				Spring 2020
+			</period>
+			<courseNo>
+				CS19001
+			</courseNo>
+			<head>
+				Programming and Data Structures (Lab)
+			</head>
+			<faculty>
+				Prof. Jayanta Mukhopadhyay
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Autumn 2019
+			</period>
+			<courseNo>
+				CS21003 and CS29003
+			</courseNo>
+			<head>
+				Algorithms-I (Theory and Lab)
+			</head>
+			<faculty>
+				Prof. Animesh Mukherjee and Prof. Pawan Goyal
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Spring 2019
+			</period>
+			<courseNo>
+				CS60002
+			</courseNo>
+			<head>
+				Distributed Systems
+			</head>
+			<faculty>
+				Prof. Arobinda Gupta
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Autumn 2018
+			</period>
+			<courseNo>
+				CS60026
+			</courseNo>
+			<head>
+				Parallel and Distributed Algorithms
+			</head>
+			<faculty>
+				Prof. Abhijit Das
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Spring 2018
+			</period>
+			<courseNo>
+				CS60002
+			</courseNo>
+			<head>
+				Distributed Systems
+			</head>
+			<faculty>
+				Prof. Arobinda Gupta
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Autumn 2017
+			</period>
+			<courseNo>
+				CS10001
+			</courseNo>
+			<head>
+				Programming and Data Structures (Theory)
+			</head>
+			<faculty>
+				Prof. Arobinda Gupta
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Autumn 2016
+			</period>
+			<courseNo>
+				CS60047
+			</courseNo>
+			<head>
+				Advanced Graph Theory
+			</head>
+			<faculty>
+				Prof. Rogers Mathew
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Spring 2016
+			</period>
+			<courseNo>
+				CS60002
+			</courseNo>
+			<head>
+				Distributed Systems
+			</head>
+			<faculty>
+				Prof. Arobinda Gupta
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Autumn 2015
+			</period>
+			<courseNo>
+				CS60019
+			</courseNo>
+			<head>
+				Performance Modelling of Computer Networks
+			</head>
+			<faculty>
+				Prof. Sandip Chakraborty
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Spring 2015
+			</period>
+			<courseNo>
+				CS60049
+			</courseNo>
+			<head>
+				Computational Complexity
+			</head>
+			<faculty>
+				Prof. Rogers Mathew
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Autumn 2014
+			</period>
+			<courseNo>
+				CS10001
+			</courseNo>
+			<head>
+				Programming and Data Structures (Theory)
+			</head>
+			<faculty>
+				Prof. Soumyajit Das
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Spring 2012
+			</period>
+			<courseNo>
+				IT69102
+			</courseNo>
+			<head>
+				Internet and Web Technology (Lab)
+			</head>
+			<faculty>
+				Prof. Soumya Kanti Ghosh and Prof. Shamik Sural
+			</faculty>			
+		</entry>
+
+		<entry>
+			<period>
+				Autumn 2011
+			</period>
+			<courseNo>
+				IT60111
+			</courseNo>
+			<head>
+				Geospatial Information System
+			</head>
+			<faculty>
+				Prof. Soumya Kanti Ghosh
+			</faculty>			
+		</entry>
+	</entries>
+</data>

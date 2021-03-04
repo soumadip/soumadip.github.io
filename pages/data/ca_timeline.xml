@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<heading>
+		<h4>
+			Career Timeline
+		</h4>
+	</heading>
+
+	<entries>
+		<entry>
+			<period>
+				2014 - &lt;i&gt;present&lt;/i&gt;
+			</period>
+			<head>
+				PhD
+			</head>
+			<details>
+				Indian Institurte of Technology Kharagpur
+				&lt;i&gt;Research Area&lt;/i&gt; : LTE, Wireless networks
+				&lt;i&gt;Supervisors&lt;/i&gt; : Prof. Arobinda gupta and Prof. Sandip Chakraborty
+			</details>			
+		</entry>
+
+		<entry>
+			<period>
+				2012 - 2014
+			</period>
+			<head>
+				Software Engineer 2
+			</head>
+			<details>
+				Citrix R&amp;D India Pvt. Ltd.
+				&lt;i&gt;Responsibility&lt;/i&gt; : (Team - LCM-Dev Team)
+				Addressing customer reported problems, providing assistance to sales and support teams in addressing PoC blockers and help ensure success for customer deployments.
+			</details>			
+		</entry>
+
+		<entry>
+			<period>
+				2010 - 2012
+			</period>
+			<head>
+				M. Tech (IT)
+			</head>
+			<details>
+				Indian Institurte of Technology Kharagpur
+				&lt;i&gt;Master's Thesis&lt;/i&gt; : Geospatial Services in Cloud Infrastructure
+				&lt;i&gt;Supervisor&lt;/i&gt; : Prof. Soumya Kanti Ghosh
+			</details>			
+		</entry>
+
+		<entry>
+			<period>
+				2006 - 2010
+			</period>
+			<head>
+				B. Tech (CSE)
+			</head>
+			<details>
+				West Bengal University of Technology
+				&lt;i&gt;Bachelor's Project&lt;/i&gt;: Web Enabled Cluster Computing with Customized Load Balancing
+				&lt;i&gt;Supervisor&lt;/i&gt; : Mr. Kalyan Mohanta
+			</details>			
+		</entry>
+
+		<entry>
+			<period>
+				2006
+			</period>
+			<head>
+				Higher Secondary (XII)
+			</head>
+			<details>
+				West Bengal Council of Higher Secondary Education
+			</details>			
+		</entry>
+
+		<entry>
+			<period>
+				2004
+			</period>
+			<head>
+				Secondary (X)
+			</head>
+			<details>
+				West Bengal Board of Secondary Education
+			</details>			
+		</entry>
+	</entries>
+</data>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<heading>
+		<h4>
+			Computer Network Research Related Links
+		</h4>
+	</heading>
+
+	<entries>
+		<entry>
+			<title>Computer Science Journal Listings by Scimagojr</title>
+			<link>http://www.scimagojr.com/journalrank.php?category=1705&amp;area=1700&amp;type=j</link>
+		</entry>
+		<entry>
+			<title>Computer Networks Journal Listings by guide2research</title>
+			<link>http://www.guide2research.com/journals/network-communication</link>
+		</entry>
+		<entry>
+			<title>SDN reading lists</title>
+			<link>https://sites.google.com/site/sdnreadinglist</link>
+		</entry>
+		<entry>
+			<title>SDN course syllebus IITM</title>
+			<link>http://www.cse.iitm.ac.in/~skrishnam/cs6045.tx</link>
+		</entry>
+		<entry>
+			<title>Computer Networks Conferences</title>
+			<link>http://www.dia.uniroma3.it/~compunet/www/view/deadlines.php?id=compunet&amp;mode=4&amp;action=table&amp;sort=2&amp;reverse=1</link>
+		</entry>
+		<entry>
+			<title>3GPP releases and protocols listing</title>
+			<link>http://www.3gpp.org/specifications/79-specification-numbering</link>
+		</entry>
+	</entries>
+</data>

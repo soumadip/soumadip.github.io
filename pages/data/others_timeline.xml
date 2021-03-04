@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<heading>
+		<h4>
+			Others
+		</h4>
+	</heading>
+
+	<entries>
+		<entry>
+			<paper>
+				Poster: Balanced User Association in Dense LTE Networks
+			</paper>
+			<authors>
+				S. Biswas, S. Chakraborty, A. Gupta 
+			</authors>
+			<conference>
+				IEEE International Conference on Computer Communications (INFOCOM)
+			</conference>
+			<year>
+				2019
+			</year>
+			<venue>
+				Paris, France
+			</venue>
+			<keywords>
+				LTE; Cellular Networks; Dense LTE; Load Balancing
+			</keywords>
+			<bibtex>
+				1570523263
+			</bibtex>
+		</entry>
+	</entries>
+</data>

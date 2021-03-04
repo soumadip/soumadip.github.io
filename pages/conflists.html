@@ -1,0 +1,295 @@
+<html>
+<head>
+
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Conference Ranking for Networking and Distributed Systems</title>
+
+	<!-- Load Custom.CSS and Bootstrap.CSS -->
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<!-- Load Google Font -->
+
+	<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+
+	<!-- Load jQuery and Bootstrap.JS -->
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+
+        <script type="text/javascript">
+	function googleSearch(e) {
+				e = e || window.event;
+				e = e.target || e.srcElement;
+				if (e.nodeName === 'BUTTON') {
+					var d = new Date();
+					var yyyy = "+"+d.getUTCFullYear();
+					var win = window.open("http://www.google.com/search?ie=UTF-8&oe=utf-8&q="+e.innerHTML+yyyy, '_blank');
+				}
+			}
+			/********************************************/
+	$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			  //alert("Hostname="+this.hostname +"("+location.hostname+")");
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			      }
+			    }
+			  });
+			});
+
+	</script>
+
+	<style>
+	.jumbotron{
+                background-image: url('../Images/body-bg.jpg');
+                background-size: cover;
+        }
+	#section{
+                background-image:url('../Images/header-bg.jpg');
+                background-size:cover;
+                font-family:'Allura', cursive;
+                color:black
+		}
+	.gsearch{
+			width:100%;
+			background-color: #383838;
+			color: #FFFFFF;
+		}
+	.gsearch:hover{
+			background-color: #c80000;
+		}
+	.sidebar{
+			border-radius:15px;
+			position: fixed;
+			top: 20%;
+			right: 2%;
+			z-index: 1;
+		}
+	.cite a
+	{
+		width: 30%;
+	}
+	
+	a {
+		background: lightblue;
+		border-right: 1px solid #fff;
+		color: #000;	
+		display: block;
+		padding: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 100%;
+	}
+	a:hover{background-color: #c80000; text-decoration: none;}
+	th {
+		background: lightblue; 
+		text-decoration: bold; 
+		color: #000;	
+		text-align: center; 
+		text-transform: uppercase;
+		font-size:1.2em;;
+	}
+	</style>
+
+</head>
+<body style="background-color:lightgrey">
+
+
+<div id="main" class="container">
+
+<div id="gallary" class="jumbotron">
+
+<h1 id="section" align="center">AREA: Networking and Distributed Systems</h1>
+<center>
+<table class="sidebar" width="8%" cellspacing="0">
+	<tbody><tr align="center">
+		<td class="Change Hicon" style="height:75px">
+			<a id="NavBarLink" class="NavLink" href="javascript:self.close();""> Close Page</a>
+		</td>
+	</tr><tr align="center">
+		<td class="Change Hicon" style="height:75px">
+			<a id="NavBarLink" class="NavLink" href="#rank1">Rank 1</a>
+		</td>
+	</tr><tr align="center">
+		<td class="Change Aicon" style="height:75px">
+			<a id="NavBarLink" class="NavLink" href="#rank2">Rank 2</a>
+		</td>
+	</tr><tr align="center">
+		<td class="Change Picon" style="height:75px">
+			<a id="NavBarLink" class="NavLink" href="#rank3">Rank 3</a>
+		</td>
+	</tr><tr align="center">
+		<td class="Change Cicon" style="height:75px">
+			<a id="NavBarLink" class="NavLink" href="#norank">Unranked</a>
+		</td>
+	</tr><tr align="center">
+		<td class="Change Cicon" style="height:75px">
+			<a id="NavBarLink" class="NavLink" href="#cite">Citation</a>
+		</td>
+	</tr>
+</tbody></table>
+</center>
+
+<center>
+<h2 id="rank1">Rank 1</h2>
+<table width="90%" border="1">
+<tbody><tr><th>Acronym</th><th>Conference Name</th></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICDCS	</button></td><td>	IEEE Intl Conf on Distributed Comp Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICNP	</button></td><td>	Intl Conf on Network Protocols	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	INFOCOM	</button></td><td>	Joint Conference of the IEEE Computer and Communications Societies	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IPSN	</button></td><td>	Information Processing in Sensor Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IWQoS	</button></td><td>	IFIP International Workshop on QoS	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	MOBICOM	</button></td><td>	ACM International Conferencem on Mobile Computing and Networking	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	PERFORMANCE	</button></td><td>	IFIP Intl Symp on Computer Performance, Modeling, Measurements &amp; Evaluation (since 1980)	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	PODC	</button></td><td>	ACM Symp on Principles of Distributed Computing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	SIGCOMM	</button></td><td>	ACM Conference on Applications, Technologies,Architectures, and Protocols for Computer Communication	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	SIGMETRICS	</button></td><td>	ACM Conf on Meas. &amp; Modelling of Comp Sys	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	UbiComp	</button></td><td>	Uniquitous Computing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	WWW	</button></td><td>	International World Wide Web Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	USITS	</button></td><td>	USENIX Conf on Internet Tech and Sys	</td></tr>
+
+</tbody></table>
+</center>
+<!----------------------------------------------------------------------------------- -->
+<center>
+<h2 id="rank2">Rank 2</h2>
+<table width="90%" border="1">
+<tbody><tr><th>Acronym</th><th>Conference Name</th></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	DISC	</button></td><td>	International Symposium on Distributed Computing (ex WDAG)	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	EWSN	</button></td><td>	European conference on Wireless Sensor Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	Grid	</button></td><td>	International Conference on Grid Computing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	HiPC	</button></td><td>	International Conference on High Performance Computing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	HOTNETS	</button></td><td>	ACM Workshop on Hot Topics in Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	HPDC	</button></td><td>	IEEE International Symposium on High Performance Distributed Computing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	IC3N	</button></td><td>	International Conference on Computer Communication and Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	ICC	</button></td><td>	Intl Conf on Comm	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICDCS	</button></td><td>	IEEE International Conference on Distributed Computing Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICGG	</button></td><td>	International Conference on Grid Computing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICNP	</button></td><td>	International Conference on Network Protocols	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IM	</button></td><td>	IFIP/IEEE Integrated Management (odd years sharing with NOMS)	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IPCCC	</button></td><td>	IEEE Intl Phoenix Conf on Comp &amp; Communications	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IPDPS	</button></td><td>	IEEE International Parallel and Distributed Processing Symposium (was IPPS and SPDP)	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	LCN	</button></td><td>	IEEE Annual Conference on Local Computer Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	MOBIHOC	</button></td><td>	ACM Symposium of mobile and ad hoc computing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	Mobiquitous	</button></td><td>	International Conference on Mobile and Ubiquitous Systems: Networks and Services	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	Mobisys	</button></td><td>	ACM SIGMOBILE International Conference on mobile systems, applications and services	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	MSWIM	</button></td><td>	ACM/IEEE International Conference on Modelling, Analysis and Simulation of Wireless and Mobile Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	NetStore	</button></td><td>	Network Storage Symposium	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	Networking 200X	</button></td><td>	IFIP Networking 200X	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	OPENARCH	</button></td><td>	IEEE Conference on Open Architecture and Network Programming	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	P2P	</button></td><td>	IEEE International Conference on Peer-toPeer Computing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	PADS	</button></td><td>	ACM/IEEE/SCS Workshop on Parallel &amp; Distributed Simulation	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	PERFORMANCE	</button></td><td>	IFIP International Symposium on Computing Performance, Modelling, Measurement and Evaluation	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	RAID	</button></td><td>	Symposium on Recent Advances in Intrusion Detection	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	USITS	</button></td><td>	Unix Symposium on Internet Technologies	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	WCNC	</button></td><td>	IEEE Wireless Communications and Networking Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	WoWMoM	</button></td><td>	IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks	</td></tr>
+</tbody></table>
+</center>
+
+<!----------------------------------------------------------------------------------- -->
+<center>
+<h2 id="rank3">Rank 3</h2>
+<table width="90%" border="1">
+<tbody><tr><th>Acronym</th><th>Conference Name</th></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ACISP	</button></td><td>	Australasia Conference on Information Security and Privacy	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ACSAC	</button></td><td>	Australasian Computer Systems Architecture Conference (now Asia-Pacific Computer Systems Architecture Conference)	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ACSC	</button></td><td>	Australasian Computer Science Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ADHOC-NOW	</button></td><td>	International Conference on AD-HOC Networks &amp; Wireless	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	AINA	</button></td><td>	International Conference on Advanced Information Networking and Applications (was ICOIN)	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	AMOC	</button></td><td>	Asian International Mobile Computing Conferrence	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	AWSAC	</button></td><td>	Annual Workshop on Selected Areas in Cryptography	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	Broadnets	</button></td><td>	International Conference on Broadband Communications, Networks and Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	DAIS	</button></td><td>	IFIP International Conference on Distributed Applications and Inoperable Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	DSS	</button></td><td>	Distributed Simulation Symposium	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	Emnets	</button></td><td>	IEEE Embedded Sensor Networks Worskhop	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	EuroPDP	</button></td><td>	EUROMICRO Conference on Parallel, Distributed and Network-Based processing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	GLOBECOM	</button></td><td>	IEEE Global Telecommunications Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()" style="background-color: #c80000">	HPCN	</button></td><td>	International Conference on High Performance Computing and Networking	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	HPSR	</button></td><td>	IEEE Workshop on High Performance Switching and Routing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICCC	</button></td><td>	Intl Conf on Comp Communication	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICDCN	</button></td><td>	IEEE International Conference on Distributed Computing and Networking	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICON	</button></td><td>	IEEE International Conference on Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICPADS	</button></td><td>	IEEE International Conference on Parallel and Distributed Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IEEE-IV	</button></td><td>	Intelligent Vehicles Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IN	</button></td><td>	IEEE Intell Network Workshop	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	INET	</button></td><td>	Internet Society Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IWCMC	</button></td><td>	ACM International Wireless Communications and Mobile Computing Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	LATIN	</button></td><td>	International Symposium on Latin American Theoretical Informatics	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	NCC	</button></td><td>	National Conference Communications	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	NOMS	</button></td><td>	IEEE Network Operations and Management Symp	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	NOMS	</button></td><td>	IEEE Network Operations and Management Symposium	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ODP	</button></td><td>	IFIP International Conference on Open Distributed Processing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	OPODIS	</button></td><td>	International Conference on Principles of Distributed Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	PDCAT	</button></td><td>	International Conference on Parallel and Distributed Computing, Applications and Technologies	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	PIMRC	</button></td><td>	IEEE International Symposium on Personal and Indoor Mobile Radio Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	Qsine	</button></td><td>	International Conference on Quality of Service in Heterogeneous Wired/Wireless Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	SECON	</button></td><td>	IEEE Conference on Sensor, Mesh and Ad Hoc Communications and Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	VTC	</button></td><td>	IEEE Vehicular Technology Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	WCNC	</button></td><td>	IEEE Wireless Communications and Networking Conference	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	WDAG	</button></td><td>	Workshop on Distributed Algorithms (DISC since 1998)	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	WiOpt	</button></td><td>	International. Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks	</td></tr>
+
+</tbody></table>
+</center>
+<!----------------------------------------------------------------------------------- -->
+<center>
+<h2 id="norank">Not Ranked</h2>
+<table width="90%" border="1">
+<tbody><tr><th>Acronym</th><th>Conference Name</th></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	BC	</button></td><td>	IFIP International Conference on Broadband Communications	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	EWSDN	</button></td><td>	European Workshop on Software Defined Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	HotSDN	</button></td><td>	ACM SIGCOMM Workshop on Hot Topics in Software Defined Networking	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	HealthCom	</button></td><td>	International Workshop on Enterprise Networking and Computing in Health Care Industry	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IC	</button></td><td>	International Conference on Internet Computing	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICMSO	</button></td><td>	International Conference on Modelling, Simulation and Optimisation	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	ICOTA	</button></td><td>	International Conference on Optimization: Techniques And Applications	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IICS	</button></td><td>	Innovative Internet Computer Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	IWCC	</button></td><td>	IEEE International Workshop on Cluster Computing and the Grid	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	LANMAN	</button></td><td>	IEEE LAN/MAN Workshop	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	MDDS	</button></td><td>	Mobility in Databases and Distributed Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	MobiDE	</button></td><td>	Workshop on Data Engineering for Wireless and Mobile Access	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	MTNS	</button></td><td>	International Symposium on the Mathematical Theory of Networks and Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	NPDP	</button></td><td>	Annual IASTED International Conference on Networks, Parallel and Distributed Processing and Applications	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	PCNS	</button></td><td>	SPIE - Conference on Performance and Control of Network Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	PDCN	</button></td><td>	IASTED International Conference on Parallel and Distributed Computing and Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	PDCS	</button></td><td>	IASTED International Conference on Parallel and Distributed Computing and Systems	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	Sensor Networks	</button></td><td>	Sensor Networks	</td></tr>
+<tr><td><button class="gsearch" onclick="googleSearch()">	SSS	</button></td><td>	Symposium on Stabilization, Safety, and Security of Distributed Systems	</td></tr>
+</tbody></table>
+</center>
+.<br>.<br>.<br>.<br>.<br>.<br>
+</center>
+<!----------------------------------------------------------------------------------- -->
+
+<br><br><br>
+
+<div id="cite">
+<blockquote>
+Cites: <br>
+<small>Sources of Information</small>
+<a class="cite" href="http://www.iitg.ernet.in/stud/subhrendu/">Subhrendu Chattopadhyay</a>
+<a class="cite" href="http://cse.iitkgp.ac.in/~sandipc/">Sandip Chakraborty</a>
+</blockquote>
+<p align="Center">Now, <a href="javascript:self.close();" title="'Spare my life, and I will grant you three wi--- ERK!'">window begone</a>.</p>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<heading>
+		<h4>
+			Career Timeline
+		</h4>
+	</heading>
+
+	<entries>
+		<entry>
+			<period>
+				March 2017
+			</period>
+			<head>
+				Merging of code with intents
+			</head>
+			<details>
+				The automation of two branches of codes are mostly manual process. A coding guideline can help making this automation.
+			</details>			
+		</entry>
+
+		<entry>
+			<period>
+				May 2016
+			</period>
+			<head>
+				Organisation of research literature
+			</head>
+			<details>
+				A good amount of research time is invested by the research community in searching of related works.
+				A good organisation of research articles can save significant amount of this time and contribute to faster innovations indirectly.
+			</details>			
+		</entry>
+
+		<entry>
+			<period>
+				July 2015
+			</period>
+			<head>
+				IIT Kgp Nightly
+			</head>
+			<details>
+				An android app with a server inside IIT Kgp (or for any campus) for updating local news in the campus.
+				It should have a public rating system for fine refinements of the news feed.
+				The top news(s) of hour, week, month etc. should be available on demand.
+				All posts should be archived for data analysis.
+			</details>			
+		</entry>
+	</entries>
+
+	<!--
+		<entry>
+			<period>
+				period 1
+			</period>
+			<head>
+				idea name 1
+			</head>
+			<details>
+				idea 
+				details
+				here
+			</details>			
+		</entry>
+	-->
+
+</data>
