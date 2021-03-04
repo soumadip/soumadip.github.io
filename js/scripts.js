@@ -201,7 +201,7 @@ function parse_CJO_data(id, text, context){
 			var keywords = "<tr><td>Keywords</td><td>" + entry.children[5].childNodes[0].nodeValue.trim() + "</td></tr>";
 			var bibtex = "<tr><td><a href=pages/data/bib/" + entry.children[6].childNodes[0].nodeValue.trim() + ".bib target=\"_blank\">Bibtex</a></td></tr>"
 			
-			txt += "<div class='timeCJO'><table>" + [index, authors, conference, year, venue, keywords, bibtex].join("") + "</table></div>";
+			txt += "<div class='timeCJO'><table>" + [index, authors, journal, year, vol, keywords, bibtex].join("") + "</table></div>";
 		}
 		if (context == "others")
 		{
