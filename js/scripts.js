@@ -191,7 +191,18 @@ function parse_CJO_data(id, text, context){
 			txt += "<div class='timeCJO'><table>" + [index, authors, conference, year, venue, keywords, bibtex].join("") + "</table></div>";
 		}
 		if (context == "journals")
-		{}
+		{
+			var index = "<tr><th>[" + (count - e) +"]</th><th>" + entry.children[0].childNodes[0].nodeValue.trim() + "</th></tr>";
+			//var paper = "<tr><td>Title</td><td>" + entry.children[0].childNodes[0].nodeValue.trim() + "</td></tr>";
+			var authors = "<tr><td>Authors</td><td>" + entry.children[1].childNodes[0].nodeValue.trim() + "</td></tr>";
+			var journal = "<tr><td>Journal</td><td>" + entry.children[2].childNodes[0].nodeValue.trim() + "</td></tr>";
+			var year = "<tr><td>Year</td><td>" + entry.children[3].childNodes[0].nodeValue.trim() + "</td></tr>";
+			var vol = "<tr><td>Volume</td><td>" + entry.children[4].childNodes[0].nodeValue.trim() + "</td></tr>";
+			var keywords = "<tr><td>Keywords</td><td>" + entry.children[5].childNodes[0].nodeValue.trim() + "</td></tr>";
+			var bibtex = "<tr><td><a href=pages/data/bib/" + entry.children[6].childNodes[0].nodeValue.trim() + ".bib target=\"_blank\">Bibtex</a></td></tr>"
+			
+			txt += "<div class='timeCJO'><table>" + [index, authors, conference, year, venue, keywords, bibtex].join("") + "</table></div>";
+		}
 		if (context == "others")
 		{
 			var index = "<tr><th>[" + (count - e) +"]</th><th>" + entry.children[0].childNodes[0].nodeValue.trim() + "</th></tr>";
