@@ -7,5 +7,28 @@
 	</heading>
 
 	<entries>
+		<entry>
+			<paper>
+				Load-balanced user associations in dense LTE networks
+			</paper>
+			<authors>
+				S. Biswas, A. Gupta, S. Chakraborty
+			</authors>
+			<journal>
+				Computer Networks
+			</journal>
+			<year>
+				2021
+			</year>
+			<volume>
+				189
+			</volumn>
+			<keywords>
+				Load balancing; Handover; Dense LTE
+			</keywords>
+			<bibtex>
+				S1389128621000761
+			</bibtex>
+		</entry>
 	</entries>
 </data>
