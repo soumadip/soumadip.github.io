@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang=en-US>
+	<head lang="en">
+		<title>A Gallary by Soumadip</title>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallary.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/freewall.js"></script>
+		<script type="text/javascript" src="js/gallary.js"></script>
+		<style type="text/css">
+			.free-wall {
+				margin: 15px;
+			}
+		</style>
+	</head>
+	<body  onload="initGallary()">
+		<div class='header'>
+			<div class="clearfix">
+				<div class="float-left">
+						<h1><a href="">Asphic Moments</a></h1>
+						<div class='target'>A Gallary by Soumadip</div>
+				</div>
+			</div>
+		</div>
+		<div id="freewall" class="free-wall"></div>
+		<div id="viewer" class="popup">
+			<!-- The Close Button -->
+			<span class="close" id="close" onclick="document.getElementById('viewer').style.display='none'">&times;</span>
+			<!-- Modal Content (The Image) -->
+			<img id="container" class="popup-img" />
+			<!-- Modal Caption (Image Text) -->
+			<div id="caption"></div>
+		</div>
+	</body>
+</html>
