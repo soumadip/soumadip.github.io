@@ -9,15 +9,31 @@
 	<entries>
 		<entry>
 			<period>
-				2014 - &lt;i&gt;present&lt;/i&gt;
+				2022 - &lt;i&gt;present&lt;/i&gt;
 			</period>
 			<head>
-				PhD
+				Associate Professor
 			</head>
 			<details>
-				Indian Institurte of Technology Kharagpur
-				&lt;i&gt;Research Area&lt;/i&gt; : LTE, Wireless networks
+				Institute of Engineering &amp; Management, Kolkata
+			</details>			
+		</entry>
+		<entry>
+			<period>
+				2014 - 2022 (expected)
+			</period>
+			<head>
+				Ph.D. (Thesis Submitted)
+			</head>
+			<details>
+				Indian Institute of Technology Kharagpur
+				&lt;i&gt;Research Area&lt;/i&gt; : LTE, Cellular networks
 				&lt;i&gt;Supervisors&lt;/i&gt; : Prof. Arobinda gupta and Prof. Sandip Chakraborty
+				&lt;i&gt;Thesis Overview&lt;/i&gt; : Handover and Load Balancing in Dense LTE Network for Users in Vehicles -- 
+				Reduction in the number of handover is desirable for providing good quality of service. 
+				However in a densely deployed LTE network, for high-speed users, achieving this has its own set of problems. 
+				In this regard, we have provided some solutions published in reputed journal and conferences.
+				During this time, I have gained experienced on i) identifying and modeling of problems, ii) designing experiments through technical analysis and iii) open-source tools.
 			</details>			
 		</entry>
 
@@ -30,9 +46,12 @@
 			</head>
 			<details>
 				Citrix R&amp;D India Pvt. Ltd.
-				&lt;i&gt;Responsibility&lt;/i&gt; : (Team - LCM-Dev Team)
-				Addressing customer reported problems, providing assistance to sales and support teams in addressing PoC blockers and help ensure success for customer deployments.
-			</details>			
+				&lt;i&gt;Responsibility&lt;/i&gt; :
+				I had worked as a developer for an application virtualization tool called XenApp using C#, C++. 
+				I was responsible for fixing problems faced in deployed products by providing feature enhancements and bug fixes.
+				During this time, I have gained experience in i) remote and local debugging, ii) distributed systems problems, iii) responsible coding and iv) communications. Also, on some occasions, I had helped in achieving a multi-party consensus.
+				I had received a promotion from Software Engineer 1 to Software Engineer 2 within 1 year of joining.
+			</details>	
 		</entry>
 
 		<entry>
@@ -46,6 +65,9 @@
 				Indian Institurte of Technology Kharagpur
 				&lt;i&gt;Master's Thesis&lt;/i&gt; : Geospatial Services in Cloud Infrastructure
 				&lt;i&gt;Supervisor&lt;/i&gt; : Prof. Soumya Kanti Ghosh
+				&lt;i&gt;Thesis Overview&lt;/i&gt; : Geospatial Services in Cloud Infrastructure -- 
+				In this work, using only open-source tools, we successfully deployed a first-generation IaaS cloud. 
+				We further demonstrated that data intensive geospatial services (e.g. WFS, WMS, WPS) can be safely deployed in a cloud environment by utilizing SaaS while respecting the privacy of multiple participating parties.
 			</details>			
 		</entry>
 
@@ -60,6 +82,8 @@
 				West Bengal University of Technology
 				&lt;i&gt;Bachelor's Project&lt;/i&gt;: Web Enabled Cluster Computing with Customized Load Balancing
 				&lt;i&gt;Supervisor&lt;/i&gt; : Mr. Kalyan Mohanta
+				&lt;i&gt;Project Overview&lt;/i&gt; : Web-Enabled Cluster Computing with Customized Load Balancing -- 
+				In this work we provided a proof of concept that large computation can be remotely performed over commodity hardware and low-bandwidth connection by utilizing the Beowulf cluster and MPI.
 			</details>			
 		</entry>
 
