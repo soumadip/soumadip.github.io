@@ -1,0 +1,25 @@
+Yours taks:
+1 Download the file linked_list/link.c in your machine's home directory
+
+2 open terminal and type in the following commands on after another to run the code
+	a. cd
+	b. gcc link.c
+	c. ./a.out
+
+3 in the code, the capacity of the storage of the stack is set to 5 by default
+	a. do some add, del, display, etc. 
+	b. test different boundary cases
+
+4 check the code to understand how it works
+
+
+Today's Assignments:
+
+1 add following four functions to this code consistant with the coding style
+	a. search_all that searches a given value in the linked list and prints all positions where the value is present
+	b. add_by_pos that can add a value at a given position
+	c. del_by_pos that can delete a value at a given position
+	d. print_reversed that will print the linked list values in reverse order and it does not change the actual list
+2 add appropriate entries to the while loop in the main function so that all the above functions can be called 
+
+		
