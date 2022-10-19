@@ -1,0 +1,6 @@
+
+Today's Assignments:
+
+1 write your own linked_list structure
+2 implement the add, del, display and search operations
+		
