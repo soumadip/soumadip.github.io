@@ -9,10 +9,10 @@ Whatever taught in class until Lecture 6
 6. Arrarys and basics of pointers
 
 Question format:
-30 marks
-1 mark questions - 10
+25 marks
+1 mark questions - 12
 2 marks questions - 5
-5 marks questions - 2
+3 marks questions - 1
 
 Hints:
 <<If you have a good understanding (not memorization) of the underlying concepts, you should be able get full marks>>
