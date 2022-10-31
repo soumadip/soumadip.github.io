@@ -1,0 +1,13 @@
+Instructions (please read carefully each point)
+Write as little as possible without missing out on any details
+Think carefully before answering
+There is no marks on being verbose
+Sometimes, adding an example makes things easier
+The higher the marks are, the more you need to check your answers
+You can answer any combination of questions as long as the total marks attempted is less than or equal to 25,  i.e., any question attempted beyond 25 marks will not be considered while marking
+If you are making any valid assumption(s) while writing an answer, do remember to mention that information clearly
+For 1 Mark questions, no explanations are required; just write the answers.
+For 2 mark questions, you can just write the coding logic (2-3 lines), no need to write full code
+For 4 mark questions, write full codes, small mistakes (missing a semicolon, forget to close a bracket, etc.) are ok, major mistakes (messing up syntax for a loop, switch case, etc.) are not.
+Consider size of int and float as 4 bytes, char as 1 byte, double as 8 bytes in this exam
+
