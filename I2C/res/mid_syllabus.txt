@@ -11,8 +11,8 @@ Whatever taught in class until Lecture 6
 Question format:
 25 marks
 1 mark questions - 10~12
-2 marks questions - 5~6
-3 marks questions - 1~2
+2 marks questions - 5~7
+4 marks questions - 1~2
 
 Hints:
 <<If you have a good understanding (not memorization) of the underlying concepts, you should be able get full marks>>
