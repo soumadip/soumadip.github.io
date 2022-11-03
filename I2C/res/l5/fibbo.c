@@ -2,11 +2,11 @@
 
 int fib (int n)
 {
-	int fn = 0, fn_1 = 1, result;
-	if (n == 0 )
-		return fn;
-	else if (n == 1)
+	int fn_1 = 0, fn = 1, result;
+	if (n == 0)
 		return fn_1;
+	else if (n == 1)
+		return fn;
 	else
 	{
 		while (n-- - 1)
