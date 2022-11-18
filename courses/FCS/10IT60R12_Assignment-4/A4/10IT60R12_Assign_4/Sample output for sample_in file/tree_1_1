@@ -1,0 +1,13 @@
+graph g {
+label = "CONVENSION: NODEVALUE | BALANCE FACTOR | HEIGHT of SUBTREE | HEIGHT OF NODE";
+node [shape=record,width=0.75,style=filled,fillcolor=lightgray];
+"12|1|2|2" -- "34|0|1|3"[style=bold,label=" RIGHT"];
+"34|0|1|3" -- "16|0|0|4"[style=bold,label=" LEFT"];
+"34|0|1|3" -- "38|0|0|4"[style=bold,label=" RIGHT"];
+"43|1|4|1" -- "12|1|2|2"[style=bold,label=" LEFT"];
+"43|1|4|1" -- "55|2|3|2"[style=bold,label=" RIGHT"];
+"55|2|3|2" -- "47|0|0|3"[style=bold,label=" LEFT"];
+"55|2|3|2" -- "65|1|2|3"[style=bold,label=" RIGHT"];
+"65|1|2|3" -- "67|1|1|4"[style=bold,label=" RIGHT"];
+"67|1|1|4" -- "66|0|0|5"[style=bold,label=" LEFT"];
+}

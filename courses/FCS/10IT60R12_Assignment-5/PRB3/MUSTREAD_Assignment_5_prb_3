@@ -1,0 +1,12 @@
+pevious two programs will genetare a stat file 
+named stal.avl and stat.rbt
+which will contain all the information about time taken
+
+
+
+
+NOTE:
+to have a look at each insertion step of the program just uncomment the line #498 in prb_1 AND #547 in prb_2
+all the outputs are separated by their testcase no in separate folders in the same directory.
+
+

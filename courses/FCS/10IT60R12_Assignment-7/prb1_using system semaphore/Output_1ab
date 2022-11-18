@@ -1,0 +1,43 @@
+main waiting for Pro--Con to terminate...
+
+Produced:#  1: 777
+Produced:#  2: 793
+		Consumed:#  1: 777
+Produced:#  3: 492
+Produced:#  4: 421
+		Consumed:#  2: 793
+Produced:#  5: 690
+		Consumed:#  3: 492
+Produced:#  6: 926
+		Consumed:#  4: 421
+Produced:#  7: 426
+		Consumed:#  5: 690
+		Consumed:#  6: 926
+Produced:#  8: 567
+		Consumed:#  7: 426
+		Consumed:#  8: 567
+Produced:#  9: 862
+		Consumed:#  9: 862
+Produced:# 10: 135
+		Consumed:# 10: 135
+Produced:# 11: 22
+		Consumed:# 11: 22
+Produced:# 12: 167
+		Consumed:# 12: 167
+Produced:# 13: 11
+		Consumed:# 13: 11
+Produced:# 14: 373
+		Consumed:# 14: 373
+Produced:# 15: 784
+		Consumed:# 15: 784
+Produced:# 16: 324
+		Consumed:# 16: 324
+Produced:# 17: 413
+		Consumed:# 17: 413
+Produced:# 18: 980
+		Consumed:# 18: 980
+Produced:# 19: 862
+		Consumed:# 19: 862
+Produced:# 20: 281
+		Consumed:# 20: 281
+DONE...

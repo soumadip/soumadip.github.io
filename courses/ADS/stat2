@@ -1,0 +1,19 @@
+#inserted nodes:30000 random attenpts(repeated nodes are there, thus effectively less unique nodes)
+#random search:1000 :Note:all searches may not be successful 
+
+
+BST.c
+Time to insert avg is 0.960100 microseconds
+Avg time-search-->0.648000 microseconds
+
+TETRAX.c
+Time to insert avg is 1.489867 microseconds
+Avg time search--->1.210000 microseconds
+
+LBT.c
+Avg time INsert--->1.054533 microseconds
+Avg time Search--->0.721000 microseconds
+
+TETBT.c
+AVG TIME PER INSERT:: 0.814733microseconds
+AVG TIME PER SEARCH:: 0.581000 microseconds

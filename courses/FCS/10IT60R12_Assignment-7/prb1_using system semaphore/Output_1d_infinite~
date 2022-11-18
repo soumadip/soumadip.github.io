@@ -1,0 +1,523 @@
+Enter no of Producers:: Enter no of Consumers:: 
+main waiting for 5Pro--10Con to terminate...
+
+Produced:1: #  1: 926
+			Consumed:6: #  1: 926
+Produced:1: #  2: 172
+			Consumed:1: #  2: 172
+Produced:4: #  3: 368
+			Consumed:8: #  3: 368
+Produced:3: #  4: 782
+			Consumed:1: #  4: 782
+Produced:3: #  5: 123
+			Consumed:7: #  5: 123
+Produced:5: #  6: 929
+			Consumed:4: #  6: 929
+Produced:3: #  7: 58
+			Consumed:9: #  7: 58
+Produced:1: #  8: 393
+			Consumed:5: #  8: 393
+Produced:2: #  9: 42
+			Consumed:6: #  9: 42
+Produced:1: # 10: 421
+			Consumed:3: # 10: 421
+Produced:3: # 11: 537
+			Consumed:2: # 11: 537
+Produced:2: # 12: 315
+			Consumed:10: # 12: 315
+Produced:4: # 13: 526
+			Consumed:5: # 13: 526
+Produced:1: # 14: 956
+			Consumed:6: # 14: 956
+Produced:3: # 15: 170
+			Consumed:3: # 15: 170
+Produced:5: # 16: 305
+			Consumed:4: # 16: 305
+Produced:1: # 17: 327
+			Consumed:1: # 17: 327
+Produced:2: # 18: 846
+			Consumed:7: # 18: 846
+Produced:4: # 19: 857
+			Consumed:8: # 19: 857
+Produced:5: # 20: 582
+			Consumed:5: # 20: 582
+Produced:5: # 21: 367
+			Consumed:2: # 21: 367
+Produced:1: # 22: 43
+			Consumed:10: # 22: 43
+Produced:2: # 23: 808
+			Consumed:9: # 23: 808
+Produced:3: # 24: 788
+			Consumed:1: # 24: 788
+Produced:2: # 25: 651
+			Consumed:3: # 25: 651
+Produced:1: # 26: 932
+			Consumed:4: # 26: 932
+Produced:4: # 27: 368
+			Consumed:6: # 27: 368
+Produced:5: # 28: 226
+			Consumed:7: # 28: 226
+Produced:1: # 29: 539
+			Consumed:8: # 29: 539
+Produced:3: # 30: 434
+			Consumed:10: # 30: 434
+Produced:2: # 31: 601
+Produced:1: # 32: 902
+			Consumed:6: # 31: 601
+			Consumed:10: # 32: 902
+Produced:5: # 33: 756
+			Consumed:5: # 33: 756
+Produced:1: # 34: 286
+			Consumed:7: # 34: 286
+Produced:2: # 35: 689
+			Consumed:3: # 35: 689
+Produced:4: # 36: 440
+			Consumed:1: # 36: 440
+Produced:1: # 37: 117
+			Consumed:2: # 37: 117
+Produced:2: # 38: 481
+			Consumed:4: # 38: 481
+Produced:3: # 39: 927
+			Consumed:8: # 39: 927
+Produced:4: # 40: 497
+			Consumed:9: # 40: 497
+Produced:5: # 41: 965
+			Consumed:6: # 41: 965
+Produced:1: # 42: 219
+			Consumed:10: # 42: 219
+Produced:1: # 43: 871
+			Consumed:3: # 43: 871
+Produced:3: # 44: 503
+			Consumed:4: # 44: 503
+Produced:2: # 45: 368
+			Consumed:5: # 45: 368
+Produced:5: # 46: 340
+			Consumed:7: # 46: 340
+Produced:3: # 47: 723
+			Consumed:10: # 47: 723
+Produced:3: # 48: 846
+			Consumed:3: # 48: 846
+Produced:4: # 49: 555
+			Consumed:2: # 49: 555
+Produced:1: # 50: 764
+			Consumed:8: # 50: 764
+Produced:5: # 51: 350
+			Consumed:1: # 51: 350
+Produced:4: # 52: 34
+			Consumed:9: # 52: 34
+Produced:4: # 53: 914
+			Consumed:4: # 53: 914
+Produced:5: # 54: 743
+			Consumed:10: # 54: 743
+Produced:2: # 55: 365
+			Consumed:5: # 55: 365
+Produced:3: # 56: 432
+			Consumed:6: # 56: 432
+Produced:5: # 57: 228
+			Consumed:7: # 57: 228
+Produced:5: # 58: 474
+			Consumed:8: # 58: 474
+Produced:3: # 59: 395
+			Consumed:4: # 59: 395
+Produced:1: # 60: 235
+			Consumed:1: # 60: 235
+Produced:3: # 61: 428
+			Consumed:2: # 61: 428
+Produced:5: # 62: 928
+			Consumed:10: # 62: 928
+Produced:2: # 63: 404
+			Consumed:9: # 63: 404
+Produced:4: # 64: 613
+			Consumed:5: # 64: 613
+Produced:3: # 65: 840
+			Consumed:6: # 65: 840
+Produced:3: # 66: 128
+			Consumed:3: # 66: 128
+Produced:1: # 67: 917
+			Consumed:1: # 67: 917
+Produced:5: # 68: 324
+			Consumed:2: # 68: 324
+Produced:3: # 69: 183
+			Consumed:8: # 69: 183
+Produced:1: # 70: 772
+			Consumed:5: # 70: 772
+Produced:2: # 71: 590
+			Consumed:9: # 71: 590
+Produced:4: # 72: 954
+			Consumed:10: # 72: 954
+Produced:1: # 73: 82
+			Consumed:4: # 73: 82
+Produced:3: # 74: 197
+			Consumed:7: # 74: 197
+Produced:4: # 75: 804
+			Consumed:6: # 75: 804
+Produced:1: # 76: 622
+			Consumed:1: # 76: 622
+Produced:1: # 77: 343
+			Consumed:2: # 77: 343
+Produced:2: # 78: 340
+			Consumed:3: # 78: 340
+Produced:5: # 79: 810
+			Consumed:8: # 79: 810
+Produced:1: # 80: 661
+			Consumed:9: # 80: 661
+Produced:4: # 81: 305
+			Consumed:5: # 81: 305
+Produced:5: # 82: 444
+			Consumed:4: # 82: 444
+Produced:4: # 83: 465
+			Consumed:3: # 83: 465
+Produced:3: # 84: 282
+			Consumed:2: # 84: 282
+Produced:5: # 85: 637
+			Consumed:6: # 85: 637
+Produced:1: # 86: 600
+			Consumed:9: # 86: 600
+Produced:3: # 87: 899
+			Consumed:10: # 87: 899
+Produced:2: # 88: 468
+			Consumed:7: # 88: 468
+Produced:5: # 89: 131
+			Consumed:8: # 89: 131
+Produced:2: # 90: 933
+			Consumed:5: # 90: 933
+Produced:4: # 91: 163
+			Consumed:1: # 91: 163
+Produced:3: # 92: 899
+			Consumed:6: # 92: 899
+Produced:1: # 93: 773
+			Consumed:10: # 93: 773
+Produced:3: # 94: 190
+			Consumed:2: # 94: 190
+Produced:1: # 95: 466
+			Consumed:3: # 95: 466
+Produced:4: # 96: 90
+			Consumed:4: # 96: 90
+Produced:1: # 97: 542
+			Consumed:9: # 97: 542
+Produced:5: # 98: 445
+			Consumed:5: # 98: 445
+Produced:2: # 99: 418
+			Consumed:6: # 99: 418
+Produced:4: #100: 348
+			Consumed:1: #100: 348
+Produced:4: #101: 9
+			Consumed:7: #101: 9
+Produced:3: #102: 342
+			Consumed:8: #102: 342
+Produced:5: #103: 301
+			Consumed:10: #103: 301
+Produced:4: #104: 321
+			Consumed:6: #104: 321
+Produced:3: #105: 599
+			Consumed:4: #105: 599
+Produced:1: #106: 939
+			Consumed:9: #106: 939
+Produced:2: #107: 667
+			Consumed:2: #107: 667
+Produced:5: #108: 127
+			Consumed:3: #108: 127
+Produced:4: #109: 658
+			Consumed:1: #109: 658
+Produced:2: #110: 422
+			Consumed:5: #110: 422
+Produced:3: #111: 81
+			Consumed:9: #111: 81
+Produced:1: #112: 292
+			Consumed:7: #112: 292
+Produced:5: #113: 850
+			Consumed:10: #113: 850
+Produced:4: #114: 222
+			Consumed:4: #114: 222
+Produced:3: #115: 42
+			Consumed:2: #115: 42
+Produced:2: #116: 298
+			Consumed:8: #116: 298
+Produced:2: #117: 590
+			Consumed:6: #117: 590
+Produced:5: #118: 819
+			Consumed:3: #118: 819
+Produced:1: #119: 155
+			Consumed:1: #119: 155
+Produced:4: #120: 379
+			Consumed:7: #120: 379
+Produced:3: #121: 776
+			Consumed:5: #121: 776
+Produced:2: #122: 860
+			Consumed:9: #122: 860
+Produced:5: #123: 884
+			Consumed:4: #123: 884
+Produced:1: #124: 621
+			Consumed:2: #124: 621
+Produced:4: #125: 613
+			Consumed:8: #125: 613
+Produced:2: #126: 326
+			Consumed:6: #126: 326
+Produced:3: #127: 202
+			Consumed:7: #127: 202
+Produced:5: #128: 784
+			Consumed:10: #128: 784
+Produced:2: #129: 868
+			Consumed:1: #129: 868
+Produced:1: #130: 872
+			Consumed:5: #130: 872
+Produced:3: #131: 498
+			Consumed:4: #131: 498
+Produced:4: #132: 753
+			Consumed:3: #132: 753
+Produced:2: #133: 333
+			Consumed:8: #133: 333
+Produced:5: #134: 890
+			Consumed:9: #134: 890
+Produced:2: #135: 746
+			Consumed:10: #135: 746
+Produced:3: #136: 500
+			Consumed:1: #136: 500
+Produced:1: #137: 797
+			Consumed:6: #137: 797
+Produced:3: #138: 303
+			Consumed:2: #138: 303
+Produced:3: #139: 497
+			Consumed:7: #139: 497
+Produced:4: #140: 686
+			Consumed:3: #140: 686
+Produced:1: #141: 996
+			Consumed:4: #141: 996
+Produced:1: #142: 157
+			Consumed:8: #142: 157
+Produced:2: #143: 460
+			Consumed:5: #143: 460
+Produced:4: #144: 460
+			Consumed:10: #144: 460
+Produced:4: #145: 27
+			Consumed:6: #145: 27
+Produced:2: #146: 556
+			Consumed:9: #146: 556
+Produced:5: #147: 697
+			Consumed:1: #147: 697
+Produced:4: #148: 39
+			Consumed:4: #148: 39
+Produced:3: #149: 403
+			Consumed:7: #149: 403
+Produced:2: #150: 647
+			Consumed:2: #150: 647
+Produced:4: #151: 151
+			Consumed:10: #151: 151
+Produced:1: #152: 339
+			Consumed:3: #152: 339
+Produced:3: #153: 127
+			Consumed:6: #153: 127
+Produced:1: #154: 49
+			Consumed:7: #154: 49
+Produced:4: #155: 429
+			Consumed:5: #155: 429
+Produced:5: #156: 177
+			Consumed:4: #156: 177
+Produced:5: #157: 971
+			Consumed:2: #157: 971
+Produced:1: #158: 367
+			Consumed:9: #158: 367
+Produced:3: #159: 795
+			Consumed:8: #159: 795
+Produced:3: #160: 829
+			Consumed:1: #160: 829
+Produced:2: #161: 340
+			Consumed:10: #161: 340
+Produced:4: #162: 826
+			Consumed:7: #162: 826
+Produced:5: #163: 42
+			Consumed:3: #163: 42
+Produced:4: #164: 23
+			Consumed:6: #164: 23
+Produced:2: #165: 309
+			Consumed:8: #165: 309
+Produced:4: #166: 996
+			Consumed:10: #166: 996
+Produced:3: #167: 234
+			Consumed:2: #167: 234
+Produced:1: #168: 524
+			Consumed:5: #168: 524
+Produced:1: #169: 168
+			Consumed:7: #169: 168
+Produced:5: #170: 312
+			Consumed:6: #170: 312
+Produced:1: #171: 346
+			Consumed:9: #171: 346
+Produced:3: #172: 916
+			Consumed:4: #172: 916
+Produced:4: #173: 529
+			Consumed:3: #173: 529
+Produced:3: #174: 647
+			Consumed:10: #174: 647
+Produced:2: #175: 80
+			Consumed:1: #175: 80
+Produced:1: #176: 857
+			Consumed:5: #176: 857
+Produced:5: #177: 886
+			Consumed:8: #177: 886
+Produced:4: #178: 512
+			Consumed:2: #178: 512
+Produced:3: #179: 479
+			Consumed:7: #179: 479
+Produced:1: #180: 189
+			Consumed:6: #180: 189
+Produced:2: #181: 641
+			Consumed:1: #181: 641
+Produced:5: #182: 987
+			Consumed:4: #182: 987
+Produced:1: #183: 566
+			Consumed:9: #183: 566
+Produced:5: #184: 856
+			Consumed:3: #184: 856
+Produced:2: #185: 260
+			Consumed:2: #185: 260
+Produced:4: #186: 205
+			Consumed:10: #186: 205
+Produced:2: #187: 518
+			Consumed:5: #187: 518
+Produced:2: #188: 873
+			Consumed:9: #188: 873
+Produced:1: #189: 637
+			Consumed:10: #189: 637
+Produced:2: #190: 607
+			Consumed:8: #190: 607
+Produced:3: #191: 314
+			Consumed:2: #191: 314
+Produced:4: #192: 100
+			Consumed:3: #192: 100
+Produced:5: #193: 438
+			Consumed:4: #193: 438
+Produced:5: #194: 74
+			Consumed:6: #194: 74
+Produced:3: #195: 681
+			Consumed:7: #195: 681
+Produced:3: #196: 270
+			Consumed:1: #196: 270
+Produced:3: #197: 839
+			Consumed:4: #197: 839
+Produced:4: #198: 622
+			Consumed:9: #198: 622
+Produced:1: #199: 847
+			Consumed:10: #199: 847
+Produced:2: #200: 682
+			Consumed:7: #200: 682
+Produced:3: #201: 791
+			Consumed:5: #201: 791
+Produced:1: #202: 521
+			Consumed:2: #202: 521
+Produced:4: #203: 491
+			Consumed:8: #203: 491
+Produced:5: #204: 231
+			Consumed:6: #204: 231
+Produced:5: #205: 740
+			Consumed:3: #205: 740
+Produced:3: #206: 98
+			Consumed:10: #206: 98
+Produced:3: #207: 516
+			Consumed:9: #207: 516
+Produced:4: #208: 231
+			Consumed:1: #208: 231
+Produced:2: #209: 404
+			Consumed:9: #209: 404
+Produced:5: #210: 218
+			Consumed:5: #210: 218
+Produced:5: #211: 862
+			Consumed:4: #211: 862
+Produced:1: #212: 977
+			Consumed:10: #212: 977
+Produced:3: #213: 904
+			Consumed:7: #213: 904
+Produced:2: #214: 207
+			Consumed:8: #214: 207
+Produced:4: #215: 744
+			Consumed:6: #215: 744
+Produced:3: #216: 127
+			Consumed:1: #216: 127
+Produced:2: #217: 560
+			Consumed:3: #217: 560
+Produced:5: #218: 563
+			Consumed:10: #218: 563
+Produced:1: #219: 711
+			Consumed:4: #219: 711
+Produced:1: #220: 291
+			Consumed:2: #220: 291
+Produced:2: #221: 614
+			Consumed:5: #221: 614
+Produced:1: #222: 993
+			Consumed:7: #222: 993
+Produced:2: #223: 882
+			Consumed:9: #223: 882
+Produced:4: #224: 717
+			Consumed:6: #224: 717
+Produced:3: #225: 574
+			Consumed:1: #225: 574
+Produced:4: #226: 486
+			Consumed:10: #226: 486
+Produced:5: #227: 74
+			Consumed:3: #227: 74
+Produced:1: #228: 179
+			Consumed:5: #228: 179
+Produced:1: #229: 775
+			Consumed:4: #229: 775
+Produced:3: #230: 710
+			Consumed:1: #230: 710
+Produced:4: #231: 17
+			Consumed:8: #231: 17
+Produced:5: #232: 137
+			Consumed:2: #232: 137
+Produced:2: #233: 943
+			Consumed:7: #233: 943
+Produced:2: #234: 925
+			Consumed:4: #234: 925
+Produced:4: #235: 18
+			Consumed:6: #235: 18
+Produced:1: #236: 963
+			Consumed:1: #236: 963
+Produced:4: #237: 858
+			Consumed:9: #237: 858
+Produced:2: #238: 571
+			Consumed:5: #238: 571
+Produced:3: #239: 685
+			Consumed:10: #239: 685
+Produced:5: #240: 604
+			Consumed:2: #240: 604
+Produced:3: #241: 250
+			Consumed:3: #241: 250
+Produced:4: #242: 485
+			Consumed:4: #242: 485
+Produced:2: #243: 639
+			Consumed:8: #243: 639
+Produced:2: #244: 967
+			Consumed:7: #244: 967
+Produced:1: #245: 677
+			Consumed:1: #245: 677
+Produced:1: #246: 865
+			Consumed:5: #246: 865
+Produced:5: #247: 955
+			Consumed:4: #247: 955
+Produced:4: #248: 211
+			Consumed:2: #248: 211
+Produced:4: #249: 196
+			Consumed:6: #249: 196
+Produced:3: #250: 270
+			Consumed:10: #250: 270
+Produced:5: #251: 427
+			Consumed:3: #251: 427
+Produced:4: #252: 283
+			Consumed:9: #252: 283
+Produced:2: #253: 830
+			Consumed:8: #253: 830
+Produced:5: #254: 950
+			Consumed:7: #254: 950
+Produced:1: #255: 714
+			Consumed:4: #255: 714
+Produced:3: #256: 47
+			Consumed:5: #256: 47
+Produced:2: #257: 435
+			Consumed:2: #257: 435
+Produced:4: #258: 954
+			Consumed:3: #258: 954
+Produced:2: #259: 486
+			Consumed:1: #259: 486
+Produced:5: #260: 159
+			Consumed:1

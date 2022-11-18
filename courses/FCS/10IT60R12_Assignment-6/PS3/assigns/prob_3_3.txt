@@ -1,0 +1,4 @@
+There will be two error if we don't use static declration in count and printcount function
+ 
+  1... count is undeclared.
+  2... method is not a static function.

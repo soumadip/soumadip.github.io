@@ -1,0 +1,703 @@
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file1
+
+NO_OF_NODES(FROM_FILE):: 10
+
+TIME_TAKEN_FOR_INSERTION_OF    1:: 25 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 8 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 26 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    4:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 6 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 10
+
+
+TOTAL_TIME_TAKEN:: 75 microsec
+TOTAL_SPACE_TAKEN:: 240 BYTES
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file2
+
+NO_OF_NODES(FROM_FILE):: 20
+
+TIME_TAKEN_FOR_INSERTION_OF   11:: 19 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   19:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    1:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    4:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   15:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   13:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   17:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   18:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   12:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   10:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   16:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   16:: 8 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 20
+
+
+TOTAL_TIME_TAKEN:: 57 microsec
+TOTAL_SPACE_TAKEN:: 480 BYTES
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file3
+
+NO_OF_NODES(FROM_FILE):: 30
+
+TIME_TAKEN_FOR_INSERTION_OF   15:: 17 microsec
+TIME_TAKEN_FOR_INSERTION_OF   13:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   17:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   18:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   19:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   20:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   29:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    1:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   22:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    4:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   12:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   24:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   21:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   11:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   26:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   16:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   23:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   27:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   25:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   10:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 6 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 30
+
+
+TOTAL_TIME_TAKEN:: 70 microsec
+TOTAL_SPACE_TAKEN:: 720 BYTES
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file4
+
+NO_OF_NODES(FROM_FILE):: 40
+
+TIME_TAKEN_FOR_INSERTION_OF   36:: 19 microsec
+TIME_TAKEN_FOR_INSERTION_OF   25:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   15:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   22:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    4:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   13:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   38:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   18:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   23:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   30:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   35:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   19:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   39:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   37:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   12:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   10:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   16:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   26:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   33:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   34:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   11:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   17:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   20:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   27:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   21:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   29:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   24:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   31:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    1:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   32:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 6 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 40
+
+
+TOTAL_TIME_TAKEN:: 71 microsec
+TOTAL_SPACE_TAKEN:: 960 BYTES
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file5
+
+NO_OF_NODES(FROM_FILE):: 50
+
+TIME_TAKEN_FOR_INSERTION_OF   19:: 17 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 4 microsec
+TIME_TAKEN_FOR_INSERTION_OF   22:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   34:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   13:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   25:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   24:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   47:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   26:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   17:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   42:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   33:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    1:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   35:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   29:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   27:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   18:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   31:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   40:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   23:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   11:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   49:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   20:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   37:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    4:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   39:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   16:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   21:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   30:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   38:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   48:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   15:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   12:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   45:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   44:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   10:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   43:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   36:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   41:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   46:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   32:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   32:: 22 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 50
+
+
+TOTAL_TIME_TAKEN:: 115 microsec
+TOTAL_SPACE_TAKEN:: 1200 BYTES
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file6
+
+NO_OF_NODES(FROM_FILE):: 60
+
+TIME_TAKEN_FOR_INSERTION_OF   16:: 17 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   50:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   26:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   34:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   59:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   48:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   23:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   27:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   40:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   22:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   17:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF    1:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   25:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   33:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   37:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   56:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   57:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   42:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   12:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   15:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   55:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   20:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   49:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   51:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   39:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   10:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   54:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   38:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    4:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   45:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   11:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   31:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   21:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   35:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   19:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   47:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   36:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   58:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   46:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   52:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   43:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   53:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   24:: 4 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   18:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   44:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   30:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   41:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   32:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   29:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   13:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 7 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 60
+
+
+TOTAL_TIME_TAKEN:: 98 microsec
+TOTAL_SPACE_TAKEN:: 1440 BYTES
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file7
+
+NO_OF_NODES(FROM_FILE):: 70
+
+TIME_TAKEN_FOR_INSERTION_OF   50:: 20 microsec
+TIME_TAKEN_FOR_INSERTION_OF   64:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   26:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   40:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   43:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    1:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   65:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   13:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   38:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   36:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   29:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   10:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   53:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   20:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   52:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   34:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   45:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   42:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   27:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   62:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   22:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   41:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   32:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   46:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   48:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   16:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   35:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   44:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   37:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   17:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   25:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   61:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   15:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   55:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   23:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   58:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   19:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   69:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    4:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   63:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   24:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   57:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   60:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   31:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   56:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   21:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   30:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   12:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   59:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   18:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   33:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   49:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   11:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   51:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   68:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   39:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   66:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   67:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   47:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   54:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   54:: 6 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 70
+
+
+TOTAL_TIME_TAKEN:: 132 microsec
+TOTAL_SPACE_TAKEN:: 1680 BYTES
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file8
+
+NO_OF_NODES(FROM_FILE):: 80
+
+TIME_TAKEN_FOR_INSERTION_OF    4:: 18 microsec
+TIME_TAKEN_FOR_INSERTION_OF   15:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   16:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   78:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   38:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   59:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   77:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   42:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   54:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   30:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   68:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   19:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   51:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   20:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   76:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   17:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   27:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   39:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   50:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   71:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   69:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   74:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   31:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   26:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   61:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   13:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   43:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   79:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   48:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   45:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   49:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   47:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   52:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   64:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   46:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   63:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   37:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   57:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   55:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   67:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   25:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   10:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   21:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   35:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   32:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   65:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   66:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   56:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   62:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   12:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   29:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   41:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   18:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   22:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   33:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   70:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   11:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    1:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   44:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   34:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   40:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   36:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   75:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   72:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   73:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   60:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   24:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   53:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   58:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   23:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   23:: 8 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 80
+
+
+TOTAL_TIME_TAKEN:: 151 microsec
+TOTAL_SPACE_TAKEN:: 1920 BYTES
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file9
+
+NO_OF_NODES(FROM_FILE):: 90
+
+TIME_TAKEN_FOR_INSERTION_OF   18:: 21 microsec
+TIME_TAKEN_FOR_INSERTION_OF   33:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   81:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   38:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   21:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   49:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   62:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   71:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   78:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   36:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   20:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   45:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   59:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF    4:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   54:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   89:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   73:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    1:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   46:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   23:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   66:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   34:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   11:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   15:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   17:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   75:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   27:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   13:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   50:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   70:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   82:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   39:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   37:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   51:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   85:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   76:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   55:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   63:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   80:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   60:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   22:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   25:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   31:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   79:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   43:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   44:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   10:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   64:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   68:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   24:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   57:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   47:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   65:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   87:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   52:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   16:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   12:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   32:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   67:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   48:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   26:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   83:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   86:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   61:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   19:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   77:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   58:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   41:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   74:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   69:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   84:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   35:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   40:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   88:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   56:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   42:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   53:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   29:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   72:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   30:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   30:: 5 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 90
+
+
+TOTAL_TIME_TAKEN:: 120 microsec
+TOTAL_SPACE_TAKEN:: 2160 BYTES
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+FILENAME:: file10
+
+NO_OF_NODES(FROM_FILE):: 100
+
+TIME_TAKEN_FOR_INSERTION_OF   88:: 20 microsec
+TIME_TAKEN_FOR_INSERTION_OF    5:: 3 microsec
+TIME_TAKEN_FOR_INSERTION_OF   53:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   47:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   31:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   56:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   89:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   14:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   33:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   26:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   20:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   87:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   90:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    4:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   54:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   51:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   57:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   42:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   67:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   62:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   77:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   19:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   32:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   60:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   96:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   99:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   98:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   41:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   15:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   44:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   43:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   21:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   73:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   22:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   45:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   71:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   48:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   91:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   83:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   84:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   17:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    3:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   24:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   35:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   74:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   76:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   29:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   95:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   72:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   49:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   78:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   37:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   16:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   12:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   36:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   82:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   68:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   25:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    7:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   55:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   93:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   30:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   70:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   28:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   59:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   39:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   66:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    6:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   80:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   63:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   34:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   11:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   10:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   75:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   97:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   40:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   79:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   92:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    8:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   94:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   64:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   46:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   58:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   85:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    1:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF    9:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF    2:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   86:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   38:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   61:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   13:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   69:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   81:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   23:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   65:: 2 microsec
+TIME_TAKEN_FOR_INSERTION_OF   50:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   52:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   18:: 0 microsec
+TIME_TAKEN_FOR_INSERTION_OF   27:: 1 microsec
+TIME_TAKEN_FOR_INSERTION_OF   27:: 5 microsec
+
+NO_OF_INSERT_ATTEMPTS:: 100
+
+
+TOTAL_TIME_TAKEN:: 139 microsec
+TOTAL_SPACE_TAKEN:: 2400 BYTES
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EXITING_PROGRAM

@@ -1,0 +1,38 @@
+For compiling c programs use
+
+	$gcc <filename> -lpthread
+	outputs of all programs are attached.
+
+here are some instructions.
+
+Threre are Three folders
+
+>>"prb1_using mySemaphore"
+
+	this is implementation of my own semaphore variables 
+
+	i have done 1a, 1b and 1d in this implementation
+	for id as there is no infinite loop is there so if you give input #consumer > #producer, some consumer(s) may 		wait indefinitely at the end of all producers, in case of infinite loop(just replace while loop condition by 1), 	this 	works Fine.
+	
+	in case of 1c, removing busy wait i had used Signaling inlinux, but that leads to some proble while implementing
+	thus it is not working properly.
+	
+
+>>"prb1_using system semaphore" 
+
+	this implementation is using system semaphore variables
+	for implementing 1ab problem 
+	I have used pthread_mutex variable from pthread library]
+	
+		for 1c problem i have used sembuff structure form <sys/sem.h>
+	here i have removed the busy wait in case of checking the #item present in the buffer
+	
+	for 1d problem
+	it is an infinite loop
+	just give any #consumers and #producers, and it will work.
+
+
+>>"Prb2_JAVA"
+
+	this is two implementations of 2nd problem.
+	basically they are same apart from the 'synchronized' keyword.This is also an infinite loopp, see the output.

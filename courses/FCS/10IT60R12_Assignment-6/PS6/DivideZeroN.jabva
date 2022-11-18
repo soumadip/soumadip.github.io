@@ -1,0 +1,21 @@
+// Folowing is the program dealing with the exception
+    class DivideZero {
+      static int anyFunction (int x, int y ){
+        try {
+           int a = x/y;
+           return(a);
+        }
+        catch (ArithmeticException e) {
+          System.out.println ( " Division by zero" );
+        }
+        }
+     public static void main (String args[ ] {
+      int a,b, result;
+      System.out.print("Enter any two integers : ");
+      a = System.in.read( );
+      b = System.in.read( );
+      result = any Function (a, b);
+      System.out.println ( "Result : " + result);
+     }
+   }
+

@@ -1,0 +1,51 @@
+Enter no of Producers:: Enter no of Consumers:: 
+main waiting for 5Pro--4Con to terminate...
+
+Produced:1: #  1: 421
+			Consumed:1: #  1: 421
+Produced:1: #  2: 690
+			Consumed:4: #  2: 690
+Produced:4: #  3: 926
+Produced:3: #  4: 426
+Produced:5: #  5: 736
+Produced:5: #  6: 368
+			Consumed:3: #  3: 926
+			Consumed:1: #  4: 426
+Produced:3: #  7: 530
+Produced:4: #  8: 123
+			Consumed:2: #  5: 736
+Produced:2: #  9: 929
+Produced:4: # 10: 22
+Produced:1: # 11: 69
+			Consumed:1: #  6: 368
+			Consumed:4: #  7: 530
+			Consumed:4: #  8: 123
+Produced:5: # 12: 42
+Produced:3: # 13: 373
+			Consumed:2: #  9: 929
+			Consumed:4: # 10: 22
+Produced:5: # 14: 537
+Produced:4: # 15: 324
+			Consumed:3: # 11: 69
+Produced:1: # 16: 413
+Produced:2: # 17: 91
+Produced:3: # 18: 956
+			Consumed:4: # 12: 42
+			Consumed:2: # 13: 373
+Produced:2: # 19: 996
+			Consumed:1: # 14: 537
+Produced:5: # 20: 925
+Produced:3: # 21: 84
+			Consumed:3: # 15: 324
+Produced:4: # 22: 336
+Produced:2: # 23: 505
+Produced:1: # 24: 846
+			Consumed:3: # 16: 413
+			Consumed:4: # 17: 91
+			Consumed:1: # 18: 956
+			Consumed:2: # 19: 996
+			Consumed:3: # 20: 925
+			Consumed:4: # 21: 84
+			Consumed:2: # 22: 336
+			Consumed:1: # 23: 505
+DONE...
