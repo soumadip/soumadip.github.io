@@ -2,7 +2,7 @@ ASSIGNMENT SUBMISSION INSTRUCTIONS
 
 1. For each of questions you need to write a c file, name the file in the following format
 	if the last two digits of your rollnumber is 99, then for question number A1.1 the solution file should have a name A1.1_99.c
-2. You can choose the pair up in (groups of two persons max) for solving the assignments
+2. You may choose to pair up (in a group of two persons max) for solving the assignments
 	if the last two digits of your rollnumbers are 99 and 98 respectively, then for question number A1.1 the solution file should have a name A1.1_99_98.c
 3. Once you are done writing the code, you must run you code and check with different inputs whenever necessary 
 	you need to make sure that your code must run i.e. compile successfully and exeucute
