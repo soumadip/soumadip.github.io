@@ -8,5 +8,5 @@ ASSIGNMENT SUBMISSION INSTRUCTIONS
 	you need to make sure that your code must run i.e. compile successfully and exeucute
 4. Keep all c files for an assignment in a single folder
 	you can zip the folder by right click on the folder and select compress
-	then you need to send the zipped file to me by mail (put the Course code, your name, rollnumber and assignment number in the subject line)
+	then you need to send the zipped file to me by mail (put the Course code, your name, rollnumber(s) and assignment number in the subject line)
 	send a separate mail for each assignment
