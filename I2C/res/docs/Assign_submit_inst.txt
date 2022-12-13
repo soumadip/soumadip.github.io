@@ -10,3 +10,22 @@ ASSIGNMENT SUBMISSION INSTRUCTIONS
 	you can zip the folder by right click on the folder and select compress
 	then you need to send the zipped file to me by mail (put the Course code, your name, rollnumber(s) and assignment number in the subject line)
 	send a separate mail for each assignment
+
+_________________________________________________________________________________
+There are a total of 3 assignments (10 question each) that you all have to solve
+The bonus assignment (another 10 questions) is optional - if you want to recover marks lost during the midsem, you can attempt them
+The bonus assignment is also going to be considered for outstanding grades
+
+
+__________________________________________________________________________________
+submission recommendations
+The evaluation of the assignments will be done online.
+Your submitted code should run/exucute
+You can submit partial codes (in case you are unable to run the code) as well, but make sure you understand the portions you have submitted.
+
+
+___________________________________________________________________________________
+Evaluation Process:
+I pick some random submissions for each student (even if you are working in groups) and ask them to explain how that code is working.
+Additionally, I may make some small changes in your code and ask you to explain the effects of the changes.
+Therefore, you must understand what exactly you are submitting - so only submit the codes, that you understand properly.
