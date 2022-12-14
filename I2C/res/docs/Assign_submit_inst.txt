@@ -20,8 +20,8 @@ The bonus assignment is also going to be considered for outstanding grades
 __________________________________________________________________________________
 submission recommendations
 The evaluation of the assignments will be done online.
-Your submitted code should run/exucute
-You can submit partial codes (in case you are unable to run the code) as well, but make sure you understand the portions you have submitted.
+Your submitted code should run/execute
+You can submit partial codes (in case you are unable make the code run successfully), but make sure you understand the portions you have submitted.
 
 
 ___________________________________________________________________________________
