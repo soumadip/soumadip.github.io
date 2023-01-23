@@ -29,7 +29,7 @@ two_val hiloformula ( int n )
    two_val N;
 
    N.hi = //complete the code
-   N.hi = //complete the code
+   N.lo = //complete the code
    return N;
 }
 
