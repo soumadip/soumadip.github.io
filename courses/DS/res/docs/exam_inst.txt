@@ -1,0 +1,15 @@
+1. Draw diagrams whenever possible to show nodes, messages, state transitions, etc.
+2. Focus on understanding (not mugging up) the algorithms that are in the syllabus
+3. I will not ask you to write the algorithms as they are - I will ask you to write some modifications over them
+4. Make sure you understand how to write the algorithms in the proper format - check books, slides
+5. There will be some numericals 
+     - mostly questions will ask you to show how a particular execution of any of those algorithm will work 
+     - you will need to show what value changes at what point in time, for this you need to understand those algorithms thoroughly
+6. There will be remember type questions which will be of 2 marks, for the rest you need to analyze the problem and solutions
+7. It is important to remember that there can be mutiple correct answer to a single question, since these are design type questions 
+     - so, it is important to justify your answers properly
+8. There will be questions that will ask you to analyze complexities of existing/modified algorithms
+     - you can't just write the answers
+     - you need to show how the complexity value is computed
+9. most importantly, try to write exact answers, there is no marks for being verbose - remember the 3Cs of answering question
+     - Clear, Concise and Correct
