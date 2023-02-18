@@ -1,7 +1,12 @@
 1. Draw diagrams whenever possible to show nodes, messages, state transitions, etc.
 2. Focus on understanding (not mugging up) the algorithms that are in the syllabus
-3. I will not ask you to write the algorithms as they are - I will ask you to write some modifications over them
-4. Make sure you understand how to write the algorithms in the proper format - check books, slides
+3. I will not ask you to write the algorithms as they are 
+     - I will ask you to write some modifications over them
+     - I will ask you to point out/explain any drawbacks/weaknesses of algorithms
+4. Make sure you understand how to write the algorithms in the proper format 
+     - check books, slides for examples
+     - remember to mention your model you are considering/assuming for your algorithm
+     - justify any valid assumptions you are making on the underlying system
 5. There will be some numericals 
      - mostly questions will ask you to show how a particular execution of any of those algorithm will work 
      - you will need to show what value changes at what point in time, for this you need to understand those algorithms thoroughly
