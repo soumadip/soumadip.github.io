@@ -1,167 +1,107 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-66MZLWS0PQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-66MZLWS0PQ');
+</script>
 	<title> Data Structures and Algorithm </title>
-	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2023-07-10T12:21:46.888476522"/>
-	<style type="text/css">
-		@page { size: 21cm 29.7cm; margin-left: 2cm; margin-right: 1cm; margin-top: 1cm; margin-bottom: 1cm }
-		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
-		h1 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
-		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
-		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt; font-weight: bold }
-		h1.ctl { font-family: "FreeSans"; font-size: 24pt; font-weight: bold }
-		h2 { margin-top: 0.35cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
-		h2.western { font-family: "Liberation Serif", serif; font-size: 18pt; font-weight: bold }
-		h2.cjk { font-family: "Noto Serif CJK SC"; font-size: 18pt; font-weight: bold }
-		h2.ctl { font-family: "FreeSans"; font-size: 18pt; font-weight: bold }
-		td p { orphans: 0; widows: 0; background: transparent }
-		th p { font-weight: bold; text-align: center; orphans: 0; widows: 0; background: transparent }
-		a:link { color: #000080; text-decoration: underline }
-	</style>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
 </head>
-<body lang="en-IN" link="#000080" vlink="#800000" bgcolor="#fffff0" dir="ltr"><h1 class="western" align="center">
-PCC-CS-391: Data Structures and Algorithm Lab 
-</h1>
-<h2 class="western" align="center">Autumn 2023 
-</h2>
-<hr size="1" color="#0000ff" noshade="noshade"/>
 
-<h2 class="western">Announcements 
-</h2>
-<ul>
-	<li><p style="margin-bottom: 0cm">Syllabus for the theory can be
-	found <a href="../DSA/res/docs/DSA_Syllabus.pdf">here</a> 
-	</p>
-	<li><p>Classes will start in July 2023 
-	</p>
-</ul>
-<p><br/>
-<br/>
+<body bgcolor=ivory>
+	<h1> <center> PCC-CS-391: Data Structures and Algorithm Lab </center> </h1>
+	<h2> <center> Autumn 2023 </center> </h2>
+	<hr color=blue>
 
-</p>
-<h2 class="western">Class Details</h2>
-<ul>
-	<li><p style="margin-bottom: 0cm"><i>Instructors</i>: Pulak baral,
-	Swagatam Basu and Soumadip Biswas 
-	</p>
-	<li><p style="margin-bottom: 0cm"><i>Venue</i>: IT Lab 4 
-	</p>
-	<li><p style="margin-bottom: 0cm"><i>Time</i>: 1 lab session per
-	week, check routine on dept. website 
-	</p>
-	<li><p><i>Theory Class Webpage</i> <a href="../DSA">DSA Theory</a> 
-	</p>
-</ul>
-<h2 class="western">Books 
-</h2>
-<ul>
-	<li><p><a href="http://www.cs.bell-labs.com/~bwk/">Brian W.
-	Kernighan</a> and <a href="http://www.cs.bell-labs.com/~dmr/">Dennis
-	M. Ritchie</a>, <a href="http://cm.bell-labs.com/cm/cs/cbook/"><i>The
-	C Programming Language</i></a>, Prentice Hall of India. 
-	</p>
-</ul>
-<ul>
-	<li><p style="margin-bottom: 0cm">E. Balaguruswamy, <a href="http://highered.mcgraw-hill.com/sites/0070534772/information_center_view0/"><i>Programming
-	in ANSI C</i></a>, Tata McGraw-Hill. 
-	</p>
-</ul>
-<ul>
-	<li><p style="margin-bottom: 0cm">Byron Gottfried, <a href="http://www.flipkart.com/schaum-outline-programming-byron-gottfried-book-0070240353"><i>Schaum's
-	Outline of Programming with C</i></a>, McGraw-Hill. 
-	</p>
-</ul>
-<ul>
-	<li><p style="margin-bottom: 0cm">Seymour Lipschutz, <a href="http://www.flipkart.com/data-structures-lipschutz-special-indian-book-0070601682"><i>Data
-	Structures</i></a>, Schaum's Outlines Series, Tata McGraw-Hill. 
-	</p>
-</ul>
-<ul>
-	<li><p style="margin-bottom: 0cm"><a href="http://www.ellishorowitz.com/">Ellis
-	Horowitz</a>, <a href="http://www.cise.ufl.edu/~sahni/">Satraj Sahni</a>
-	and <a href="http://www.iwu.edu/~sander/">Susan Anderson-Freed</a>,
-	<a href="http://www.flipkart.com/fundamentals-data-strucures-ellis-horowitz-book-0716782502"><i>Fundamentals
-	of Data Structures in C</i></a>, W. H. Freeman and Company. 
-	</p>
-</ul>
-<ul>
-	<li><p>R. G. Dromey, <a href="http://www.flipkart.com/solve-computer-dromey-s-book-8131705625"><i>How
-	to Solve it by Computer</i></a>, Prentice-Hall of India. 
-	</p>
-</ul>
-<h2 class="western">Assignment Details 
-</h2>
-<table cellpadding="2" cellspacing="2">
+	<h2> Announcements </h2>
+		<ul>
+			<li> Syllabus for the theory can be found <a href="../DSA/res/docs/DSA_Syllabus.pdf">here</a> </li>
+			<li> Classes will start in July 2023 </li>
+			<!--<li> <span class = "blink"> Updated </span> Lecture slides and resources </li>-->
+		</ul>
+	<br>
+
+
+	<h2>Class Details</h2>
+		<ul> 
+		   <li> <i>Instructors</i>: Pulak baral, Swagatam Basu and Soumadip Biswas</li>
+		   <li> <i>Venue</i>: IT Lab 4</li>
+		   <li> <i>Time</i>: 1 lab session per week, check routine on dept. website</li>
+		   <li> <i>Theory Class Webpage</i> <a href="../DSA/">DSA Theory</a></li>
+		</ul>
+
+	<h2> Books  </h2>
+		<ul> 
+			<li>  </li>
+		</ul>
+
+	<h2> Assignment Details </h2>
+	<table  style="width:70%">
+	<th>
+		<td >No.    </td>
+		<td >Date   </td>
+		<td >Time   </td>
+		<td >Title  </td>
+		<td >Link   </td>
+	</th>
 	<tr>
-		<th style="border: none; padding: 0cm"><p>No. 
-			</p>
-		</th>
-		<th style="border: none; padding: 0cm"><p>Date 
-			</p>
-		</th>
-		<th style="border: none; padding: 0cm"><p>Time 
-			</p>
-		</th>
-		<th style="border: none; padding: 0cm"><p>Title 
-			</p>
-		</th>
-		<th style="border: none; padding: 0cm"><p>Link 
-			</p>
-		</th>
+		<td >1</td>
+		<td >18JUL23</td>
+		<td >1 week</td>
+		<td >Basics </td>
+		<td ><a href="res/Assign/0.Basics.pdf">Link</a></td>
 	</tr>
-	<tr>
-		<td style="border: none; padding: 0cm"><p>1 
-			</p>
-		</td>
-		<td style="border: none; padding: 0cm"><p>18JUL23 
-			</p>
-		</td>
-		<td style="border: none; padding: 0cm"><p>1 week 
-			</p>
-		</td>
-		<td style="border: none; padding: 0cm"><p>Basics 
-			</p>
-		</td>
-		<td style="border: none; padding: 0cm"><p><a href="res/Assign/0.Basics.pdf">Link</a>
-						</p>
-		</td>
-	</tr>
-</table>
-<p><br/>
-<i>Assignment Marks Obtained Links </i>
-</p>
-<ul>
-	<li><p style="margin-bottom: 0cm"><a href="../DSA-LAB">IT Marks</a> 
-	</p>
-	<li><p style="margin-bottom: 0cm"><a href="../DSA-LAB">CSE IoTCSBT
-	Marks</a> 
-	</p>
-	<li><p><a href="../DSA-LAB">CSE IoT Marks</a> 
-	</p>
-</ul>
-<h2 class="western">Helpful Resourses 
-</h2>
-<ul>
-	<li><p style="margin-bottom: 0cm"><a href="https://www.guru99.com/linux-commands-cheat-sheet.html" target="_blank">Link</a>
-	to Linux terminal commands cheatsheet. 
-	</p>
-	<li><p style="margin-bottom: 0cm"><a href="https://riptutorial.com/gcc" target="_blank">Link</a>
-	to basic usage of gcc. 
-	</p>
-	<li><p style="margin-bottom: 0cm"><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank">Link</a>
-	to visual represenations of various data structures. 
-	</p>
-	<li><p style="margin-bottom: 0cm"><a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">Link</a>
-	to compare running time of different sorting techniques. 
-	</p>
-	<li><p style="margin-bottom: 0cm"><a href="https://workshape.github.io/visual-graph-algorithms/" target="_blank">Link</a>
-	to visual represenations of graph traversals e.g. BFS, DFS, etc. 
-	</p>
-	<li><p>Link to previous year page <a href="http://soumadip.github.io/courses/DSA/2022/" target="_blank">2022</a>
-		</p>
-</ul>
+	</table>
+
+	<br/>
+	<i>Assignment Marks Obtained Links </i>
+	<ul> 
+		<li> <a href="">IT Marks</a> </li>
+		<li> <a href="">CSE IoTCSBT Marks</a> </li> 
+		<li> <a href="">CSE IoT Marks</a> </li>
+	</ul>
+
+	<h2> Helpful Resourses </h2>
+
+	<ul>
+		<li><a href="https://www.guru99.com/linux-commands-cheat-sheet.html" target="_blank">Link</a> to Linux terminal commands cheatsheet.</li>
+		<li><a href="https://riptutorial.com/gcc" target="_blank">Link</a> to basic usage of gcc.</li>
+		<li><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank">Link</a> to visual represenations of various data structures.</li>
+		<li><a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">Link</a> to compare running time of different sorting techniques.</li>
+		<li><a href="https://workshape.github.io/visual-graph-algorithms/" target="_blank">Link</a> to visual represenations of graph traversals e.g. BFS, DFS, etc.</li>
+		<li> Link to previous year page <a href="http://soumadip.github.io/courses/DSA/2022/" target="_blank">2022</a> </li>
+	</ul>
+
 </body>
 </html>
