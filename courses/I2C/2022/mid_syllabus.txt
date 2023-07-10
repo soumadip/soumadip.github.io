@@ -1,0 +1,26 @@
+Mid sem syllabus:
+Whatever taught in class until Lecture 6
+
+1. Basics of computers, computation, problem solving and programming
+2. Operators, Expressions and Statements in C
+3. Branching 
+4. Looping 
+5. Basics of Functions
+6. Arrarys and basics of pointers
+
+Question format:
+25 marks
+1 mark questions - 10~12
+2 marks questions - 5~6
+3 marks questions - 1~2
+
+Hints:
+<<If you have a good understanding (not memorization) of the underlying concepts, you should be able get full marks>>
+Practice coding using pencil and paper
+Verify your coding accuracy by executing the code on machine
+	-- when you can predict the output of your code before running, you know you have learnt that concept
+Question type to expect in exam:
+	-- understanding of the basics, mostly questions that you do not need to mug up
+	-- evaluate given expressions (arithmatic, logical, assignment, or any compbination of the same)
+	-- form logical expresions for a problem
+	-- application of brancing and looping (including nested)
