@@ -16,6 +16,11 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
 .blink {
   animation: blink 1s steps(1, end) infinite;
 }
@@ -62,7 +67,7 @@ table, th, td {
 		</ul>
 
 	<h2> Assignment Details </h2>
-	<table>
+	<table  style="width:70%">
 	<tr>
 		<td >No.    </td>
 		<td >Date   </td>
