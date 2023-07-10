@@ -1,87 +1,119 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-66MZLWS0PQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-66MZLWS0PQ');
-</script>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title> Data Structures and Algorithm </title>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-
-th:nth-child(even),td:nth-child(even) {
-  background-color: rgba(150, 212, 212, 0.4);
-}
-
-.blink {
-  animation: blink 1s steps(1, end) infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2023-07-10T12:23:34.098567500"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 2cm; margin-right: 1cm; margin-top: 1cm; margin-bottom: 1cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		h1 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "FreeSans"; font-size: 24pt; font-weight: bold }
+		h2 { margin-top: 0.35cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h2.western { font-family: "Liberation Serif", serif; font-size: 18pt; font-weight: bold }
+		h2.cjk { font-family: "Noto Serif CJK SC"; font-size: 18pt; font-weight: bold }
+		h2.ctl { font-family: "FreeSans"; font-size: 18pt; font-weight: bold }
+		td p { orphans: 0; widows: 0; background: transparent }
+		th p { font-weight: bold; text-align: center; orphans: 0; widows: 0; background: transparent }
+		a:link { color: #000080; text-decoration: underline }
+	</style>
 </head>
+<body lang="en-IN" link="#000080" vlink="#800000" bgcolor="#fffff0" dir="ltr"><h1 class="western" align="center">
+PCC-CS-301: Data Structures and Algorithm Theory 
+</h1>
+<h2 class="western" align="center">Autumn 2023 
+</h2>
+<hr size="1" color="#0000ff" noshade="noshade"/>
 
-<body bgcolor=ivory>
-	<h1> <center> PCC-CS-301: Data Structures and Algorithm Theory </center> </h1>
-	<h2> <center> Autumn 2023 </center> </h2>
-	<hr color=blue>
+<h2 class="western">Announcements 
+</h2>
+<ul>
+	<li><p style="margin-bottom: 0cm">Syllabus for the theory can be
+	found <a href="res/docs/DSA_Syllabus.pdf">here</a> 
+	</p>
+	<li><p>Classes will start in July 2023 
+	</p>
+</ul>
+<p><br/>
+<br/>
 
-	<h2> Announcements </h2>
-		<ul>
-			<li> Syllabus for the theory can be found <a href="res/docs/DSA_Syllabus.pdf">here</a> </li>
-			<li> Classes will start in July 2023 </li>
-			<!--<li> <span class = "blink"> Updated </span> Lecture slides and resources </li>-->
-		</ul>
-	<br>
-
-
-	<h2>Class Details</h2>
-		<ul> 
-		   <li> <i>Instructors</i>: Pulak baral, Swagatam Basu and Soumadip Biswas</li>
-		   <li> <i>Venue</i>: LG2.1(IT), LG2.2(IoTCSBT), LG 2.3(IoT)</li>
-		   <li> <i>Time</i>: 3 classes per week, check routine on dept. website</li>
-		   <li> <i>Lab Class Webpage</i> <a href="../DSA-LAB/">DSA-LAB</a></li>
-		</ul>
-
-	<h2> Books  </h2>
-		<ul> 
-			<li>  </li>
-		</ul>
-
-	<h2> Lecture Details </h2>
-	<table style="width:70%">
+</p>
+<h2 class="western">Class Details</h2>
+<ul>
+	<li><p style="margin-bottom: 0cm"><i>Instructors</i>: Pulak baral,
+	Swagatam Basu and Soumadip Biswas 
+	</p>
+	<li><p style="margin-bottom: 0cm"><i>Venue</i>: LG2.1(IT),
+	LG2.2(IoTCSBT), LG 2.3(IoT) 
+	</p>
+	<li><p style="margin-bottom: 0cm"><i>Time</i>: 3 classes per week,
+	check routine on dept. website 
+	</p>
+	<li><p><i>Lab Class Webpage</i> <a href="../DSA-LAB">DSA-LAB</a> 
+	</p>
+</ul>
+<h2 class="western">Books 
+</h2>
+<ul>
+	<li><p><a href="http://www.cs.bell-labs.com/~bwk/">Brian W.
+	Kernighan</a> and <a href="http://www.cs.bell-labs.com/~dmr/">Dennis
+	M. Ritchie</a>, <a href="http://cm.bell-labs.com/cm/cs/cbook/"><i>The
+	C Programming Language</i></a>, Prentice Hall of India. 
+	</p>
+	<li><p style="margin-bottom: 0cm">E. Balaguruswamy, <a href="http://highered.mcgraw-hill.com/sites/0070534772/information_center_view0/"><i>Programming
+	in ANSI C</i></a>, Tata McGraw-Hill. 
+	</p>
+	<li><p style="margin-bottom: 0cm">Byron Gottfried, <a href="http://www.flipkart.com/schaum-outline-programming-byron-gottfried-book-0070240353"><i>Schaum's
+	Outline of Programming with C</i></a>, McGraw-Hill. 
+	</p>
+	<li><p style="margin-bottom: 0cm">Seymour Lipschutz, <a href="http://www.flipkart.com/data-structures-lipschutz-special-indian-book-0070601682"><i>Data
+	Structures</i></a>, Schaum's Outlines Series, Tata McGraw-Hill. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><a href="http://www.ellishorowitz.com/">Ellis
+	Horowitz</a>, <a href="http://www.cise.ufl.edu/~sahni/">Satraj Sahni</a>
+	and <a href="http://www.iwu.edu/~sander/">Susan Anderson-Freed</a>,
+	<a href="http://www.flipkart.com/fundamentals-data-strucures-ellis-horowitz-book-0716782502"><i>Fundamentals
+	of Data Structures in C</i></a>, W. H. Freeman and Company. 
+	</p>
+	<li><p>R. G. Dromey, <a href="http://www.flipkart.com/solve-computer-dromey-s-book-8131705625"><i>How
+	to Solve it by Computer</i></a>, Prentice-Hall of India. 
+	</p>
+</ul>
+<h2 class="western">Lecture Details 
+</h2>
+<table cellpadding="2" cellspacing="2">
 	<tr>
-		<td >Basics</td>
-		<td ></td>
+		<th style="border: none; padding: 0cm"><p>No.</p>
+		</th>
+		<th style="border: none; padding: 0cm"><p>Topic</p>
+		</th>
+		<th style="border: none; padding: 0cm"><p>Details</p>
+		</th>
 	</tr>
-	</table>
-
-	<h2> Helpful Resourses </h2>
-
-	<ul>
-		<li><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank">Link</a> to visual represenations of various data structures.</li>
-		<li><a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">Link</a> to compare running time of different sorting techniques.</li>
-		<li><a href="https://workshape.github.io/visual-graph-algorithms/" target="_blank">Link</a> to visual represenations of graph traversals e.g. BFS, DFS, etc.</li>
-	</ul>
-
+	<tr>
+		<td style="border: none; padding: 0cm"><p>1</p>
+		</td>
+		<td style="border: none; padding: 0cm"><p>Basics</p>
+		</td>
+		<td style="border: none; padding: 0cm"></td>
+	</tr>
+</table>
+<h2 class="western">Helpful Resourses 
+</h2>
+<ul>
+	<li><p style="margin-bottom: 0cm"><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank">Link</a>
+	to visual represenations of various data structures. 
+	</p>
+	<li><p style="margin-bottom: 0cm"><a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">Link</a>
+	to compare running time of different sorting techniques. 
+	</p>
+	<li><p><a href="https://workshape.github.io/visual-graph-algorithms/" target="_blank">Link</a>
+	to visual represenations of graph traversals e.g. BFS, DFS, etc. 
+	</p>
+</ul>
 </body>
 </html>
