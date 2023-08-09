@@ -1,0 +1,19 @@
+Instructions (please read carefully each point)
+Write as little as possible without missing out on any details
+	Think carefully before answering
+	There is no marks on being verbose
+	Sometimes, adding an example makes things easier
+
+There are two sections in the paper - (A) the mandatory section and (B) the optional section
+
+You can answer any combination of questions from the mandatory Section A as long as the total marks attempted is less than or equal to 50,  i.e., any question attempted beyond 50 marks will not be considered while marking
+
+Additionally, you can attempt the optional Section B which contains 10 marks in total; this may be considered at the time of final grading but not for the End-sem exam itself
+
+If you are making any valid assumption(s) while writing an answer, do remember to mention that information clearly and concisely
+
+3 bonus marks will be awarded if there is no minor mistakes as well as major ones, and questions worth a total of 50 marks are attempted
+
+Consider all questions in the section A are for C language and assume the size of int and float as 4 bytes, char as 1 byte, double as 8 bytes, pointer types as 8 bytes for this exam; also note the characters are evaluated using their ASCII values A-Z are valued 65-90 and a-z are valued 97-122 respectively
+
+Questions marked with [Python] are all-or-nothing questions. For the rest, there will be part-marking.
