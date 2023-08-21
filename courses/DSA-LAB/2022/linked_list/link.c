@@ -96,6 +96,23 @@ void clear (list** head)
 	printf("list cleared\n");
 }
 
+list* rev(list* ptr)
+{
+	if (!ptr || !(ptr->next))
+		return ptr;
+	else
+	{
+		list* ret = rev(ptr->next);
+		ptr->next->next = ptr;
+		ptr->next = NULL;
+		return ret;
+	}
+}
+void reverse(list** head)
+{
+	*head  = rev(*head);
+}
+
 int main ()
 {
 	list** HEAD;
@@ -106,7 +123,7 @@ int main ()
 	int ch, val;
 	while (1)
 	{
-		printf ("enter you choice\n\t1: display list\n\t2: add an element\n\t3: remove an element\n\t4: clear list\n\t5: exit\n\nchoice:: ");
+		printf ("enter you choice\n\t1: display list\n\t2: add an element\n\t3: remove an element\n\t4: clear list\n\t5: exit\n\t6: reverse\n\nchoice:: ");
 		scanf("%d", &ch);
 		switch (ch)
 		{
@@ -129,6 +146,10 @@ int main ()
 			case 4:
 				//destroy
 				clear (HEAD);
+				break;
+			case 6:
+				//destroy
+				reverse (HEAD);
 				break;
 			default:
 				clear (HEAD);
