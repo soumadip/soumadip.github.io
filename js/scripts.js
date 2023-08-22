@@ -346,6 +346,6 @@ function init(){
 	loadPage("title", "pages/layout/title.html");
 	loadPage("bottom", "pages/layout/navbar.html");
 	loadArticle("middle", "pages/abstract.html");
-	//loadPage("cover", "pages/layout/cover.html");
+	loadPage("cover", "pages/layout/cover.html");
 }
 // </script>
