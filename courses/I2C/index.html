@@ -27,6 +27,32 @@
     opacity: 1;
   }
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 </style>
 </head>
 
@@ -62,10 +88,28 @@
 	<h2> Lecture Details </h2>
 
 	Note that slides have the basic coverage. However, additional related things may be taught in class, including working out examples, additional design issues etc.
-		<ul>
-			<li> 10 Aug 23: <a href="slides/I2C_L1.pdf" target="_blank">Lecture 1</a>, <a href="res/l1/" target="_blank" target="_blank">resources</a> </li>
-			<li> 17 Aug 23: <a href="slides/I2C_L2.pdf" target="_blank">Lecture 2</a>, <a href="res/l2/" target="_blank" target="_blank">resources</a> </li>
-			<li> 24 Aug 23: <a href="slides/I2C_L3.pdf" target="_blank">Lecture 3</a>, <a href="res/l3/" target="_blank" target="_blank">resources</a> </li>
+<table style="width:80%">
+	<tr>
+		<th> Date</td>
+		<th>Lecture Details</td>
+		<th>Resourses</td>
+	</tr>
+	<tr>
+		<td> 10 Aug 23</td>
+		<td><a href="slides/I2C_L1.pdf" target="_blank">Lecture 1</a></td>
+		<td><a href="res/l1/" target="_blank" target="_blank">link</a> </td>
+	</tr>
+	<tr>
+		<td> 17 Aug 23</td> 
+		<td><a href="slides/I2C_L2.pdf" target="_blank">Lecture 2</a></td> 
+		<td><a href="res/l2/" target="_blank" target="_blank">link</a> </td>
+	</tr>
+	<tr>
+		<td> 24 Aug 23</td>
+		<td><a href="slides/I2C_L3.pdf" target="_blank">Lecture 3</a></td>
+		<td><a href="res/l3/" target="_blank" target="_blank">link</a> </td>
+	</tr>
+</table>
 			<!--
 						<li> 29 Sep 22: <a href="slides/I2C_L3-4.pdf" target="_blank">Lecture 3-4</a>, <a href="res/l3/" target="_blank" target="_blank">resources</a> </li>
 			<li> 06 Sep 22: Holiday </li>
