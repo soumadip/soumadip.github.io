@@ -38,7 +38,7 @@ void create_fsm (FSM f)
 int check_acceptance (FSM f, char* input) //returns 1 on acceptance
 {
 	int i=0, len = strlen (input);
-	node* ptr = *f;
+	node* ptr = *f; //get the starting state
 	while (i < len)
 	{
 		if (input[i] == '0')
