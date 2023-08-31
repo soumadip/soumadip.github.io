@@ -1,25 +1,30 @@
 #include<stdio.h>
 
+int fib (int n)
+{
+	int fn_1 = 0, fn = 1, result;
+	if (n == 0)
+		return fn_1;
+	else if (n == 1)
+		return fn;
+	else
+	{
+		while (n-- - 1)
+		{
+			result = fn + fn_1;
+			fn_1 = fn;
+			fn = result;
+		}
+		return result;
+	}
+}
+
 int main ()
 {
-	int fn = 1, fn_1 = 0, tmp;
+	int n;
 
-	int count, max = 20;
+	printf ("Enter number:: ");
+	scanf ("%d", &n);
 
-	printf ("FIBBONACCHI SERIES:: %5d", fn_1);
-	count  = 1;
-	while (1)
-	{
-		printf ("%5d", fn);
-		count++;
-
-		if (count == max)
-			break;
-		
-		tmp = fn + fn_1;
-		fn_1 = fn;
-		fn = tmp;
-		//fn = fn + fn_1;
-		//fn_1 = fn - fn_1;
-	}
+	printf ("%dth fibbonaci number is %d", n, fib(n));
 }
