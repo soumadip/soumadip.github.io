@@ -9,7 +9,7 @@ int fib (int n)
 		return fn;
 	else
 	{
-		while (n-- - 1)
+		while (n-- - 1) // can also be written as while (--n)
 		{
 			result = fn + fn_1;
 			fn_1 = fn;

@@ -5,7 +5,7 @@ void print_line ()
 	printf ("************************\n");
 	printf ("************************\n");
 	printf ("************************\n");
-	return;
+	return; //move this return around and see the difference in outputs
 }
 
 int main ()
