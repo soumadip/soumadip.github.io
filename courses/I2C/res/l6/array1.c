@@ -1,25 +1,59 @@
-#include <stdio.h>
-    void main()
-    {
-        int i, a[4] = {1,2,3};
-	printf(" 0--%d\n", a[0]);
-	printf(" 1--%d\n", a[1]);
-	printf(" 2--%d\n", a[2]);
-	printf(" 3--%d\n", a[3]);
-	printf(" 4--%d\n", a[4]); //unpredictable
-	printf(" 5--%d\n", a[5]); //unpredictable
-	printf(" 6--%d\n", a[6]); //unpredictable
-	printf("-1--%d\n", a[-1]); //unpredictable
-	
+#include<stdio.h>
+#include<limits.h>
 
-	printf("\n");
+#define SIZE 10
 
-	printf("-1--%-20d \t%-20p\n", a[-1], &a[-1]);
-	printf(" 0--%-20d \t%-20p\n", a[0], &a[0]);
-	printf(" 1--%-20d \t%-20p\n", a[1], &a[1]);
-	printf(" 2--%-20d \t%-20p\n", a[2], &a[2]);
-	printf(" 3--%-20d \t%-20p\n", a[3], &a[3]);
-	printf(" 4--%-20d \t%-20p\n", a[4], &a[4]);
-	printf(" 5--%-20d \t%-20p\n", a[5], &a[5]);
-	printf(" 6--%-20d \t%-20p\n", a[6], &a[6]);
-    }
+int main ()
+{
+	int arr[SIZE];
+	int i, sum, max, min;
+
+	printf ("Enter elements...\n");
+	for (i = 0; i < SIZE; i++)
+	{
+		printf ("elem[%d]: ", i);
+		scanf ("%d", &arr[i]);
+	}
+
+	//print all elements
+	printf ("All elements\n");
+	for (i = 0; i < SIZE; i++)
+	{
+		printf ("arr[%d] = %d\n", i, arr[i]);
+	}
+
+	//print all elements in reverse
+	printf ("All elements in reverse order\n");
+	for (i = SIZE-1; i >= 0; i--)
+	{
+		printf ("arr[%d] = %d\n", i, arr[i]);
+	}
+
+	//print all alternative elements
+	printf ("All alternative elements\n");
+	for (i = 0; i < SIZE; i+=2)
+	{
+		printf ("arr[%d] = %d\n", i, arr[i]);
+	}
+
+	//sum of  all elements
+	sum = 0;
+	for (i = 0; i <SIZE; i++)
+		sum += arr[i];
+	printf ("Sum of all elements:: %d\n", sum);
+	printf ("Mean of all elements:: %d\n", sum/SIZE);
+	printf ("Median of all elements:: %d\n", arr[SIZE/2]);
+
+	//max and min of all elements
+	max = INT_MIN;
+	min = INT_MAX;
+	for (i = 0; i <SIZE; i++)
+	{
+		if (arr[i] > max)
+			max = arr[i];
+		if (arr[i] < min)
+			min = arr[i];
+	}
+	printf ("Maximum of all elements:: %d\n", max);
+	printf ("Minimum of all elements:: %d\n", min);
+}
