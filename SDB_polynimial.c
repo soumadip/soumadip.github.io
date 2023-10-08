@@ -41,11 +41,11 @@ bool display_polynomial(Poly* expr)
 	if (expr && expr->size)
 	{
 		term* ptr = expr->HEAD;
-		printf("\n");
 		while (ptr)
 		{
-			printf("%lf x^%d", ptr->coeff, ptr->expo);
+			printf("(%.2lf)*x^%d", ptr->coeff, ptr->expo);
 			ptr = ptr->next_term;
+			if(ptr) printf(" + ");
 		}
 		printf("\n");
 		return true;
@@ -60,7 +60,7 @@ bool include_term(term** expr_head_addr, term* to_add)
 	{
 		if(curr->expo == to_add->expo)
 		{
-			curr->expo += to_add->expo;
+			curr->coeff += to_add->coeff;
 			free(to_add);
 			return false;
 		}
@@ -83,29 +83,29 @@ bool insert_term (Poly* expr, term* ptr)
 	{
 		if (expr->HEAD && include_term(&expr->HEAD, ptr))
 				expr->size++;
-		else
+		else if (expr->HEAD == NULL)
 		{
 			expr->HEAD = ptr;
 			expr->size = 1;
 		}
+		return true;
 	}
 	else return false;
 }
 
 
+typedef struct polylist{Poly* ptr; int index; struct polylist* next_expr;}pl;
+pl *list_head = NULL;
+
+void add_to_list(Poly*);
+void display_list();
+Poly* get_from_list(int);
+
 int main()
 {
-	typedef struct polylist{Poly* ptr; int index; struct polylist* next_expr;}pl;
-	void add_to_list(Poly*);
-	void display_list();
-	Poly* get_from_list(int);
-	
-	pl *list_head, *expr;
-	list_head = malloc(sizeof (pl));
-	list_head->ptr = NULL;
-	list_head->next_expr = NULL;
-	
+	Poly *expr;
 	int choice, ind, no;
+
 	while(true)
 	{
 		printf("1 to add polynomial\n2 to add terms\n3 to display all\n0 to exit\n choice:: ");
@@ -118,9 +118,13 @@ int main()
 			case 2:
 				printf("choose polynomial number: ");	scanf("%d", &ind);
 				expr = get_from_list(ind);
-				printf("number of terms to add: "); scanf("%d", &no);
-				while (no--)
-					insert_term(expr, new_term());
+				if (!expr) printf ("polynomial does not exist\n");
+				else
+				{
+					printf("number of terms to add: "); scanf("%d", &no);
+					while (no--)
+						if (insert_term(expr, new_term())) printf (".. term incorporated\n");
+				}
 				break;
 			case 3:
 				display_list(list_head);
@@ -130,33 +134,44 @@ int main()
 		}
 	}
 	
-	
-	void add_to_list( Poly* expr;)
+}
+
+void add_to_list(Poly* expr)
+{
+	if (list_head == NULL)
 	{
-		pl *tmp = list_head;
-		while(tmp->next_expr) tmp = tmp->next_expr;
-		tmp->next_expr = malloc(sizeof pl);
-		tmp->next_expr->ptr = expr;
-		tmp->next_expr->index = tmp->index + 1;
+		list_head = malloc(sizeof(pl));
+		list_head->ptr = expr;
+		list_head->index = 1;
+		list_head->next_expr = NULL;
+		return;
 	}
-	void display_list()
+	pl *it = list_head;
+	while(it->next_expr) it = it->next_expr;
+
+	it->next_expr = malloc(sizeof (pl));
+	it->next_expr->ptr = expr;
+	it->next_expr->index = it->index + 1;
+}
+void display_list()
+{
+	pl *curr = list_head;
+	while(curr) 
 	{
-		pl *tmp = list_head;
-		while(tmp->next_expr) 
-		{
-			printf("%d: ", tmp->index);
-			display_polynomial (tmp->ptr);
-			tmp = tmp->next_expr;
-		}
+		printf("\t[%d]\t", curr->index);
+		if (!display_polynomial (curr->ptr))
+			printf("Empty polynomial\n");
+		curr = curr->next_expr;
 	}
-	Poly* get_from_list(int ind)
+}
+Poly* get_from_list(int ind)
+{
+	pl *curr = list_head;
+	while(curr) 
 	{
-		pl *tmp = list_head;
-		while(tmp->next_expr) 
-		{
-			if(tmp->index == ind)
-				return tmp->ptr; 
-			tmp = tmp->next_expr;
-		}
+		if(curr->index == ind)
+			return curr->ptr; 
+		curr = curr->next_expr;
 	}
+	return NULL;
 }
