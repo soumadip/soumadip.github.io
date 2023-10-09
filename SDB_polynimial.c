@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<stdbool.h>
 
+#define ABS(X) (X)>0?(X):-1*(X)
+
 typedef struct _node
 {
 	double coeff;
@@ -49,11 +51,29 @@ bool display_polynomial(Poly* expr)
 		else
 		{
 			term* ptr = expr->first_term;
+			printf("%.2lfx^%d", ptr->coeff, ptr->expo);
 			while (ptr)
 			{
-				printf("(%.2lf)*x^%d", ptr->coeff, ptr->expo);
-				ptr = ptr->next_term;
-				if(ptr) printf(" + ");
+				if ((int)ptr->coeff)
+				{
+					if ((int)ptr->expo > 0)? printf(" + ") : printf(" - ");
+					{
+						printf(" + ");
+						if ((int)ptr->coeff == 1 || (int)ptr->coeff == -1)
+							printf("x^%d", ptr->expo);
+						else
+							printf("%.2lfx^%d", ABS(ptr->coeff), ptr->expo);
+					}
+					// else
+					// {
+						// printf(" - ");
+						// if ((int)ptr->coeff == -1)
+							// printf("x^%d", ptr->expo);
+						// else
+							// printf("%.2lfx^%d", ABS(ptr->coeff), ptr->expo);
+					// }
+					ptr = ptr->next_term;
+				}
 			}
 			printf("\n");
 		}
