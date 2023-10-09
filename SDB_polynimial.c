@@ -50,29 +50,29 @@ bool display_polynomial(Poly* expr)
 			printf("Empty polynomial\n");
 		else
 		{
-			term* ptr = expr->first_term;
-			printf("%.2lfx^%d", ptr->coeff, ptr->expo);
-			while (ptr)
+			term* it = expr->first_term;
+			printf("%.2lfx^%d", it->coeff, it->expo);
+			while (it)
 			{
-				if ((int)ptr->coeff)
+				if ((int)it->coeff)
 				{
-					if ((int)ptr->expo > 0)? printf(" + ") : printf(" - ");
+					if ((int)it->expo > 0)? printf(" + ") : printf(" - ");
 					{
 						printf(" + ");
-						if ((int)ptr->coeff == 1 || (int)ptr->coeff == -1)
-							printf("x^%d", ptr->expo);
+						if ((int)it->coeff == 1 || (int)it->coeff == -1)
+							printf("x^%d", it->expo);
 						else
-							printf("%.2lfx^%d", ABS(ptr->coeff), ptr->expo);
+							printf("%.2lfx^%d", ABS(it->coeff), it->expo);
 					}
 					// else
 					// {
 						// printf(" - ");
-						// if ((int)ptr->coeff == -1)
-							// printf("x^%d", ptr->expo);
+						// if ((int)it->coeff == -1)
+							// printf("x^%d", it->expo);
 						// else
-							// printf("%.2lfx^%d", ABS(ptr->coeff), ptr->expo);
+							// printf("%.2lfx^%d", ABS(it->coeff), it->expo);
 					// }
-					ptr = ptr->next_term;
+					it = it->next_term;
 				}
 			}
 			printf("\n");
