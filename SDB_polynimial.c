@@ -201,10 +201,12 @@ int main()
 {
 	Poly *expr;
 	int choice, ind, no, p1, p2, ret;
+	bool flag = true;
 
 	while(true)
 	{
-		printf("\nEnter\n1 to add polynomial\n2 to add terms\n3 to display all\n4 to remove a polynomial from list\n5 to multiply two polynomials\n6 to add two polynomials\n0 to exit\n\tchoice:: ");
+		if (flag) printf("\nEnter\n1 to add polynomial\n2 to add terms\n3 to display all\n4 to remove a polynomial from list\n5 to multiply two polynomials\n6 to add two polynomials\n0 to exit\n\tchoice:: ");
+		else flag = !flag;
 		scanf("%d", &choice);
 		switch(choice)
 		{
@@ -251,7 +253,8 @@ int main()
 				release_list();
 				exit(0);
 			default:
-				printf("<<invalid choice>> Please retry.");
+				printf("<<invalid choice>> Please retry.\n\tchoice:: ");
+				flag = !flag;
 		}
 	}
 	
