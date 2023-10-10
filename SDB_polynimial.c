@@ -276,6 +276,7 @@ int add_to_list(Poly* expr)
 	if(it->next_polynomial == NULL) return 0;
 	it->next_polynomial->expr = expr;
 	it->next_polynomial->index = it->index + 1;
+	it->next_polynomial->next_polynomial = NULL;
 	return it->index + 1;
 }
 void display_list()
@@ -327,6 +328,7 @@ bool remove_from_list(int ind)
 			else
 				list_head = curr->next_polynomial;
 			remove_polynomial(curr->expr);
+			free(curr);
 			return true;
 		}
 		prev = curr;
