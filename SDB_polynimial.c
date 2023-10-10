@@ -192,6 +192,7 @@ typedef struct polylist{Poly* expr; int index; struct polylist* next_polynomial;
 pl *list_head = NULL;
 
 int add_to_list(Poly*);
+bool remove_from_list(int);
 void display_list();
 Poly* get_from_list(int);
 void release_list();
@@ -203,22 +204,22 @@ int main()
 
 	while(true)
 	{
-		printf("\nEnter\n1 to add polynomial\n2 to add terms\n3 to display all\n4 to multiply two polynomials\n5 to add two polynomials\n0 to exit\n\tchoice:: ");
+		printf("\nEnter\n1 to add polynomial\n2 to add terms\n3 to display all\n4 to remove a polynomial from list\n5 to multiply two polynomials\n6 to add two polynomials\n0 to exit\n\tchoice:: ");
 		scanf("%d", &choice);
 		switch(choice)
 		{
 			case 1:
 				ret = add_to_list(new_polynomial());
-				ret? printf("\tpolynomial no %d added\n", ret) : printf("\tfail to add polynomial\n");
+				ret? printf("\t\t..added at index %d\n", ret) : printf("\t\t..fail to add\n");
 				break;
 			case 2:
-				printf("\tchoose polynomial number: ");	scanf("%d", &ind);
+				printf("\t\tchoose polynomial number: ");	scanf("%d", &ind);
 				expr = get_from_list(ind);
-				if (!expr) printf ("\tpolynomial does not exist\n");
+				if (!expr) printf ("\t\tpolynomial does not exist\n");
 				else
 				{
-					printf("\tselected polynomial is: "); display_polynomial(expr);
-					printf("\tnumber of terms to add: "); scanf("%d", &no);
+					printf("\t\tselected polynomial is: "); display_polynomial(expr);
+					printf("\t\tnumber of terms to add: "); scanf("%d", &no);
 					while (no > 0 && no--)
 						if (insert_term(expr, new_term())) printf ("\t\t.. term incorporated\n");
 						else printf ("\t\t.. term not incorporated\n");
@@ -228,24 +229,29 @@ int main()
 				display_list();
 				break;
 			case 4:
-				display_list();
-				printf("\tselect first polynomial number: "); scanf("%d", &p1);
-				printf("\tselect second polynomial number: "); scanf("%d", &p2);
-				ret = add_to_list(multiply_two_polynomials(get_from_list(p1), get_from_list(p2)));
-				ret? printf("\tresulting polynomial (no %d) added\n", ret) : printf("\tfail to add resulting polynomial\n");
+				//display_list();
+				printf("\t\tchoose polynomial number to remove: ");	scanf("%d", &ind);
+				printf("\t\t..%s\n", remove_from_list(ind)? "success" : "failure");
 				break;
-				case 5:
+			case 5:
 				display_list();
-				printf("\tselect first polynomial number: "); scanf("%d", &p1);
-				printf("\tselect second polynomial number: "); scanf("%d", &p2);
+				printf("\t\tselect first polynomial number: "); scanf("%d", &p1);
+				printf("\t\tselect second polynomial number: "); scanf("%d", &p2);
+				ret = add_to_list(multiply_two_polynomials(get_from_list(p1), get_from_list(p2)));
+				ret? printf("\t\t..added resulting polynomial (index %d)\n", ret) : printf("\t\t..failure\n");
+				break;
+				case 6:
+				display_list();
+				printf("\t\tselect first polynomial number: "); scanf("%d", &p1);
+				printf("\t\tselect second polynomial number: "); scanf("%d", &p2);
 				ret = add_to_list(add_two_polynomials(get_from_list(p1), get_from_list(p2)));
-				ret? printf("\tresulting polynomial (no %d) added\n", ret) : printf("\tfail to add resulting polynomial\n");
+				ret? printf("\t\t..added resulting polynomial (index %d)\n", ret) : printf("\t\t..failure\n");
 				break;
 			case 0:
 				release_list();
 				exit(0);
 			default:
-				printf("!! invalid choice. Please retry.");
+				printf("<<invalid choice>> Please retry.");
 		}
 	}
 	
@@ -274,6 +280,7 @@ int add_to_list(Poly* expr)
 }
 void display_list()
 {
+	if(!list_head) printf("\t\tlist empty");
 	pl *curr = list_head;
 	while(curr) 
 	{
@@ -305,5 +312,26 @@ void release_list()
 		free(tmp);
 	}
 	printf("list released\n");
+}
+
+bool remove_from_list(int ind)
+{
+	if (!list_head) return false;
+	pl *curr = list_head, *prev;
+	while (curr)
+	{
+		if (curr->index == ind)
+		{
+			if (prev)
+				prev->next_polynomial = curr->next_polynomial;
+			else
+				list_head = curr->next_polynomial;
+			remove_polynomial(curr->expr);
+			return true;
+		}
+		prev = curr;
+		curr = curr->next_polynomial;
+	}
+	return false;
 }
 
