@@ -242,7 +242,7 @@ int main()
 				ret = add_to_list(multiply_two_polynomials(get_from_list(p1), get_from_list(p2)));
 				ret? printf("\t\t..added resulting polynomial (index %d)\n", ret) : printf("\t\t..failure\n");
 				break;
-				case 6:
+			case 6:
 				display_list();
 				printf("\t\tselect first polynomial number: "); scanf("%d", &p1);
 				printf("\t\tselect second polynomial number: "); scanf("%d", &p2);
