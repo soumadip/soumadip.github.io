@@ -318,7 +318,7 @@ void release_list()
 bool remove_from_list(int ind)
 {
 	if (!list_head) return false;
-	pl *curr = list_head, *prev;
+	pl *curr = list_head, *prev = NULL;
 	while (curr)
 	{
 		if (curr->index == ind)
