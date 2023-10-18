@@ -21,5 +21,8 @@ int main ()
 	for(int i=0; i <*ptr; i++)
 		printf("[%p] %d\n", arr+i, *(arr+i));
 
+	free(ptr);
+	free(arr);
+
 }
 
