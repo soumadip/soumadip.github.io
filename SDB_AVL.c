@@ -14,7 +14,7 @@ typedef struct _tree_node
 }node;
 
 #define DIFF(X,Y) ((X)>(Y))?((X)-(Y)):((Y)-(X))
-#define BALANCING_REQUIRED(X) (DIFF(((X)->left_subtree_height),((Y)->right_subtree_height)) > 1)
+#define BALANCING_REQUIRED(X) (DIFF(((X)->left_subtree_height),((X)->right_subtree_height)) > 1)
 
 typedef struct __balanced_avl_tree_container
 {
@@ -47,6 +47,7 @@ node* new_tree_node(int val)
 
 void rotate_LL (node* ptr)
 {
+	printf("rotating LL on node %d\n", ptr->data);
 	node *parent = ptr->parent;
 	node *left = ptr->left;
 
@@ -61,6 +62,7 @@ void rotate_LL (node* ptr)
 
 void rotate_RR (node* ptr)
 {
+	printf("rotating RR on node %d\n", ptr->data);
 	node *parent = ptr->parent;
 	node *right = ptr->right;
 
@@ -104,8 +106,9 @@ void rebalance (node* ptr)
 	}
 }
 
-node* insert_avl(node* ptr, node* new_node, int level)
+bool insert_avl(node* ptr, node* new_node, int level)
 {
+	printf("checking node with data %d\n", ptr->data);
 	if (ptr->data < new_node->data)
 		if(ptr->right)
 			if (insert_avl(ptr->right, new_node, level+1))
@@ -116,9 +119,11 @@ node* insert_avl(node* ptr, node* new_node, int level)
 			}
 		else
 		{
+			printf("insering data %d\n", new_node->data);
 			ptr->right = new_node;
 			new_node->level = level;
 			new_node->parent = ptr;
+			return true;
 		}
 	else if (ptr->data > new_node->data)
 		if(ptr->left)
@@ -130,6 +135,7 @@ node* insert_avl(node* ptr, node* new_node, int level)
 			}
 		else
 		{
+			printf("insering data %d\n", new_node->data);
 			ptr->left = new_node; 
 			new_node->level = level;
 			new_node->parent = ptr;
@@ -142,24 +148,24 @@ node* insert_avl(node* ptr, node* new_node, int level)
 
 bool insert(avl* tree, int new_data)
 {
+	printf("starting insertion process for data %d\n", new_data);
 	node* ptr = new_tree_node(new_data);
 	if (ptr)
 	{
 		if (tree->root_node == NULL) 
 		{
-			tree->root_node = new_node(val);
+			tree->root_node = new_tree_node(new_data);
 			tree->node_count = 1;
-			return true
+			return true;
 		} 
 		else 
-			ptr = insert_avl(tree->root_node, ptr);
-		if(ptr)
-		{
-			tree->node_count += 1;
-			return true;
-		}
-		else
-			return false;
+			if(insert_avl(tree->root_node, ptr, 0))
+			{
+				tree->node_count += 1;
+				return true;
+			}
+			else
+				return false;
 	}
 	return false;
 }
@@ -167,14 +173,19 @@ bool insert(avl* tree, int new_data)
 bool delete_avl(int key)
 {
 }
-
+bool delete(avl* tree, int key)
+{}
+void traverse(avl* tree)
+{}
+void destroy(avl* tree)
+{}
 int main ()
 {
-    avl* tptr
-    if (tptr = initilize_avl_tree())
+    avl* tptr;
+    if (!(tptr = initilize_avl_tree()))
     {
         printf ("Failed to allocate memory for AVL\nExiting\n");
-        return -1;
+        return -1;	
     }
     else
         printf ("AVL initialized\n");
