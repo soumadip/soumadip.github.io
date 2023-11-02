@@ -12,5 +12,7 @@ int main ()
 
 	printf("%p, %p, %p, %lf \n", buf, &buf[0], buf[1], *buf[1]);
 	//prints 0xbfed51d4, 0xbfed51d4, 0xbfed51e0, 11.000000
+	
+	printf("%lf %lf\n", buf[1][0], buf[1][1]);
 
 }
