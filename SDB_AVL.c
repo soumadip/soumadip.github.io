@@ -13,6 +13,7 @@ typedef struct _tree_node
 	struct _tree_node *right;
 }node;
 
+#define MAX(X,Y) ((X)>(Y))?(X):(Y)
 #define DIFF(X,Y) ((X)>(Y))?((X)-(Y)):((Y)-(X))
 #define BALANCING_REQUIRED(X) (DIFF(((X)->left_subtree_height),((X)->right_subtree_height)) > 1)
 
@@ -45,19 +46,48 @@ node* new_tree_node(int val)
 	return ptr;
 }
 
+void increment_level (node* ptr)
+{
+	if (ptr)
+	{
+		ptr->level += 1;
+		increment_level(ptr->left);
+		increment_level(ptr->right);
+	}
+}
+
+void decrement_level (node* ptr)
+{
+	if (ptr)
+	{
+		ptr->level -= 1;
+		decrement_level(ptr->left);
+		decrement_level(ptr->right);
+	}
+}
+
 void rotate_LL (node* ptr)
 {
 	printf("rotating LL on node %d\n", ptr->data);
 	node *parent = ptr->parent;
 	node *left = ptr->left;
+	int tmp;
 
-	if (parent->left == ptr)
-		parent->left = left;
-	else
-		parent->right = left;
+	if (parent)
+		if (parent->left == ptr)
+			parent->left = left;
+		else
+			parent->right = left;
+	else printf ("root node detected, proceeding with caution\n");
+
 	ptr->left = left->right;
-	left->parent = parent;
+	left->right->parent = parent;
+	tmp = ptr->left_subtree_height; ptr->left_subtree_height = left->right_subtree_height;
 	ptr->parent = left;
+	left->right = ptr;
+	left->right_subtree_height = 1 + MAX(ptr->left_subtree_height, ptr->right_subtree_height);
+	increment_level (ptr);
+	decrement_level (left);
 }
 
 void rotate_RR (node* ptr)
@@ -65,14 +95,23 @@ void rotate_RR (node* ptr)
 	printf("rotating RR on node %d\n", ptr->data);
 	node *parent = ptr->parent;
 	node *right = ptr->right;
+	int tmp;
 
-	if (parent->left == ptr)
-		parent->left = right;
-	else
-		parent->right = right;
+	if (parent)
+		if (parent->left == ptr)
+			parent->left = right;
+		else
+			parent->right = right;
+	else printf ("root node detected, proceeding with caution\n");
+
 	ptr->right = right->left;
 	right->parent = parent;
+	tmp = ptr->right_subtree_height; ptr->right_subtree_height = right->left_subtree_height;
 	ptr->parent = right;
+	right->left = ptr;
+	right->left_subtree_height = 1 + MAX(ptr->left_subtree_height, ptr->right_subtree_height);
+	increment_level (ptr);
+	decrement_level (right);
 }
 
 void rotate_LR (node* ptr)
@@ -115,13 +154,14 @@ bool insert_avl(node* ptr, node* new_node, int level)
 			{	
 				ptr->right_subtree_height += 1;
 				if (BALANCING_REQUIRED(ptr)) rebalance (ptr);
-				return ptr->left_subtree_height < ptr->right_subtree_height ? true : false;
+				return true;
 			}
+			else return false;
 		else
 		{
 			printf("insering data %d\n", new_node->data);
 			ptr->right = new_node;
-			new_node->level = level;
+			new_node->level = level+1;
 			new_node->parent = ptr;
 			return true;
 		}
@@ -131,13 +171,15 @@ bool insert_avl(node* ptr, node* new_node, int level)
 			{	
 				ptr->left_subtree_height += 1;
 				if (BALANCING_REQUIRED(ptr)) rebalance (ptr);
-				return ptr->left_subtree_height > ptr->right_subtree_height ? true : false;
+				//return ptr->left_subtree_height > ptr->right_subtree_height ? true : false;
+				return true;
 			}
+			else return false;
 		else
 		{
 			printf("insering data %d\n", new_node->data);
 			ptr->left = new_node; 
-			new_node->level = level;
+			new_node->level = level+1;
 			new_node->parent = ptr;
 			return true;
 		}
@@ -162,6 +204,8 @@ bool insert(avl* tree, int new_data)
 			if(insert_avl(tree->root_node, ptr, 0))
 			{
 				tree->node_count += 1;
+				if (tree->root_node->level)
+					tree->root_node = tree->root_node->parent;
 				return true;
 			}
 			else
@@ -190,6 +234,14 @@ int main ()
     else
         printf ("AVL initialized\n");
 
+    insert(tptr, 50);
+    insert(tptr, 30);
+    insert(tptr, 80);
+    insert(tptr, 20);
+    insert(tptr, 60);
+    insert(tptr, 40);
+    insert(tptr, 90);
+    insert(tptr, 70);
     int ch, val;
     while (true)
     {
