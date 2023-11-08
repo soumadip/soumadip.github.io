@@ -6,5 +6,5 @@ int main ()
 	int *arr;
 	arr = a;
 
-	printf ("%d, %d, %d, %d", sizeof a, sizeof arr, sizeof a[1], sizeof(int));
+	printf ("%ld, %ld, %ld, %ld", sizeof a, sizeof arr, sizeof a[1], sizeof(int));
 }

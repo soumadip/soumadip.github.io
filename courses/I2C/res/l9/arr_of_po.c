@@ -7,7 +7,7 @@ int main ()
 	double d0 = 8, d1[2] = {11, 12}, d2 = 10;
 	buf[0] = &d0; buf[1] = &d1[0]; buf[2] = &d2;
 
-	printf("%ld, %ld \n", sizeof(void*), sizeof(buf));
+	printf("%ld, %ld \n", sizeof(double*), sizeof(buf));
 	//prints 8, 24
 
 	printf("%p, %p, %p, %lf \n", buf, &buf[0], buf[1], *buf[1]);

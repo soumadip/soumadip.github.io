@@ -4,9 +4,9 @@
 
 int main ()
 {
-	char str1[20] = "A string";
-	char str2[20] = "Another string";
-	char str3[20];
+	char str1[30] = "A string";
+	char str2[30] = "Another string";
+	char str3[30];
 
 	printf("str1 = %s\n", str1);
 	printf("str2 = %s\n", str2);
