@@ -1,0 +1,14 @@
+In the lab copy write the following for each assignment.
+
+Points 1-5 are to be handwritten. Point 6 can be printed.
+
+1. Question
+2. Input
+3. Pseudocode/ Algorithm of the solution (not the actual codes)
+4. Output
+5. Complexity of the solution
+6. Add actual codes (printed pages)
+
+
+Note that in the final exams, you will have the luxury to carry the lab copy with you. 
+So, write well for your own benifit.

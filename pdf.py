@@ -21,13 +21,19 @@ for file in files:
     text = pageObj.extract_text()
     # print the text
     print(text)
+    
+    regex = re.compile(r"[0-9]{9}")
+    matches = regex.findall(word)
+    print (matches)
+    
     text = re.sub(' +', ' ', text)
     words = text.split()
     print(words)
-    for i, word in words:
+    for i, word in enumerate(words):
         print (word)
+            
         if "nrol" in word:
-            print (words[i-1, word, word[i+1])
+            print (words[i:i+4])
 
     # close the pdf file object
     pdfFileObj.close()
