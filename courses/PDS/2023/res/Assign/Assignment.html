@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="2023-02-13T00:00:09.015900307"/>
+	<meta name="changed" content="2023-03-27T22:55:51.941573050"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent; background: transparent }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+		a:visited { color: #800000; so-language: zxx; text-decoration: underline }
+	</style>
+</head>
+<body lang="en-IN" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0cm">
+<i><b>Assignment 1: Basics</b></i></p>
+<ol>
+	<li><p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+	What do you understand by the term “models” for distributed
+	systems?</p>
+	<li><p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+	Redesign the distributed search algorithm (from slides) for the
+	model – “Completely connected, synchronous, unreliable”</p>
+	<li><p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+	Redesign the distributed search algorithm (from slides) for the
+	model – “Connected in ring topology, asynchronous, reliable”</p>
+	<li><p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+	Demonstrate (draw nodes preferably) with a minimal example the
+	atomicity issue in a distributed system?</p>
+	<li><p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+	Create a scenario where the atomicity issue in distributed systems
+	can be understood.</p>
+	<li><p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+	Why two clocks cannot be perfectly synchronized?</p>
+	<li><p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+	To address faults, we can use replication – what kind of
+	problems/challenges this approach can cause? 
+	</p>
+	<li><p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+	Identify some distributed systems in real life that you interact
+	with. How do you know, they are distributed systems?</p>
+	<li><p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+	What do you mean by weakening a model? Give example.</p>
+</ol>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Assignment 2:
+Time</b> 
+</p>
+<ol>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Why does clock
+	synchronization important in distributed system? 
+	</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">How does clock
+	drift affect clock synchronization?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Can there exist
+	some distributed system which does not require clock
+	synchronization? If yes, give an example, and if no, explain why
+	not?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">What do you
+	mean by global clock?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">How is Berkeley
+	Algorithm better than Christian's?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">What are the
+	functional differences between the concepts of physical clock and
+	logical clock in the context of distributed systems.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Define happened
+	before relation using the formal notation for Lamport clock.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">When do you say
+	two events are concurrent for lamport clock? How about four events?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">What is total
+	ordering and partial ordering of events in the context of Lamport
+	clock. Which one is achieved using Lamport clock? Why?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Understand the
+	notations of vector time and their relationhips. Define when t1 &gt;=
+	t2, etc.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Understand the
+	weaknesses of Lamport and Vector clocks.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Define your own
+	logical clock algorithm.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">What happens is
+	the time server fails in the cases of Berkeley algorithm and
+	Christian Algorithm?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">What is causal
+	ordering of events? Define happened-before relationship formally.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Why lamport’s
+	not a true clock? How does vector clock solves this issue.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Identify
+	problems with Vector clock and Lamport’s clock.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">In the Lamport
+	clock, can the increment value be somthing other than 1(one)?
+	Why/Why not?</p>
+</ol>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Assignment 3:
+Global State</b></p>
+<ol>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Can two nodes
+	initiate the Chandi Lamport algorithm in a distributed system? What
+	happens then?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">If two
+	identical distributed system uses the Chandy Lamport algorithm to
+	record global states at the same time, will the recorded state be
+	identical?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Devise the
+	definitions of Local and Global snapshot using formal notations (you
+	can define your own version, not necessarily the one taught in
+	class). Further derive, from your definition, when your global
+	snapshot is consistent, inconsistent, transitless, and strongly
+	consistent.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Analyze the
+	worst case message complexity for the Chandy-Lamport Algorithm.</p>
+</ol>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Assignment 4:
+Leader Election</b></p>
+<ol>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">What are the
+	basic requirements for a solution to the leader election problem
+	-why are they required?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">How will you
+	change the Lelann-Chang-Robert algorithm for the following
+	modified/stronger model: Synchronous, reliable, unidirectional ring,
+	unique ids. Write your modified the Algorithm and explain the
+	advantages over the basic version.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Use an example
+	to demonstrate the functionality of the TTL (time-to-live) field in
+	Hirschberg-Sinclair Algorithm?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">How can you
+	modify the FloodMax algorithm for leader election, when the diameter
+	of the network is not known but the number of nodes are known, so
+	that it will still be able to elect the leader? What will be its
+	complexity in that case?</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Understand the
+	new models: uniform and non-uniform, anonymous and non-anonymous.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Understand the
+	functionality of the TTL (time-to-live) field in Hirschberg-Sinclair
+	Algorithm.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Explain the
+	message complexity of FloodMax algorithm for leader election in an
+	arbitrary network.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Any
+	comparison-based leader election algorithm in a ring requires
+	Ώ(nlgn) messages – why?</p>
+</ol>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Assignment 5:
+Spanning Tree</b></p>
+<ol>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Show using
+	example how a DFS spanning tree can be built on some arbitrarily
+	connected network (with 6 nodes and at least 15 edges). 
+	</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Compute the
+	message and time complexity(?) of the DFS spanning tree.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Design the BFS
+	spanning tree.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Read(materials
+	from website) and design your own flooding based spanning tree.</p>
+</ol>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Assignment 6:
+Mutual Exclusion</b></p>
+<ol>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Write in your
+	own words (use points) what do you undersand by mutual exlusion in
+	the context of distributed system. Give an example system that you
+	may design and identify where you might need to solve this problem</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">What are the
+	four requirements for distributed mutual exclusion. Explain in your
+	own words (1-2 lines each).</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Analyse why
+	Ricart-Agarwala algorithm does not require FIFO, but the Lamport’s
+	algorithm does.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">What
+	improvement is done by Roucairol-Carvalho Algorithm over
+	Ricart-Agarwala.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Show using an
+	example how Maekawa algorithm is able to achieve the “safety”
+	requirement  for distributed murual exclusion.</p>
+</ol>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+</body>
+</html>
