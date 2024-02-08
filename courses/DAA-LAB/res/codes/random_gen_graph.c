@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include<string.h>
+#include<stdbool.h>
 
 typedef struct __graph_adj_list
 {
@@ -24,6 +26,47 @@ Graph* new_graph(int no_of_vertices)
 	return ptr;
 }
 
+void graphviz(Graph *ptr, char* graph_type, char* outfile_name) 
+	//graph_type can be any of the following: diagraph, undirected, weighted_diagraph, weighted_undirected
+{
+	bool weighted = false, directed = false;
+	char outfname[15] = "", command[100] = "";
+
+	if (strstr(graph_type, "diagraph"))	directed = true && strcat(outfname, "D_");
+	if (strstr(graph_type, "weight"))	weighted = true && strcat(outfname, "W_");
+	strcat (outfname, "G.dot");
+
+	FILE *fp = fopen(outfname, "w");
+	if(ptr && fp)
+	{
+		if (directed)	fprintf(fp, "di");
+		fprintf(fp, "graph G{\n");
+
+		for (int i=0; i<ptr->size; i++)
+			fprintf(fp, "v_%d[label=V%d];\n", i, i+1);
+			//fprintf(fp, "v_%d[label=<v<SUB>%d</SUB>>];\n", i, i+1);
+
+		for (int i=0; i<ptr->size; i++)
+		{
+			for (int j=directed ? 0 : i+1; j<ptr->size; j++)
+			{
+				int weight = *(j+*(i+ptr->adj));
+				if (i !=j && weight)
+				{
+					fprintf(fp, "v_%d", i);
+					fprintf(fp, directed ? " -> " : " -- ");
+					fprintf(fp, "v_%d", j);
+					fprintf(fp, weighted ? "[label=%d];\n" : ";\n", weight);
+				}
+			}
+		}
+		fprintf(fp, "}");
+	}
+	fclose(fp);
+	sprintf(command, "dot -Tpng %s -o %s", outfname, outfile_name);
+	if(!system(command))
+		printf("Graph image %s generation successful!\n", outfile_name);
+}
 void print_graph(Graph *ptr)
 {
 	if(ptr)
@@ -39,11 +82,10 @@ void print_graph(Graph *ptr)
 
 void free_graph(Graph *ptr)
 {
-	return;
 	if(ptr)
 	{
 		for (int i=0; i<ptr->size; i++)
-			free(i+ptr->adj);
+			free(*(i+ptr->adj));
 		free(ptr->adj);
 		free(ptr);
 	}
@@ -56,7 +98,7 @@ Graph* gen_random_graph_undirected(int no_of_vertices, float edge_probability)
 	{
 		for (int i=0; i<ptr->size; i++)
 			for (int j=0; j<ptr->size; j++)
-				if((float)(rand()%100)/100 > edge_probability)
+				if(i!=j && (float)(rand()%100)/100 < edge_probability)
 					*(j+*(i+ptr->adj)) = *(i+*(j+ptr->adj)) = 1;
 	}
 	return ptr;
@@ -70,9 +112,9 @@ Graph* gen_random_graph_directed(int no_of_vertices, float edge_probability)
 		for (int i=0; i<ptr->size; i++)
 			for (int j=0; j<ptr->size; j++)
 			{
-				if((float)(rand()%100)/100 > edge_probability)
+				if(i!=j && (float)(rand()%100)/100 < edge_probability)
 					*(j+*(i+ptr->adj)) = 1;
-				if((float)(rand()%100)/100 > edge_probability)
+				if(i!=j && (float)(rand()%100)/100 < edge_probability)
 					*(j+*(i+ptr->adj)) = 1;
 			}
 	}
@@ -86,7 +128,7 @@ Graph* gen_random_graph_weighted_undirected(int no_of_vertices, float edge_proba
 	{
 		for (int i=0; i<ptr->size; i++)
 			for (int j=0; j<ptr->size; j++)
-				if((float)(rand()%100)/100 > edge_probability)
+				if(i!=j && (float)(rand()%100)/100 < edge_probability)
 					*(j+*(i+ptr->adj)) = *(i+*(j+ptr->adj)) = rand()%99 + 1; //assign an weight from 1-100
 	}
 	return ptr;
@@ -100,9 +142,9 @@ Graph* gen_random_graph_weighted_directed(int no_of_vertices, float edge_probabi
 		for (int i=0; i<ptr->size; i++)
 			for (int j=0; j<ptr->size; j++)
 			{
-				if((float)(rand()%100)/100 > edge_probability)
+				if(i!=j && (float)(rand()%100)/100 < edge_probability)
 					*(j+*(i+ptr->adj)) = rand()%99 + 1;
-				if((float)(rand()%100)/100 > edge_probability)
+				if(i!=j && (float)(rand()%100)/100 < edge_probability)
 					*(i+*(j+ptr->adj)) = rand()%99 + 1;
 			}
 	}
@@ -115,7 +157,7 @@ int main ()
 	srand ( time(NULL) );
 
 	Graph *udg, *dg, *wudg, *wdg;
-	float edge_probability = 0.6;
+	float edge_probability = 0.3;
 	int no_of_vertices = 10;
 	udg = gen_random_graph_undirected(no_of_vertices, edge_probability);
 	dg = gen_random_graph_directed(no_of_vertices, edge_probability);
@@ -131,6 +173,11 @@ int main ()
 	printf("weighted directed graph\n");
 	print_graph(wdg);
 
+	//graph_type can be any of the following: diagraph, undirected, weighted_diagraph, weighted_undirected
+	graphviz(udg, "undirected", "udg.png");
+	graphviz(dg, "diagraph", "dg.png");
+	graphviz(wudg, "weighted_undirect", "wudg.png");
+	graphviz(wdg, "weight_diagraph", "wdg.png");
 	free_graph(udg);
 	free_graph(dg);
 	free_graph(wudg);
