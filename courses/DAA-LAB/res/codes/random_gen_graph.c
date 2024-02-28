@@ -157,8 +157,24 @@ int main ()
 	srand ( time(NULL) );
 
 	Graph *udg, *dg, *wudg, *wdg;
-	float edge_probability = 0.3;
+	float edge_probability;
 	int no_of_vertices = 10;
+
+	printf("Enter number of verices (positive integer):"); 
+	scanf("%d", &no_of_vertices);
+	if(no_of_vertices <= 0)
+	{
+		printf("error in number of vertices, defaulting to 10\n");
+		edge_probability = 10;
+	}
+	printf("Enter edge probability (0-1):"); 
+	scanf("%f", &edge_probability);
+	if(edge_probability < 0 || edge_probability > 1)
+	{
+		printf("error in probability, defaulting to 0.5\n");
+		edge_probability = 0.5;
+	}
+
 	udg = gen_random_graph_undirected(no_of_vertices, edge_probability);
 	dg = gen_random_graph_directed(no_of_vertices, edge_probability);
 	wudg = gen_random_graph_weighted_undirected(no_of_vertices, edge_probability);
