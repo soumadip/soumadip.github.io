@@ -1,0 +1,168 @@
+
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-66MZLWS0PQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-66MZLWS0PQ');
+</script>
+	<title> Formal Languages and Automata Theory </title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+
+<body bgcolor=ivory>
+	<h1> <center> PCC-CS-502: Formal Languates and Automata Theory </center> </h1>
+	<h2> <center> Autumn 2023 </center> </h2>
+	<hr color=blue>
+
+	<h2> Announcements </h2>
+		<ul>
+			<li> Six practise assgnments are added for better understanding</li>
+			<li> Syllabus can be found <a href="res/docs/FLAT_Syllabus.pdf">here</a> </li>
+			<li> Classes started in July 2023 </li>
+			<!--<li> <span class = "blink"> Updated </span> Lecture slides and resources </li>-->
+		</ul>
+	<br>
+
+
+	<h2>Class Details</h2>
+		<ul> 
+		   <li> <i>Instructors</i>: Pulak baral, Rabi Narayan Behera and Soumadip Biswas</li>
+		   <li> <i>Venue</i>: LG 4.7 (IT), LG 2.4 (IoTCSBT), 5th Floor Gymkhana Room (IoT)</li>
+		   <li> <i>Time</i>: 3 classes per week, check routine on dept. website</li>
+		</ul>
+
+	<h2> Books  </h2>
+		<ul> 
+			<li><a href="https://www.amazon.in/Introduction-Formal-Languages-Automata/dp/9384323217">Introduction to Formal Languages and Automata</a> by <a href="https://faculty.engineering.ucdavis.edu/linz/">Peter Linz</a></li>
+			<li><a href="https://www.amazon.in/Introduction-Automata-Theory-Languages-Computation/dp/8131720470">Introduction to Automata Theory, Languages, and Computation</a> by <a href="https://www.cs.cornell.edu/jeh/">John E. Hopcroft</a>, <a href="http://theory.stanford.edu/people/rajeev/">Rajeev Motwani</a>, and <a href="http://infolab.stanford.edu/~ullman/">Jeffrey D. Ullman</a></li>
+			<li><a href="https://www.amazon.in/Introduction-Theory-Computation-Michael-Sipser/dp/8131525295">Introduction to the Theory of Computation</a> by <a href="https://math.mit.edu/~sipser/">Michael Sipser</a></li>
+		</ul>
+
+	<h2> Assignments </h2>
+	<table style="width:80%">
+	<tr>
+		<th >Assignment No</th>
+		<th >Details</th>
+		<th >Resourses</th>
+	</tr>
+	<tr>
+		<td >1</td>
+		<td >Practice working with regular expressions and constructing finite automata</td>
+		<td><a href="Assign/Assign1.pdf">Assignment details</a> - <a href="Assign/sol/a1.cpp">CPP template</a></td>
+	</tr>
+	<tr>
+		<td >2</td>
+		<td >Context-Free Grammars and Pushdown Automata</td>
+		<td><a href="Assign/Assign2.pdf">Assignment details</a> - <a href="Assign/sol/a2.cpp">CPP template</a></td>
+	</tr>
+	<tr>
+		<td >3</td>
+		<td >Turing Machines</td>
+		<td><a href="Assign/Assign3.pdf">Assignment details</a> - <a href="Assign/sol/a3.cpp">CPP template</a></td>
+	</tr>
+	<tr>
+		<td >4</td>
+		<td >Regular Language Conversion</td>
+		<td><a href="Assign/Assign4.pdf">Assignment details</a> - <a href="Assign/sol/a4.cpp">CPP template</a></td>
+	</tr>
+	<tr>
+		<td >5</td>
+		<td >Context-Free Language Parsing</td>
+		<td><a href="Assign/Assign5.pdf">Assignment details</a> - <a href="Assign/sol/a5.cpp">CPP template</a></td>
+	</tr>
+	<tr>
+		<td >6</td>
+		<td >Turing Machine Complexity</td>
+		<td><a href="Assign/Assign6.pdf">Assignment details</a> - <a href="Assign/sol/a6.cpp">CPP template</a></td>
+	</tr>
+	</table>
+	<h2> Lecture Details </h2>
+	<table style="width:80%">
+	<tr>
+		<th >Topic Name</th>
+		<th >Details</th>
+	</tr>
+	<tr>
+		<td> Mathematical preliminaries </td> 
+		<td> Sets, functions, complexity orders, relations, partitions, graphs, trees</td>
+	</tr>
+	<tr>
+		<td> Proof techniques </td> 
+		<td> Logical construction, induction, contrdiction</td>
+	</tr>
+	<tr>
+		<td> Three basic concepts </td> 
+		<td> Language, grammar and automata</td>
+	</tr>
+	<tr>
+		<td> Finite Automata </td> 
+		<td> Transition Graph and GTG, DFA and NFA, Equivalence of DFA and NFA, Conversion of NFA to DFA, Minimization of DFA</td>
+		<td> A basic <a href="Assign/sol/dfa_001.c">DFA implementation</a> in c</td> 
+	</tr>
+	<tr>
+		<td> Regular Expressions </td> 
+		<td> Definition, Connection with Regular Languages, NFA to Regex and Regex to NFA</td>
+	</tr>
+	<tr>
+		<td> Regular Grammars </td> 
+		<td> Right and Left linear grammars</td>
+	</tr>
+	<tr>
+		<td> Properties of Regular Languages </td> 
+		<td> Closure under set operations, Identification of regular languages, Pigeonhole principle, Pumping Lemma</td>
+	</tr>
+	<tr>
+		<td> Context Free Grammars </td> 
+		<td> Definition, Derivatrion tree, parsing, ambiguity, transformations of CFG, CNF and GNF </td>
+	</tr>
+	<tr>
+		<td> Push Down Automata </td> 
+		<td> Definition, Nondeterministic and deterministic PDA, PDA for GFG, DPDA and DCFG</td>
+	</tr>	
+	<tr>
+		<td> Properties of Context Free Languages </td> 
+		<td> Closure under set operations, Identification of context free languages (two more pumping lemmas), Intersection of CFG and Regular, decidable properties of CFGs</td>
+	</tr>		
+	</table>
+
+	<h2> Helpful Resourses </h2>
+
+	<ul>
+		<li><a href="res/software/JFLAP7.1.jar" target="_blank">Link</a> to JFLAP Software.</li>
+		<li><a href="https://www.youtube.com/playlist?list=PLeaAjeNjt7tTAH3LvvMVeR_rOVOgLLx6D" target="_blank">Link1</a> and <a href="https://www.jflap.org/tutorial/">Link2</a> to JFLAP Tutorial.</li>
+		<!--<li><a href="" target="_blank">Link</a> to .</li>-->
+	</ul>
+
+</body>
+</html>
