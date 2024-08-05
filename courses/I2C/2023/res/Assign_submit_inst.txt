@@ -1,0 +1,27 @@
+ASSIGNMENT SUBMISSION INSTRUCTIONS
+
+1. For each of the questions you need to write a c file, name the file in the following format
+	if the last two digits of your rollnumber is 99, then for question number A1.1 the solution file should have a name A1.1_99.c
+
+2. Once you are done writing the code, you must run you code and check with different inputs whenever necessary 
+	you need to make sure that your code must run i.e. compile successfully and execute
+
+3. For assignment X keep all c files for an assignment in a single folder named A_X
+	you can zip the folder by right click on the folder and select compress
+
+4. For each assignemnt send the zipped file to me by mail (soumadip.biswas@iem.edu.in)
+   (put the Course code, your name, rollnumber(s) and assignment number in the subject line)
+
+
+__________________________________________________________________________________
+submission recommendations
+The evaluation of the assignments will be done online on a later date
+Your submitted code should run/execute
+You can submit partial codes (in case you are unable make the code run successfully), but make sure you understand the portions you have submitted.
+
+
+___________________________________________________________________________________
+Evaluation Process:
+I pick some random submissions for each student and ask them to explain how that code is working.
+Additionally, I may make some small changes in your code and ask you to explain the effects of the changes.
+Therefore, you must understand what exactly you are submitting - so only submit the codes, that you understand properly.
