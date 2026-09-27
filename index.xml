@@ -3783,31 +3783,6 @@ block-beta
  
 
  
- &lt;details class="changelog-item" data-category="Portfolio" style="border-bottom: 1px solid #f1f5f9;"&gt;
- &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
- &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
- &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
- Jan 15
- &lt;/span&gt;
- &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
- Portfolio
- &lt;/span&gt;
- &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
- An Efficient Handover Mechanism for Vehicular Mobility in LTE
- &lt;/span&gt;
- &lt;/div&gt;
- &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
- &lt;a href="./portfolio/lte-handover-paper/" style="color: #94a3b8; text-decoration: none;"&gt;open &amp;rarr;&lt;/a&gt;
- &lt;/div&gt;
- &lt;/summary&gt;
-
- 
- &lt;/details&gt;
- 
- 
- 
-
- 
  &lt;details class="changelog-item" data-category="Courses" style="border-bottom: 1px solid #f1f5f9;"&gt;
  &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
  &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
@@ -5478,4 +5453,4 @@ To truly comprehend operating system architectures, you must be willing to push 
  --&gt;
 &lt;h1 id="prerequisite-guide-undergraduate-operating-systems-concepts-and-laboratory"&gt;Prerequisite Guide: Undergraduate Operating Systems Concepts and Laboratory&lt;/h1&gt;
 &lt;p&gt;This document outlines the foundational knowledge and practical skills required for the undergraduate Operating Systems course.&lt;/p&gt;
-&lt;p&gt;Operating Systems is often the first course where students transition from writing high-level application code to interacting directly with system resources. The laboratory assignments will be conducted in a Linux environment and will require you to write programs in C that manage processes, memory, and file systems.&lt;/p&gt;</description></item><item><title>An Efficient Handover Mechanism for Vehicular Mobility in LTE</title><link>https://soumadip.github.io/portfolio/lte-handover-paper/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/portfolio/lte-handover-paper/</guid><description/></item><item><title/><link>https://soumadip.github.io/courses/os-lab/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://soumadip.github.io/courses/os-lab/readme/</guid><description/></item><item><title/><link>https://soumadip.github.io/courses/os-theory/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://soumadip.github.io/courses/os-theory/readme/</guid><description/></item><item><title/><link>https://soumadip.github.io/courses/toc-theory/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://soumadip.github.io/courses/toc-theory/readme/</guid><description/></item></channel></rss>
+&lt;p&gt;Operating Systems is often the first course where students transition from writing high-level application code to interacting directly with system resources. The laboratory assignments will be conducted in a Linux environment and will require you to write programs in C that manage processes, memory, and file systems.&lt;/p&gt;</description></item><item><title/><link>https://soumadip.github.io/courses/os-lab/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://soumadip.github.io/courses/os-lab/readme/</guid><description/></item><item><title/><link>https://soumadip.github.io/courses/os-theory/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://soumadip.github.io/courses/os-theory/readme/</guid><description/></item><item><title/><link>https://soumadip.github.io/courses/toc-theory/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://soumadip.github.io/courses/toc-theory/readme/</guid><description/></item></channel></rss>
