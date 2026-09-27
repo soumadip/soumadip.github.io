@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Assignments &amp; Labs on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/courses/os-theory/content/assignments/</link><description>Recent content in Assignments &amp; Labs on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/courses/os-theory/content/assignments/index.xml" rel="self" type="application/rss+xml"/><item><title>Assignment 03: Context Switching and CPU Dispatch</title><link>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-03/</link><pubDate>Tue, 01 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-03/</guid><description>&lt;h1 id="self-assessment"&gt;Self-Assessment&lt;/h1&gt;
+&lt;h2 id="topic-1-context-switching-fundamentals--the-pcb"&gt;Topic 1: Context Switching Fundamentals &amp;amp; The PCB&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Exercise 1.1: The Mechanism of State Transfer&lt;/strong&gt;
+Describe the three precise phases involved in the CPU hand-off during a context switch. Identify the specific data structure utilized during this operation and list three critical pieces of CPU state stored within it.&lt;/p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;details style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 1.5rem; padding: 0.5rem 1rem; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"&gt;
+ &lt;summary style="font-weight: 600; cursor: pointer; color: #334155; margin: -0.5rem -1rem; padding: 0.75rem 1rem; outline: none;"&gt;
+ 💡 View Solution
+ &lt;/summary&gt;
+ &lt;div style="margin-top: 1rem; border-top: 1px dashed #cbd5e1; padding-top: 1rem; font-size: 0.95em;"&gt;
+ &lt;p&gt;The context switch mechanism involves three distinct phases:&lt;/p&gt;</description></item><item><title>Assignment 04: CPU Scheduling Algorithms</title><link>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-04/</link><pubDate>Tue, 01 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-04/</guid><description>&lt;h1 id="self-assessment"&gt;Self-Assessment&lt;/h1&gt;
+&lt;h2 id="topic-1-scheduling-criteria--bottlenecks"&gt;Topic 1: Scheduling Criteria &amp;amp; Bottlenecks&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Exercise 1.1: Core Performance Metrics&lt;/strong&gt;
+Define the following scheduling criteria: Throughput, Turnaround Time (TAT), and Response Time (RT). Why is it often impossible for an operating system designer to optimize all of these criteria simultaneously?&lt;/p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;details style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 1.5rem; padding: 0.5rem 1rem; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"&gt;
+ &lt;summary style="font-weight: 600; cursor: pointer; color: #334155; margin: -0.5rem -1rem; padding: 0.75rem 1rem; outline: none;"&gt;
+ 💡 View Solution
+ &lt;/summary&gt;
+ &lt;div style="margin-top: 1rem; border-top: 1px dashed #cbd5e1; padding-top: 1rem; font-size: 0.95em;"&gt;
+ &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Throughput:&lt;/strong&gt; The number of processes completed per unit time, where high throughput signifies more work done.&lt;/p&gt;</description></item><item><title>Assignment 02: Process Concepts and the Process Control Block</title><link>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-02/</link><pubDate>Mon, 31 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-02/</guid><description>&lt;h1 id="self-assessment"&gt;Self-Assessment&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Instructions:&lt;/strong&gt; Answer the following questions concisely. For analytical and calculation questions, ensure you justify your reasoning based on operating system principles.&lt;/p&gt;
+&lt;h2 id="part-a-process-fundamentals-and-memory-layout"&gt;Part A: Process Fundamentals and Memory Layout&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Process Definition:&lt;/strong&gt; Differentiate a &amp;ldquo;program&amp;rdquo; from a &amp;ldquo;process&amp;rdquo; and explain why a process is considered an &amp;ldquo;active entity.&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;details style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 1.5rem; padding: 0.5rem 1rem; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"&gt;
+ &lt;summary style="font-weight: 600; cursor: pointer; color: #334155; margin: -0.5rem -1rem; padding: 0.75rem 1rem; outline: none;"&gt;
+ 💡 View Solution
+ &lt;/summary&gt;
+ &lt;div style="margin-top: 1rem; border-top: 1px dashed #cbd5e1; padding-top: 1rem; font-size: 0.95em;"&gt;
+ &lt;strong&gt;Definition:&lt;/strong&gt; A program is passive code, while a process is an instance of a program in execution. A process is an active entity because it encompasses the current state of the CPU, associated data, and allocated system resources.
+ &lt;/div&gt;
+ &lt;/details&gt;
+
+ 
+
+
+&lt;ol start="2"&gt;
+&lt;li&gt;&lt;strong&gt;Memory Segments:&lt;/strong&gt; A process is divided into multiple memory segments. Briefly describe the contents of the following segments:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Text Segment&lt;/li&gt;
+&lt;li&gt;Data Segment (Initialized and Uninitialized/BSS)&lt;/li&gt;
+&lt;li&gt;Heap&lt;/li&gt;
+&lt;li&gt;Stack&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;details style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 1.5rem; padding: 0.5rem 1rem; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"&gt;
+ &lt;summary style="font-weight: 600; cursor: pointer; color: #334155; margin: -0.5rem -1rem; padding: 0.75rem 1rem; outline: none;"&gt;
+ 💡 View Solution
+ &lt;/summary&gt;
+ &lt;div style="margin-top: 1rem; border-top: 1px dashed #cbd5e1; padding-top: 1rem; font-size: 0.95em;"&gt;
+ &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Text Segment:&lt;/strong&gt; Contains the compiled, read-only executable instructions.&lt;/p&gt;</description></item><item><title>Assignment 01: System Calls and OS Structures</title><link>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-01/</link><pubDate>Sat, 15 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-01/</guid><description>&lt;h1 id="self-assessment"&gt;Self-Assessment&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Instructions:&lt;/strong&gt; Answer the following questions concisely. For code analysis and architectural design questions, ensure you justify your reasoning based on operating system principles.&lt;/p&gt;
+&lt;h2 id="part-a-core-concepts-and-workflows"&gt;Part A: Core Concepts and Workflows&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;System Call Definition:&lt;/strong&gt; In your own words, define what a system call is and explain why user programs cannot bypass this interface to interact directly with hardware.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Execution Flow:&lt;/strong&gt; Outline the exact lifecycle of a system call, starting from the user application and ending at the kernel service routine. List the intermediate steps in order.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Kernel Boundary:&lt;/strong&gt; Why do system calls require a dedicated CPU instruction (such as a trap to kernel mode) rather than functioning like standard C function calls?&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ &lt;details style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 1.5rem; padding: 0.5rem 1rem; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"&gt;
+ &lt;summary style="font-weight: 600; cursor: pointer; color: #334155; margin: -0.5rem -1rem; padding: 0.75rem 1rem; outline: none;"&gt;
+ 💡 View Solution
+ &lt;/summary&gt;
+ &lt;div style="margin-top: 1rem; border-top: 1px dashed #cbd5e1; padding-top: 1rem; font-size: 0.95em;"&gt;
+ &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Definition:&lt;/strong&gt; A system call is a controlled interface through which user programs request services from the operating system kernel, such as file access, process creation, or device control. User programs cannot bypass this interface because system calls enforce privilege separation, ensuring secure interaction between user and kernel space.&lt;/p&gt;</description></item><item><title>Assignment 00: Prequisite Self-Assessment</title><link>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-00/</link><pubDate>Mon, 03 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/assignments/assignment-00/</guid><description>&lt;p&gt;&lt;strong&gt;Weight:&lt;/strong&gt; 0% (Formative Assessment)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Environment Requirements:&lt;/strong&gt; Linux CLI, GCC, Make, GDB, Valgrind&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This assignment is designed to help you gauge your readiness for the course. It tests your proficiency in C programming, memory management, low-level debugging, and the Linux toolchain.&lt;/p&gt;
+&lt;p&gt;If you find these tasks significantly challenging, you must review the prerequisite guide for this course and bridge your knowledge gaps before the first graded lab.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="part-1-debugging-and-memory-management-c-programming"&gt;Part 1: Debugging and Memory Management (C Programming)&lt;/h2&gt;
+&lt;p&gt;You have been provided with a starter file named &lt;code&gt;buggy_list.c&lt;/code&gt;. It contains a basic implementation of a singly linked list. However, it contains two major issues: a critical memory initialization bug and a severe memory leak.&lt;/p&gt;</description></item></channel></rss>

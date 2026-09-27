@@ -1,0 +1,10 @@
+\beamer@sectionintoc {1}{Closure Properties}{4}{0}{1}
+\beamer@sectionintoc {2}{Decision Algorithms}{24}{0}{2}
+\beamer@sectionintoc {3}{The Pumping Lemma}{34}{0}{3}
+\beamer@sectionintoc {4}{Proving Non-Regularity}{48}{0}{4}
+\beamer@sectionintoc {5}{Review and Exercises}{66}{0}{5}
+\beamer@sectionintoc {6}{Appendix: Extended Problems and Theory}{73}{1}{6}
+\beamer@subsectionintoc {6}{1}{Additional Pumping-Lemma Games}{74}{1}{6}
+\beamer@subsectionintoc {6}{2}{Homomorphism and Right Quotient}{79}{1}{6}
+\beamer@subsectionintoc {6}{3}{Solved Book-Style Challenges}{83}{1}{6}
+\beamer@subsectionintoc {6}{4}{Advanced Theorems and Observations}{89}{1}{6}

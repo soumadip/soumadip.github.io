@@ -1,0 +1,12 @@
+\beamer@sectionintoc {1}{Pushdown Automata: Definition and Design}{4}{0}{1}
+\beamer@sectionintoc {2}{Equivalence of CFGs and NPDAs}{34}{0}{2}
+\beamer@sectionintoc {3}{Deterministic PDAs and DCFLs}{43}{0}{3}
+\beamer@sectionintoc {4}{Deterministic Parsing}{56}{0}{4}
+\beamer@sectionintoc {5}{Review and Exercises}{65}{0}{5}
+\beamer@sectionintoc {6}{Appendix: Challenges, Proofs, and Further Results}{69}{1}{6}
+\beamer@subsectionintoc {6}{1}{Checkpoint Solutions}{70}{1}{6}
+\beamer@subsectionintoc {6}{2}{Solved Construction Challenges}{72}{1}{6}
+\beamer@subsectionintoc {6}{3}{Proof Details and Boundary Cases}{89}{1}{6}
+\beamer@subsectionintoc {6}{4}{Further Results: How Stack Access Changes Power}{110}{1}{6}
+\beamer@subsectionintoc {6}{5}{Optional Predictive and LR Parsing}{119}{1}{6}
+\beamer@subsectionintoc {6}{6}{References}{136}{1}{6}

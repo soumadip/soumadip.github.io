@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lecture Materials on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/courses/os-theory/content/materials/</link><description>Recent content in Lecture Materials on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 07 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/courses/os-theory/content/materials/index.xml" rel="self" type="application/rss+xml"/><item><title>Lecture 06: Priority Scheduling and Multilevel Queues</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-06/</link><pubDate>Mon, 07 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-06/</guid><description>&lt;ol&gt;
+&lt;li&gt;Priority Scheduling (Prioritizing critical tasks)&lt;/li&gt;
+&lt;li&gt;Starvation &amp;amp; Aging (The challenge of fairness)&lt;/li&gt;
+&lt;li&gt;Multilevel Queue Scheduling (Organizing diverse workloads)&lt;/li&gt;
+&lt;li&gt;Real-World Architectures (How OSes actually do it)&lt;/li&gt;
+&lt;li&gt;Summary &amp;amp; Discussion&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="slides.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Priority Scheduling offers fine-grained control over CPU allocation, but its inherent risk is starvation for lower-priority tasks.&lt;/li&gt;
+&lt;li&gt;Aging is a crucial mechanism to prevent starvation by dynamically increasing the priority of waiting processes.&lt;/li&gt;
+&lt;li&gt;Multilevel Queue Scheduling organizes processes into different classes, allowing for specialized scheduling strategies per class, enhancing system efficiency.&lt;/li&gt;
+&lt;li&gt;Modern OS schedulers (e.g., Linux CFS, Windows) are complex, hybrid systems that combine elements of priority, time-sharing, and feedback mechanisms to optimize for various goals like fairness, responsiveness, and throughput.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/os-theory/content/materials/lecture-06/slide-set-6.pdf" download="slide-set-6.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Lecture 05: CPU Scheduling Algorithms</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-05/</link><pubDate>Mon, 24 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-05/</guid><description>&lt;ol&gt;
+&lt;li&gt;Scheduling Criteria &amp;amp; Goals (What do we optimize for?)&lt;/li&gt;
+&lt;li&gt;FCFS: First-Come, First-Served (Simplicity, but with a catch)&lt;/li&gt;
+&lt;li&gt;SJF: Shortest Job First (Optimality vs. Practicality)&lt;/li&gt;
+&lt;li&gt;Round Robin (RR) (Fairness in Time-Sharing)&lt;/li&gt;
+&lt;li&gt;Algorithm Comparison &amp;amp; Evaluation (Understanding the Trade-offs)&lt;/li&gt;
+&lt;li&gt;Summary &amp;amp; Discussion&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="slides.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU scheduling is essential for managing concurrent processes and balancing various system performance criteria (e.g., CPU utilization, throughput, turnaround, waiting, response time, fairness).&lt;/li&gt;
+&lt;li&gt;FCFS is simple but can suffer from the convoy effect and high average waiting times.&lt;/li&gt;
+&lt;li&gt;SJF (including SRTF) is theoretically optimal for average waiting time but impractical due to the need for future burst time prediction and prone to starvation.&lt;/li&gt;
+&lt;li&gt;Round Robin provides fairness and good response time for interactive systems but introduces context switch overhead, highly dependent on the time quantum.&lt;/li&gt;
+&lt;li&gt;No single scheduling algorithm is perfect; understanding their trade-offs is crucial for OS design.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/os-theory/content/materials/lecture-05/slide-set-5.pdf" download="slide-set-5.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Lecture 04: Context Switching and Dispatcher</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-04/</link><pubDate>Sun, 23 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-04/</guid><description>&lt;ol&gt;
+&lt;li&gt;The Dispatcher’s Role (Bridging Scheduler to CPU)&lt;/li&gt;
+&lt;li&gt;Process Scheduling Cycle (The Continuous Flow)&lt;/li&gt;
+&lt;li&gt;Context Switch Performance (Overhead &amp;amp; Optimization)&lt;/li&gt;
+&lt;li&gt;Degree of Multiprogramming (System Load &amp;amp; Performance)&lt;/li&gt;
+&lt;li&gt;Real-World Implementations (Linux vs. Windows)&lt;/li&gt;
+&lt;li&gt;Key Takeaways &amp;amp; Discussion&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="slides.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Context switching is the core mechanism that allows a single CPU to handle multiple processes by rapidly saving and restoring their execution states.&lt;/li&gt;
+&lt;li&gt;The Dispatcher is the kernel component responsible for the actual context switch, mode switch, and jumping to the new process’s execution point.&lt;/li&gt;
+&lt;li&gt;Dispatch latency and overall context switch overhead (direct and indirect, e.g., TLB/cache) are critical performance considerations in OS design.&lt;/li&gt;
+&lt;li&gt;The degree of multiprogramming is a critical factor influencing system performance, affecting both CPU utilization and overhead.&lt;/li&gt;
+&lt;li&gt;Thrashing is a severe performance degradation caused by an excessively high degree of multiprogramming, leading to constant paging.&lt;/li&gt;
+&lt;li&gt;Different operating systems (like Linux and Windows) employ specific data structures and functions to optimize this crucial operation.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/os-theory/content/materials/lecture-04/slide-set-4.pdf" download="slide-set-4.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Lecture 03: Process Concepts and Process Control Block</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-03/</link><pubDate>Sun, 16 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-03/</guid><description>&lt;ol&gt;
+&lt;li&gt;What is a Process? (Defining the Core Unit)&lt;/li&gt;
+&lt;li&gt;Process States &amp;amp; Transitions (The Lifecycle of Execution)&lt;/li&gt;
+&lt;li&gt;The Process Control Block (PCB) (The OS’s Ledger)&lt;/li&gt;
+&lt;li&gt;Context Switching &amp;amp; Queues (Enabling Multitasking)&lt;/li&gt;
+&lt;li&gt;Real-world Observations &amp;amp; Conclusion&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="slides.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A process is the fundamental unit of execution in an OS, representing a program with its state and resources.&lt;/li&gt;
+&lt;li&gt;The Process Control Block (PCB) is the OS’s vital data structure, holding all metadata required for process management.&lt;/li&gt;
+&lt;li&gt;Processes cycle through distinct states (New, Ready, Running, Waiting, Terminated), driven by events and the OS scheduler.&lt;/li&gt;
+&lt;li&gt;Context switching is the mechanism that enables multitasking, allowing the CPU to rapidly switch between processes, despite its inherent overhead.&lt;/li&gt;
+&lt;li&gt;The OS uses various queues (Job, Ready, Device) to organize and manage processes for efficient scheduling and resource allocation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Following up on the topics covered in Lecture 03, this addendum addresses specific questions raised during our class discussion regarding process management, process hierarchies, communication, and kernel-level structures.&lt;/p&gt;</description></item><item><title>Lecture 02: System Calls and Operating System Structures</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-02/</link><pubDate>Sun, 09 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-02/</guid><description>&lt;ol&gt;
+&lt;li&gt;What are System Calls?&lt;/li&gt;
+&lt;li&gt;System Call Lifecycle and Examples&lt;/li&gt;
+&lt;li&gt;SOS Structures: Monolithic, Layered, Microkernel&lt;/li&gt;
+&lt;li&gt;Performance and Modularity Trade-offs&lt;/li&gt;
+&lt;li&gt;Summary and Q&amp;amp;A&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="slides.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;System Calls serve as the secure interface between user applications and the OS kernel, enabling controlled access to hardware and services.&lt;/li&gt;
+&lt;li&gt;OS Structure directly impacts performance, modularity, and fault isolation. The choice of architecture influences how the OS handles complexity and failures.&lt;/li&gt;
+&lt;li&gt;Real-World Usage:
+&lt;ul&gt;
+&lt;li&gt;Linux uses a hybrid monolithic model — fast but extensible.&lt;/li&gt;
+&lt;li&gt;Microkernels (e.g., QNX, MINIX) are favored in embedded and safety-critical systems for their reliability and modularity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id="notes-for-digging-deeper-mastering-the-linux-system-call-interface"&gt;Notes for Digging Deeper: Mastering the Linux System Call Interface&lt;/h1&gt;
+&lt;h2 id="introduction-the-ring-3-to-ring-0-boundary"&gt;Introduction: The Ring 3 to Ring 0 Boundary&lt;/h2&gt;
+&lt;p&gt;A system call (syscall) is the fundamental programmatic interface between a user-space application and the Linux kernel. Because user applications execute in a restricted environment (Ring 3 on x86 architectures), they cannot directly access hardware, manage physical memory, or spawn processes. To perform these privileged operations, the application must issue a system call, temporarily yielding control to the kernel (Ring 0) to execute the request securely.&lt;/p&gt;</description></item><item><title>Lecture 01: Introduction to Operating Systems and Execution Management</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-01/</link><pubDate>Wed, 15 Jul 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-01/</guid><description>&lt;ol&gt;
+&lt;li&gt;What is an Operating System?&lt;/li&gt;
+&lt;li&gt;Types and Evolution of OS&lt;/li&gt;
+&lt;li&gt;Execution Management in OS&lt;/li&gt;
+&lt;li&gt;Kernel vs User Mode&lt;/li&gt;
+&lt;li&gt;Real-World Relevance and Case&lt;/li&gt;
+&lt;li&gt;Questions &amp;amp; Summary&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="slides.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The OS manages execution through processes, threads, and CPU scheduling.&lt;/li&gt;
+&lt;li&gt;Kernel mode enables privileged operations; user mode ensures safety and isolation.&lt;/li&gt;
+&lt;li&gt;System calls are the bridge between user programs and kernel services.&lt;/li&gt;
+&lt;li&gt;Execution control is foundational to performance, security, and reliability.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/os-theory/content/materials/lecture-01/slide-set-1.pdf" download="slide-set-1.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Lecture 00: Prerequisites and Overview</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-00/</link><pubDate>Tue, 14 Jul 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-00/</guid><description>&lt;!-- 
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ &lt;li style="color: #666; font-style: italic;"&gt;No files found for this section.&lt;/li&gt;
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;
+ --&gt;
+&lt;h1 id="prerequisite-guide-undergraduate-operating-systems-concepts-and-laboratory"&gt;Prerequisite Guide: Undergraduate Operating Systems Concepts and Laboratory&lt;/h1&gt;
+&lt;p&gt;This document outlines the foundational knowledge and practical skills required for the undergraduate Operating Systems course.&lt;/p&gt;
+&lt;p&gt;Operating Systems is often the first course where students transition from writing high-level application code to interacting directly with system resources. The laboratory assignments will be conducted in a Linux environment and will require you to write programs in C that manage processes, memory, and file systems.&lt;/p&gt;</description></item></channel></rss>

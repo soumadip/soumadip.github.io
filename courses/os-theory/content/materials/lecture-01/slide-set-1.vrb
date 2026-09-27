@@ -1,0 +1,12 @@
+\frametitle{Exercise: diagnose the concurrent queue}
+\begin{lstlisting}[language=C]
+if (queue_empty(&q))
+    pthread_cond_wait(&not_empty, &m);
+item = queue_pop(&q);
+\end{lstlisting}
+  \begin{enumerate}
+    \item List every precondition the fragment silently assumes.
+    \item Construct an execution with two consumers that violates safety.
+    \item Repair the code and state the invariant protected by \code{m}.
+    \item Decide whether \code{signal} or \code{broadcast} is appropriate and justify the liveness/performance trade-off.
+  \end{enumerate}

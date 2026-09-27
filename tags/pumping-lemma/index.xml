@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pumping Lemma on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/pumping-lemma/</link><description>Recent content in Pumping Lemma on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/pumping-lemma/index.xml" rel="self" type="application/rss+xml"/><item><title>The Load Balancer's Mirage: A Parsing Paradox</title><link>https://soumadip.github.io/puzzles/the-load-balancer-s-mirage-a-parsing-paradox/</link><pubDate>Wed, 26 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/puzzles/the-load-balancer-s-mirage-a-parsing-paradox/</guid><description>&lt;h2 id="the-puzzle"&gt;The Puzzle&lt;/h2&gt;
+&lt;p&gt;An engineering team is building an ultra-fast, memory-efficient load balancer that processes sequential log streams from IoT devices. To prevent buffer overflow attacks, the balancer must validate the exact structure of an incoming session string before allocating resources.&lt;/p&gt;
+&lt;p&gt;By protocol design, a valid session string must consist of exactly three phases in strict order:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A sequence of &lt;code&gt;[CONNECT]&lt;/code&gt; requests.&lt;/li&gt;
+&lt;li&gt;An identical number of &lt;code&gt;[PAYLOAD]&lt;/code&gt; packets.&lt;/li&gt;
+&lt;li&gt;An identical number of &lt;code&gt;[DISCONNECT]&lt;/code&gt; commands.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For example, if a device sends 100 connects, it must immediately follow with 100 payloads, and then 100 disconnects.&lt;/p&gt;</description></item></channel></rss>

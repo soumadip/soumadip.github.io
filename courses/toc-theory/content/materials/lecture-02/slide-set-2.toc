@@ -1,0 +1,13 @@
+\beamer@sectionintoc {1}{Deterministic Finite Automata (DFA)}{4}{0}{1}
+\beamer@sectionintoc {2}{Designing DFAs}{17}{0}{2}
+\beamer@sectionintoc {3}{Nondeterministic Finite Automata (NFA)}{27}{0}{3}
+\beamer@sectionintoc {4}{Equivalence of DFA and NFA}{40}{0}{4}
+\beamer@sectionintoc {5}{DFA Minimization (State Reduction)}{53}{0}{5}
+\beamer@sectionintoc {6}{Exercises and Review}{69}{0}{6}
+\beamer@sectionintoc {7}{Appendix: Solutions and Optional Theory}{76}{1}{7}
+\beamer@subsectionintoc {7}{1}{Supplementary Examples}{77}{1}{7}
+\beamer@subsectionintoc {7}{2}{Worked Solutions}{84}{1}{7}
+\beamer@subsectionintoc {7}{3}{Textbook Challenges and Worked Solutions}{100}{1}{7}
+\beamer@subsectionintoc {7}{4}{Proofs and Further Constructions}{111}{1}{7}
+\beamer@subsectionintoc {7}{5}{Alternative Minimization and State Bounds}{130}{1}{7}
+\beamer@subsectionintoc {7}{6}{References}{146}{1}{7}

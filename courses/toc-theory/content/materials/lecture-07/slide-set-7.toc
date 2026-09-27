@@ -1,0 +1,16 @@
+\beamer@sectionintoc {1}{From CFGs and PDAs to CSGs and LBAs}{4}{0}{1}
+\beamer@sectionintoc {2}{The Standard Turing Machine}{9}{0}{2}
+\beamer@sectionintoc {3}{TM Variants and Robustness}{14}{0}{3}
+\beamer@sectionintoc {4}{Decidability and the Church--Turing Thesis}{18}{0}{4}
+\beamer@sectionintoc {5}{Undecidability and Reductions}{22}{0}{5}
+\beamer@sectionintoc {6}{The Chomsky Hierarchy}{29}{0}{6}
+\beamer@sectionintoc {7}{Computational Complexity: $P$ and $NP$}{31}{0}{7}
+\beamer@sectionintoc {8}{Review and Exercises}{36}{0}{8}
+\beamer@sectionintoc {9}{Appendix: Challenges, Constructions, and Further Results}{40}{1}{9}
+\beamer@subsectionintoc {9}{1}{Context-Sensitive Grammars and Bounded Space}{41}{1}{9}
+\beamer@subsectionintoc {9}{2}{Machine Models and Termination}{47}{1}{9}
+\beamer@subsectionintoc {9}{3}{Worked Checkpoint Answers}{50}{1}{9}
+\beamer@subsectionintoc {9}{4}{Solved Challenges: Enumeration, Machines, and Search}{53}{1}{9}
+\beamer@subsectionintoc {9}{5}{Undecidability and Complexity Proof Sketches}{60}{1}{9}
+\beamer@subsectionintoc {9}{6}{Optional Complexity Constructions}{64}{1}{9}
+\beamer@subsectionintoc {9}{7}{References}{68}{1}{9}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Routing Protocols on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/routing-protocols/</link><description>Recent content in Routing Protocols on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 06 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/routing-protocols/index.xml" rel="self" type="application/rss+xml"/><item><title>The Omniscient Navigator: Graphs, Heuristics, and Hardware</title><link>https://soumadip.github.io/viva/the-omniscient-navigator-graphs-heuristics-and-hardware/</link><pubDate>Sun, 06 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-omniscient-navigator-graphs-heuristics-and-hardware/</guid><description>&lt;h2 id="scenario-the-gps-pathfinding-mirage"&gt;Scenario: The GPS Pathfinding Mirage&lt;/h2&gt;
+&lt;p&gt;A student proudly presents their new campus navigation app. To find the shortest path between the dorms and the engineering block, they mapped the campus as a weighted graph and implemented Dijkstra&amp;rsquo;s Algorithm. It works flawlessly.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;The student decides to scale the app to the entire road network of India. Suddenly, a simple query from Mumbai to Delhi takes several seconds to compute. The student is confused because Dijkstra is mathematically proven to find the optimal path. Why is the CPU choking?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ Because Dijkstra&amp;rsquo;s Algorithm is essentially blind. It is a greedy algorithm that expands outward from the starting node uniformly in all directions, strictly based on the accumulated cost, $g(n)$. When searching for Delhi from Mumbai, the algorithm wastes millions of CPU cycles exploring nodes south towards Goa and east towards Hyderabad before it ever reaches Delhi. On a massive graph, expanding a perfect topological &amp;ldquo;circle&amp;rdquo; is computationally catastrophic.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;To fix this blind expansion, you suggest introducing Artificial Intelligence, specifically A* Search. How does A* mathematically differ from Dijkstra, and how does it give the algorithm &amp;lsquo;vision&amp;rsquo;?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;A* introduces a heuristic function, $h(n)$, which estimates the remaining distance from the current node to the destination. Instead of just looking at the cost incurred so far, A* evaluates nodes based on $f(n) = g(n) + h(n)$.&lt;/p&gt;</description></item></channel></rss>

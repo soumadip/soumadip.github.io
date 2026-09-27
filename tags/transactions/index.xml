@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Transactions on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/transactions/</link><description>Recent content in Transactions on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 14 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/transactions/index.xml" rel="self" type="application/rss+xml"/><item><title>Transactions, Concurrency &amp; The NoSQL Tradeoff</title><link>https://soumadip.github.io/handbook/volume-5/transactions-concurrency-nosql/</link><pubDate>Mon, 14 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-5/transactions-concurrency-nosql/</guid><description>&lt;h2 id="the-concurrency-problem-isolation-levels"&gt;The Concurrency Problem: Isolation Levels&lt;/h2&gt;
+&lt;p&gt;The &amp;lsquo;I&amp;rsquo; in ACID stands for Isolation—the guarantee that concurrent transactions will not interfere with each other. However, mathematically perfect isolation requires the database to lock rows, effectively forcing concurrent requests into a single-file, sequential line. This destroys performance.&lt;/p&gt;
+&lt;p&gt;To balance data integrity with system throughput, SQL databases offer configurable &lt;strong&gt;Isolation Levels&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Read Uncommitted:&lt;/strong&gt; A transaction can read uncommitted changes from other active transactions (Dirty Reads). Highly dangerous; rarely used.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read Committed:&lt;/strong&gt; The default in Postgres and SQL Server. A query only sees data committed before the query began. However, if a transaction runs two identical &lt;code&gt;SELECT&lt;/code&gt; statements, another transaction might commit an update in between them, resulting in a &lt;strong&gt;Non-Repeatable Read&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repeatable Read:&lt;/strong&gt; Guarantees that if a transaction reads a row twice, it sees the exact same data. However, new rows matching a query might appear if added by a concurrent transaction (Phantom Reads).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Serializable:&lt;/strong&gt; The strictest level. The database guarantees the result is exactly the same as if the transactions were executed one after the other in serial order.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+&lt;div style="display: flex; gap: 1rem; background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; padding: 1rem 1.5rem; border-radius: 8px; margin: 1.5rem 0;"&gt;
+ &lt;div style="font-size: 1.25rem; line-height: 1.2; user-select: none;"&gt;🛑&lt;/div&gt;
+ &lt;div style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.1rem; width: 100%;"&gt;
+ &lt;strong&gt;The Illusion of Safety:&lt;/strong&gt; Most engineers assume their database operates in &lt;code&gt;Serializable&lt;/code&gt; mode by default. It does not. If you are executing complex financial or inventory mathematics across multiple queries within a transaction, you must explicitly elevate the isolation level or use explicit row locks (&lt;code&gt;SELECT ... FOR UPDATE&lt;/code&gt;), or you will suffer from race conditions.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="database-deadlocks"&gt;Database Deadlocks&lt;/h2&gt;
+&lt;p&gt;Just as threads can deadlock in an operating system, transactions can deadlock in a database when they attempt to acquire row locks in conflicting orders.&lt;/p&gt;</description></item></channel></rss>

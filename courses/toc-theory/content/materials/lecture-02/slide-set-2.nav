@@ -1,0 +1,160 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@sectionpages {1}{3}}
+\headcommand {\beamer@subsectionpages {1}{3}}
+\headcommand {\sectionentry {1}{Deterministic Finite Automata (DFA)}{4}{Deterministic Finite Automata (DFA)}{0}}
+\headcommand {\slideentry {1}{0}{1}{4/6}{}{0}}
+\headcommand {\beamer@framepages {4}{6}}
+\headcommand {\slideentry {1}{0}{2}{7/9}{}{0}}
+\headcommand {\beamer@framepages {7}{9}}
+\headcommand {\slideentry {1}{0}{3}{10/13}{}{0}}
+\headcommand {\beamer@framepages {10}{13}}
+\headcommand {\slideentry {1}{0}{4}{14/16}{}{0}}
+\headcommand {\beamer@framepages {14}{16}}
+\headcommand {\beamer@sectionpages {4}{16}}
+\headcommand {\beamer@subsectionpages {4}{16}}
+\headcommand {\sectionentry {2}{Designing DFAs}{17}{Designing DFAs}{0}}
+\headcommand {\slideentry {2}{0}{1}{17/18}{}{0}}
+\headcommand {\beamer@framepages {17}{18}}
+\headcommand {\slideentry {2}{0}{2}{19/21}{}{0}}
+\headcommand {\beamer@framepages {19}{21}}
+\headcommand {\slideentry {2}{0}{3}{22/24}{}{0}}
+\headcommand {\beamer@framepages {22}{24}}
+\headcommand {\slideentry {2}{0}{4}{25/26}{}{0}}
+\headcommand {\beamer@framepages {25}{26}}
+\headcommand {\beamer@sectionpages {17}{26}}
+\headcommand {\beamer@subsectionpages {17}{26}}
+\headcommand {\sectionentry {3}{Nondeterministic Finite Automata (NFA)}{27}{Nondeterministic Finite Automata (NFA)}{0}}
+\headcommand {\slideentry {3}{0}{1}{27/28}{}{0}}
+\headcommand {\beamer@framepages {27}{28}}
+\headcommand {\slideentry {3}{0}{2}{29/31}{}{0}}
+\headcommand {\beamer@framepages {29}{31}}
+\headcommand {\slideentry {3}{0}{3}{32/33}{}{0}}
+\headcommand {\beamer@framepages {32}{33}}
+\headcommand {\slideentry {3}{0}{4}{34/36}{}{0}}
+\headcommand {\beamer@framepages {34}{36}}
+\headcommand {\slideentry {3}{0}{5}{37/39}{}{0}}
+\headcommand {\beamer@framepages {37}{39}}
+\headcommand {\beamer@sectionpages {27}{39}}
+\headcommand {\beamer@subsectionpages {27}{39}}
+\headcommand {\sectionentry {4}{Equivalence of DFA and NFA}{40}{Equivalence of DFA and NFA}{0}}
+\headcommand {\slideentry {4}{0}{1}{40/42}{}{0}}
+\headcommand {\beamer@framepages {40}{42}}
+\headcommand {\slideentry {4}{0}{2}{43/48}{}{0}}
+\headcommand {\beamer@framepages {43}{48}}
+\headcommand {\slideentry {4}{0}{3}{49/50}{}{0}}
+\headcommand {\beamer@framepages {49}{50}}
+\headcommand {\slideentry {4}{0}{4}{51/52}{}{0}}
+\headcommand {\beamer@framepages {51}{52}}
+\headcommand {\beamer@sectionpages {40}{52}}
+\headcommand {\beamer@subsectionpages {40}{52}}
+\headcommand {\sectionentry {5}{DFA Minimization (State Reduction)}{53}{DFA Minimization (State Reduction)}{0}}
+\headcommand {\slideentry {5}{0}{1}{53/55}{}{0}}
+\headcommand {\beamer@framepages {53}{55}}
+\headcommand {\slideentry {5}{0}{2}{56/58}{}{0}}
+\headcommand {\beamer@framepages {56}{58}}
+\headcommand {\slideentry {5}{0}{3}{59/62}{}{0}}
+\headcommand {\beamer@framepages {59}{62}}
+\headcommand {\slideentry {5}{0}{4}{63/64}{}{0}}
+\headcommand {\beamer@framepages {63}{64}}
+\headcommand {\slideentry {5}{0}{5}{65/66}{}{0}}
+\headcommand {\beamer@framepages {65}{66}}
+\headcommand {\slideentry {5}{0}{6}{67/68}{}{0}}
+\headcommand {\beamer@framepages {67}{68}}
+\headcommand {\beamer@sectionpages {53}{68}}
+\headcommand {\beamer@subsectionpages {53}{68}}
+\headcommand {\sectionentry {6}{Exercises and Review}{69}{Exercises and Review}{0}}
+\headcommand {\slideentry {6}{0}{1}{69/69}{}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\slideentry {6}{0}{2}{70/71}{}{0}}
+\headcommand {\beamer@framepages {70}{71}}
+\headcommand {\slideentry {6}{0}{3}{72/75}{}{0}}
+\headcommand {\beamer@framepages {72}{75}}
+\headcommand {\gdef \insertmainframenumber {29}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{75}}
+\headcommand {\beamer@sectionpages {69}{75}}
+\headcommand {\beamer@subsectionpages {69}{75}}
+\headcommand {\beamer@appendixpages {76}}
+\headcommand {\beamer@sectionpages {76}{75}}
+\headcommand {\beamer@subsectionpages {76}{75}}
+\headcommand {\sectionentry {7}{Appendix: Solutions and Optional Theory}{76}{Appendix: Solutions and Optional Theory}{1}}
+\headcommand {\slideentry {7}{0}{1}{76/76}{}{1}}
+\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\beamer@subsectionpages {76}{76}}
+\headcommand {\beamer@subsectionentry {1}{7}{1}{77}{Supplementary Examples}}
+\headcommand {\slideentry {7}{1}{1}{77/79}{Supplementary Examples}{1}}
+\headcommand {\beamer@framepages {77}{79}}
+\headcommand {\slideentry {7}{1}{2}{80/81}{Supplementary Examples}{1}}
+\headcommand {\beamer@framepages {80}{81}}
+\headcommand {\slideentry {7}{1}{3}{82/83}{Supplementary Examples}{1}}
+\headcommand {\beamer@framepages {82}{83}}
+\headcommand {\beamer@subsectionpages {77}{83}}
+\headcommand {\beamer@subsectionentry {1}{7}{2}{84}{Worked Solutions}}
+\headcommand {\slideentry {7}{2}{1}{84/86}{Worked Solutions}{1}}
+\headcommand {\beamer@framepages {84}{86}}
+\headcommand {\slideentry {7}{2}{2}{87/89}{Worked Solutions}{1}}
+\headcommand {\beamer@framepages {87}{89}}
+\headcommand {\slideentry {7}{2}{3}{90/92}{Worked Solutions}{1}}
+\headcommand {\beamer@framepages {90}{92}}
+\headcommand {\slideentry {7}{2}{4}{93/95}{Worked Solutions}{1}}
+\headcommand {\beamer@framepages {93}{95}}
+\headcommand {\slideentry {7}{2}{5}{96/99}{Worked Solutions}{1}}
+\headcommand {\beamer@framepages {96}{99}}
+\headcommand {\beamer@subsectionpages {84}{99}}
+\headcommand {\beamer@subsectionentry {1}{7}{3}{100}{Textbook Challenges and Worked Solutions}}
+\headcommand {\slideentry {7}{3}{1}{100/101}{Textbook Challenges and Worked Solutions}{1}}
+\headcommand {\beamer@framepages {100}{101}}
+\headcommand {\slideentry {7}{3}{2}{102/104}{Textbook Challenges and Worked Solutions}{1}}
+\headcommand {\beamer@framepages {102}{104}}
+\headcommand {\slideentry {7}{3}{3}{105/107}{Textbook Challenges and Worked Solutions}{1}}
+\headcommand {\beamer@framepages {105}{107}}
+\headcommand {\slideentry {7}{3}{4}{108/110}{Textbook Challenges and Worked Solutions}{1}}
+\headcommand {\beamer@framepages {108}{110}}
+\headcommand {\beamer@subsectionpages {100}{110}}
+\headcommand {\beamer@subsectionentry {1}{7}{4}{111}{Proofs and Further Constructions}}
+\headcommand {\slideentry {7}{4}{1}{111/112}{Proofs and Further Constructions}{1}}
+\headcommand {\beamer@framepages {111}{112}}
+\headcommand {\slideentry {7}{4}{2}{113/114}{Proofs and Further Constructions}{1}}
+\headcommand {\beamer@framepages {113}{114}}
+\headcommand {\slideentry {7}{4}{3}{115/117}{Proofs and Further Constructions}{1}}
+\headcommand {\beamer@framepages {115}{117}}
+\headcommand {\slideentry {7}{4}{4}{118/120}{Proofs and Further Constructions}{1}}
+\headcommand {\beamer@framepages {118}{120}}
+\headcommand {\slideentry {7}{4}{5}{121/123}{Proofs and Further Constructions}{1}}
+\headcommand {\beamer@framepages {121}{123}}
+\headcommand {\slideentry {7}{4}{6}{124/126}{Proofs and Further Constructions}{1}}
+\headcommand {\beamer@framepages {124}{126}}
+\headcommand {\slideentry {7}{4}{7}{127/129}{Proofs and Further Constructions}{1}}
+\headcommand {\beamer@framepages {127}{129}}
+\headcommand {\beamer@subsectionpages {111}{129}}
+\headcommand {\beamer@subsectionentry {1}{7}{5}{130}{Alternative Minimization and State Bounds}}
+\headcommand {\slideentry {7}{5}{1}{130/131}{Alternative Minimization and State Bounds}{1}}
+\headcommand {\beamer@framepages {130}{131}}
+\headcommand {\slideentry {7}{5}{2}{132/134}{Alternative Minimization and State Bounds}{1}}
+\headcommand {\beamer@framepages {132}{134}}
+\headcommand {\slideentry {7}{5}{3}{135/137}{Alternative Minimization and State Bounds}{1}}
+\headcommand {\beamer@framepages {135}{137}}
+\headcommand {\slideentry {7}{5}{4}{138/140}{Alternative Minimization and State Bounds}{1}}
+\headcommand {\beamer@framepages {138}{140}}
+\headcommand {\slideentry {7}{5}{5}{141/143}{Alternative Minimization and State Bounds}{1}}
+\headcommand {\beamer@framepages {141}{143}}
+\headcommand {\slideentry {7}{5}{6}{144/145}{Alternative Minimization and State Bounds}{1}}
+\headcommand {\beamer@framepages {144}{145}}
+\headcommand {\beamer@subsectionpages {130}{145}}
+\headcommand {\beamer@subsectionentry {1}{7}{6}{146}{References}}
+\headcommand {\slideentry {7}{6}{1}{146/146}{References}{1}}
+\headcommand {\beamer@framepages {146}{146}}
+\headcommand {\slideentry {7}{6}{2}{147/147}{References}{1}}
+\headcommand {\beamer@framepages {147}{147}}
+\headcommand {\slideentry {7}{6}{3}{148/148}{References}{1}}
+\headcommand {\beamer@framepages {148}{148}}
+\headcommand {\beamer@partpages {76}{148}}
+\headcommand {\beamer@subsectionpages {146}{148}}
+\headcommand {\beamer@sectionpages {76}{148}}
+\headcommand {\beamer@documentpages {148}}
+\headcommand {\gdef \inserttotalframenumber {58}}

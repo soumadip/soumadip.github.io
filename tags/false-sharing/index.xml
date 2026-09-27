@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>False Sharing on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/false-sharing/</link><description>Recent content in False Sharing on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/false-sharing/index.xml" rel="self" type="application/rss+xml"/><item><title>The Phantom Object: Deconstructing OOP into Silicon</title><link>https://soumadip.github.io/viva/the-phantom-object-deconstructing-oop-into-silicon/</link><pubDate>Mon, 24 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-phantom-object-deconstructing-oop-into-silicon/</guid><description>&lt;h2 id="scenario-the-illusion-of-objects"&gt;Scenario: The Illusion of &amp;ldquo;Objects&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;A student confidently asserts during a system design interview that they prefer C++ over C because C lacks the fundamental architecture for Object-Oriented Programming (OOP) and Polymorphism.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;Let&amp;rsquo;s strip away the compiler magic. If you are restricted entirely to C, how would you architect a basic &amp;lsquo;Class&amp;rsquo; that binds both state (data) and behavior (methods) together?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ You construct a &lt;code&gt;struct&lt;/code&gt; to hold the data fields, and you use &lt;strong&gt;Function Pointers&lt;/strong&gt; to represent the methods. By assigning a function pointer inside the struct to point to a specific global function, you bind behavior to the data structure. However, unlike C++, the C compiler won&amp;rsquo;t automatically pass the object instance to the function. You must manually pass a pointer to the struct itself as the first argument of the function—this is precisely what the hidden &lt;code&gt;this&lt;/code&gt; pointer in C++ does under the hood.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;The student agrees but argues that C cannot do Inheritance. How do you implement strict Single Inheritance in C, ensuring that a &amp;lsquo;Child&amp;rsquo; struct can be safely cast and used anywhere a &amp;lsquo;Parent&amp;rsquo; struct is expected?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;You leverage strict memory layout rules defined by the C standard. You declare the Parent struct as the &lt;strong&gt;very first member&lt;/strong&gt; of the Child struct.&lt;/p&gt;</description></item></channel></rss>

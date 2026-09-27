@@ -1,0 +1,12 @@
+\frametitle{Raw syscall demonstration: for ABI study only}
+\begin{lstlisting}[language=C]
+#include <sys/syscall.h>
+#include <unistd.h>
+
+long result = syscall(SYS_write, STDOUT_FILENO, "hello\n", 6);
+\end{lstlisting}
+  \begin{itemize}
+    \item \code{syscall()} is itself a libc helper for issuing a syscall by number; it is not inline assembly here.
+    \item It remains nonportable across OSes and sometimes architectures, and it can bypass wrapper features.
+    \item Use it when studying or accessing a deliberately unsupported raw interface---not as a default replacement for maintained APIs.
+  \end{itemize}

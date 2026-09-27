@@ -1,0 +1,16 @@
+\beamer@sectionintoc {1}{Motivation: Recursive Structure}{4}{0}{1}
+\beamer@sectionintoc {2}{Definition and Derivations}{10}{0}{2}
+\beamer@sectionintoc {3}{Parse Trees}{28}{0}{3}
+\beamer@sectionintoc {4}{Ambiguity}{38}{0}{4}
+\beamer@sectionintoc {5}{Simple Grammars (s-Grammars)}{54}{0}{5}
+\beamer@sectionintoc {6}{Normal Forms for CFGs}{59}{0}{6}
+\beamer@sectionintoc {7}{Properties of Context-Free Languages}{91}{0}{7}
+\beamer@sectionintoc {8}{The Pumping Lemma for CFLs}{101}{0}{8}
+\beamer@sectionintoc {9}{Applications and Grammar Notation}{120}{0}{9}
+\beamer@sectionintoc {10}{Review and Exercises}{125}{0}{10}
+\beamer@sectionintoc {11}{Appendix: Solutions and Optional Material}{133}{1}{11}
+\beamer@subsectionintoc {11}{1}{Deeper Motivation: Languages, Compilers, and Computation}{134}{1}{11}
+\beamer@subsectionintoc {11}{2}{Hints and Short Answers}{158}{1}{11}
+\beamer@subsectionintoc {11}{3}{Advanced Theorems and Observations}{163}{1}{11}
+\beamer@subsectionintoc {11}{4}{Surprising Separations and Examples}{187}{1}{11}
+\beamer@subsectionintoc {11}{5}{Solved Book-Style Challenges}{205}{1}{11}

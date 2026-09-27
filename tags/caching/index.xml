@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Caching on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/caching/</link><description>Recent content in Caching on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 28 Aug 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/caching/index.xml" rel="self" type="application/rss+xml"/><item><title>The Elastic Hash: From Arrays to Distributed Rings</title><link>https://soumadip.github.io/viva/the-elastic-hash-from-arrays-to-distributed-rings/</link><pubDate>Fri, 28 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-elastic-hash-from-arrays-to-distributed-rings/</guid><description>&lt;h2 id="scenario-the-session-cache-scaling-crisis"&gt;Scenario: The Session Cache Scaling Crisis&lt;/h2&gt;
+&lt;p&gt;A startup has built a high-speed caching service to store active user sessions. Initially, the backend uses a standard in-memory Hash Map (dictionary) to store and retrieve the session tokens in $O(1)$ time.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;Under the hood, the Hash Map is backed by a simple array of size $N$. When a session token (a string) arrives, how does the system map it to a specific index, and what happens if two tokens map to the exact same index?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;The system passes the string through a hashing algorithm (like MurmurHash) to generate a large integer, then applies a modulo operator against the array size: $index = hash(token) \pmod N$.&lt;/p&gt;</description></item></channel></rss>

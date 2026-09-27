@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pointers on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/pointers/</link><description>Recent content in Pointers on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/pointers/index.xml" rel="self" type="application/rss+xml"/><item><title>Memory State &amp; Undefined Behavior</title><link>https://soumadip.github.io/handbook/volume-1/memory-and-undefined-behavior/</link><pubDate>Sun, 23 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/memory-and-undefined-behavior/</guid><description>&lt;h2 id="the-illusion-of-managed-memory"&gt;The Illusion of Managed Memory&lt;/h2&gt;
+&lt;p&gt;While high-level languages like Python and Java use garbage collectors to abstract away memory management, the underlying operating system and virtual machines still operate strictly on physical addresses. To debug systemic failures—even in managed languages—an engineer must understand how data is physically laid out in RAM.&lt;/p&gt;
+&lt;p&gt;When a program runs, its memory is typically segmented into distinct regions:&lt;/p&gt;
+&lt;div class="mermaid"&gt;
+ 
+block-beta
+ columns 1
+ Text["Text Segment (Compiled Code)"]
+ Data["Data Segment (Global/Static Variables)"]
+ Heap["Heap (Dynamic Allocation - Grows Down)"]
+ Space["Free Memory (Unmapped)"]
+ Stack["Stack (Local Variables/Frames - Grows Up)"]
+ 
+ style Text fill:#f8fafc,stroke:#cbd5e1
+ style Data fill:#f1f5f9,stroke:#94a3b8
+ style Heap fill:#dbeafe,stroke:#3b82f6
+ style Stack fill:#fef3c7,stroke:#d97706
+
+&lt;/div&gt;
+&lt;script type="module"&gt;
+ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+ mermaid.initialize({ 
+ startOnLoad: true, 
+ theme: 'default',
+ securityLevel: 'loose'
+ });
+&lt;/script&gt;
+
+&lt;h2 id="undefined-behavior-ub"&gt;Undefined Behavior (UB)&lt;/h2&gt;
+&lt;p&gt;In systems programming (particularly C and C++), &lt;strong&gt;Undefined Behavior&lt;/strong&gt; occurs when code violates the language specifications, but the compiler is not obligated to catch the error.&lt;/p&gt;</description></item></channel></rss>

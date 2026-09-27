@@ -1,0 +1,19 @@
+\frametitle{Robust child creation and reaping skeleton}
+\begin{lstlisting}[language=C]
+pid_t pid = fork();
+if (pid < 0) fail("fork");
+if (pid == 0) {
+    execlp("worker", "worker", (char *)NULL);
+    static const char msg[] = "exec failed\n";
+    (void)write(STDERR_FILENO, msg, sizeof msg - 1);
+    _exit(127);
+}
+
+int status;
+while (waitpid(pid, &status, 0) < 0) {
+    if (errno != EINTR) fail("waitpid");
+}
+if (WIFEXITED(status)) report_exit(WEXITSTATUS(status));
+else if (WIFSIGNALED(status)) report_signal(WTERMSIG(status));
+\end{lstlisting}
+  \smallnote{A production supervisor must also define descriptor inheritance, signal masks, process groups, timeouts, cancellation, and what to do if the parent crashes.}

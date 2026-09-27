@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Debugging &amp; Program Understanding Foundations on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/handbook/volume-1/</link><description>Recent content in Debugging &amp; Program Understanding Foundations on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/handbook/volume-1/index.xml" rel="self" type="application/rss+xml"/><item><title>Isolating State: The Scientific Method of Debugging</title><link>https://soumadip.github.io/handbook/volume-1/scientific-method-debugging/</link><pubDate>Fri, 21 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/scientific-method-debugging/</guid><description>&lt;h2 id="the-illusion-of-randomness"&gt;The Illusion of Randomness&lt;/h2&gt;
+&lt;p&gt;When an application fails, the most common beginner instinct is to assume the computer did something unpredictable. In professional engineering, we operate on a strict axiom: &lt;strong&gt;Computers are entirely deterministic.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Unless you are dealing with uninitialized memory in C, hardware degradation, or specific race conditions in distributed environments, a bug is simply the logical execution of flawed instructions. If a program&amp;rsquo;s output is incorrect, its internal state diverged from the expected state at a specific, quantifiable moment in time.&lt;/p&gt;</description></item><item><title>Deconstructing Stack Traces &amp; Core Dumps</title><link>https://soumadip.github.io/handbook/volume-1/stack-traces-core-dumps/</link><pubDate>Sat, 22 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/stack-traces-core-dumps/</guid><description>&lt;h2 id="the-anatomy-of-a-crash"&gt;The Anatomy of a Crash&lt;/h2&gt;
+&lt;p&gt;When a program encounters an unrecoverable error (like a segmentation fault or an unhandled exception), the operating system forcibly terminates it. A professional engineer does not guess what happened; they read the autopsy report.&lt;/p&gt;
+&lt;p&gt;The two primary diagnostic tools generated during a crash are the &lt;strong&gt;Stack Trace&lt;/strong&gt; and the &lt;strong&gt;Core Dump&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Stack Trace:&lt;/strong&gt; A textual representation of the call stack at the exact moment the exception was thrown. It shows the precise sequence of nested function calls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core Dump:&lt;/strong&gt; A complete file containing the recorded state of the program&amp;rsquo;s working memory at the time of the crash.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+&lt;div style="display: flex; gap: 1rem; background: #fffbeb; border: 1px solid #fde68a; color: #92400e; padding: 1rem 1.5rem; border-radius: 8px; margin: 1.5rem 0;"&gt;
+ &lt;div style="font-size: 1.25rem; line-height: 1.2; user-select: none;"&gt;⚠️&lt;/div&gt;
+ &lt;div style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.1rem; width: 100%;"&gt;
+ &lt;strong&gt;Production Risk:&lt;/strong&gt; Core dumps capture raw memory, which may include sensitive user data, plaintext passwords, or cryptographic keys. Never share unredacted production core dumps in public forums or unencrypted channels.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="visualizing-the-call-stack"&gt;Visualizing the Call Stack&lt;/h2&gt;
+&lt;p&gt;The call stack operates as a Last-In-First-Out (LIFO) data structure. When reading a stack trace, you are looking back in time. The top of the trace is where the system died; the bottom is where the execution began.&lt;/p&gt;</description></item><item><title>Memory State &amp; Undefined Behavior</title><link>https://soumadip.github.io/handbook/volume-1/memory-and-undefined-behavior/</link><pubDate>Sun, 23 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/memory-and-undefined-behavior/</guid><description>&lt;h2 id="the-illusion-of-managed-memory"&gt;The Illusion of Managed Memory&lt;/h2&gt;
+&lt;p&gt;While high-level languages like Python and Java use garbage collectors to abstract away memory management, the underlying operating system and virtual machines still operate strictly on physical addresses. To debug systemic failures—even in managed languages—an engineer must understand how data is physically laid out in RAM.&lt;/p&gt;
+&lt;p&gt;When a program runs, its memory is typically segmented into distinct regions:&lt;/p&gt;
+&lt;div class="mermaid"&gt;
+ 
+block-beta
+ columns 1
+ Text["Text Segment (Compiled Code)"]
+ Data["Data Segment (Global/Static Variables)"]
+ Heap["Heap (Dynamic Allocation - Grows Down)"]
+ Space["Free Memory (Unmapped)"]
+ Stack["Stack (Local Variables/Frames - Grows Up)"]
+ 
+ style Text fill:#f8fafc,stroke:#cbd5e1
+ style Data fill:#f1f5f9,stroke:#94a3b8
+ style Heap fill:#dbeafe,stroke:#3b82f6
+ style Stack fill:#fef3c7,stroke:#d97706
+
+&lt;/div&gt;
+&lt;script type="module"&gt;
+ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+ mermaid.initialize({ 
+ startOnLoad: true, 
+ theme: 'default',
+ securityLevel: 'loose'
+ });
+&lt;/script&gt;
+
+&lt;h2 id="undefined-behavior-ub"&gt;Undefined Behavior (UB)&lt;/h2&gt;
+&lt;p&gt;In systems programming (particularly C and C++), &lt;strong&gt;Undefined Behavior&lt;/strong&gt; occurs when code violates the language specifications, but the compiler is not obligated to catch the error.&lt;/p&gt;</description></item><item><title>Instrumentation &amp; Execution Control</title><link>https://soumadip.github.io/handbook/volume-1/instrumentation-and-xecution-control/</link><pubDate>Mon, 24 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/instrumentation-and-xecution-control/</guid><description>&lt;h2 id="the-limits-of-print-debugging"&gt;The Limits of Print Debugging&lt;/h2&gt;
+&lt;p&gt;The most universal debugging tool is standard output (e.g., &lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;console.log()&lt;/code&gt;, &lt;code&gt;printf()&lt;/code&gt;). While useful for quick sanity checks, relying on print statements for complex system failures is an anti-pattern.&lt;/p&gt;
+&lt;p&gt;Print debugging suffers from three major flaws:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Temporal Distortion:&lt;/strong&gt; I/O operations are slow. Injecting print statements changes the timing of the program. In multithreaded environments, this can artificially mask race conditions—creating a &amp;ldquo;Heisenbug&amp;rdquo; that disappears when observed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State Pollution:&lt;/strong&gt; You must manually guess which variables matter. If you guess wrong, you must rewrite the code, recompile, and restart the process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ephemeral Tooling:&lt;/strong&gt; Print statements are often accidentally committed to version control, cluttering production logs and wasting I/O bandwidth.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="execution-control-the-step-through-debugger"&gt;Execution Control: The Step-Through Debugger&lt;/h2&gt;
+&lt;p&gt;Professional debugging relies on controlling the flow of time within the CPU. By using a debugger (&lt;code&gt;gdb&lt;/code&gt;, &lt;code&gt;lldb&lt;/code&gt;, &lt;code&gt;pdb&lt;/code&gt;, or modern IDE equivalents), you set &lt;strong&gt;breakpoints&lt;/strong&gt;—explicit instructions that tell the operating system to pause process execution right before a specific line of code is evaluated.&lt;/p&gt;</description></item><item><title>Concurrency &amp; Distributed Faults</title><link>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</link><pubDate>Tue, 25 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</guid><description>&lt;h2 id="the-illusion-of-sequential-execution"&gt;The Illusion of Sequential Execution&lt;/h2&gt;
+&lt;p&gt;Up to this point, our debugging methodologies have assumed a deterministic, sequential flow of execution. However, modern systems are inherently asynchronous. Whether you are managing multiple threads on a single CPU core or coordinating state across a dense cluster of edge servers, execution happens concurrently.&lt;/p&gt;
+&lt;p&gt;When multiple actors attempt to read, write, or modify shared state simultaneously without strict orchestration, you encounter the hardest class of software bugs: &lt;strong&gt;Concurrency Faults&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>

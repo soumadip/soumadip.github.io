@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Resources on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/resources/</link><description>Recent content in Resources on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/resources/index.xml" rel="self" type="application/rss+xml"/><item><title>Classic Guides</title><link>https://soumadip.github.io/resources/classic-guides/</link><pubDate>Fri, 25 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/resources/classic-guides/</guid><description>&lt;p&gt;A curated collection of useful reference materials, tools, and links related to &lt;strong&gt;Classic Guides&lt;/strong&gt;.&lt;/p&gt;
+&lt;a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Operating Systems: Three Easy Pieces&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau (University of Wisconsin-Madison)&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://missing.csail.mit.edu/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;The Missing Semester of Your CS Education&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;A free course by MIT that teaches you how to master the command line, use powerful text editors, build automated scripts, configure SSH, and properly use version control—the foundational &amp;#34;missing&amp;#34; skills of systems work.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://www.brendangregg.com/linuxperf.html" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Brendan Gregg&amp;#39;s Performance Tools&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;The definitive roadmap for understanding system performance. His famous diagrams map exactly which Linux terminal command (like top, vmstat, iostat, or perf) to use depending on which hardware component you want to investigate.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://beej.us/guide/bgnet/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Beej&amp;#39;s Guide to Network Programming&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;Absolute gold standard guide for anyone learning how to write internet applications in C.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://beej.us/guide/bgc/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Beej&amp;#39;s Guide to C Programming&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;Systems programming requires a strong foundation in C, and this guide is designed for people who want to truly understand the language without the academic stiffness.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://beej.us/guide/bgipc/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Beej&amp;#39;s Guide to Interprocess Communication (IPC)&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;Once you know how to write a basic program, this guide teaches you how different programs on the same computer talk to one another.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://beej.us/guide/bggit/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Beej&amp;#39;s Guide to GIT&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;A shorter, highly practical guide to version control.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://teachyourselfcs.com/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Teach Yourself Computer Science&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;If you’re a self-taught engineer or bootcamp grad, you owe it to yourself to learn computer science.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://craftinginterpreters.com/contents.html" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Crafting Interpreters&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;Highly accessible guide to building your own programming language from scratch.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;</description></item><item><title>CLI Tools and Cheatsheets</title><link>https://soumadip.github.io/resources/cli-tools-and-cheatsheets/</link><pubDate>Fri, 25 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/resources/cli-tools-and-cheatsheets/</guid><description>&lt;p&gt;A curated collection of useful reference materials, tools, and links related to &lt;strong&gt;CLI Tools and Cheatsheets&lt;/strong&gt;.&lt;/p&gt;
+&lt;a href="https://cheat.sh/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;cheat.sh&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;The only cheat sheet you need; Unified access to the best community driven documentation repositories of the world.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://explainshell.com/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;explainshell.com&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;Write down a command-line to see the help text that matches each argument&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;</description></item><item><title>Fun Games</title><link>https://soumadip.github.io/resources/fun-games/</link><pubDate>Fri, 25 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/resources/fun-games/</guid><description>&lt;p&gt;A curated collection of useful reference materials, tools, and links related to &lt;strong&gt;Fun Games&lt;/strong&gt;.&lt;/p&gt;
+&lt;a href="https://vim-adventures.com/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Vim Adventures&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;An interactive RPG game played inside your browser that teaches you vim keyboard shortcuts and navigation, which are vital for terminal-based system editing.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://sadservers.com/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Sad Servers&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;Like an escape room for Linux. It gives you a real, broken Linux server in your browser, and you have to use terminal commands to diagnose and fix the system issue.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://overthewire.org/wargames/bandit/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Bandit - Unix/Linux basics by the OverTheWire community&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;A text-based security and systems wargame. It walks you from absolute beginner terminal usage to advanced file permissions, networking, and data manipulation.&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;</description></item><item><title>Opensource Resources</title><link>https://soumadip.github.io/resources/opensource-resources/</link><pubDate>Fri, 25 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/resources/opensource-resources/</guid><description>&lt;p&gt;A curated collection of useful reference materials, tools, and links related to &lt;strong&gt;Opensource Resources&lt;/strong&gt;.&lt;/p&gt;
+&lt;a href="https://www.opensourcealternative.to/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Opensource Alternatives&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;Open Source Alternatives To Proprietary Software&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;a href="https://cs.ossu.dev/" target="_blank" rel="noopener noreferrer" class="portal-resource-card"&gt;
+ &lt;div class="prc-icon"&gt;
+ 🔗
+ &lt;/div&gt;
+ &lt;div class="prc-content"&gt;
+ &lt;div class="prc-title"&gt;Open Source Society University&lt;/div&gt;
+ &lt;div class="prc-desc"&gt;Path to a free self-taught education in Computer Science!&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;style&gt;
+.portal-resource-card {
+ display: flex;
+ align-items: center;
+ padding: 1rem 1.25rem;
+ margin-bottom: 1rem;
+ background-color: var(--bg-color, #ffffff);
+ border: 1px solid var(--border-color, #e2e8f0);
+ border-radius: 8px;
+ text-decoration: none !important;
+ color: inherit;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.portal-resource-card:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.prc-icon {
+ font-size: 1.75rem;
+ margin-right: 1.25rem;
+ flex-shrink: 0;
+}
+.prc-title {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--link-color, #2b6cb0);
+ margin-bottom: 0.2rem;
+}
+.prc-desc {
+ font-size: 0.9rem;
+ color: var(--text-muted, #4a5568);
+ line-height: 1.4;
+}
+&lt;/style&gt;</description></item></channel></rss>

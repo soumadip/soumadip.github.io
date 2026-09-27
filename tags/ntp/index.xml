@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NTP on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/ntp/</link><description>Recent content in NTP on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 04 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/ntp/index.xml" rel="self" type="application/rss+xml"/><item><title>The Illusion of Now: Time and Causality in Distributed Systems</title><link>https://soumadip.github.io/viva/the-illusion-of-now-time-and-causality-in-distributed-systems/</link><pubDate>Fri, 04 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-illusion-of-now-time-and-causality-in-distributed-systems/</guid><description>&lt;h2 id="scenario-the-distributed-audit-trail"&gt;Scenario: The Distributed Audit Trail&lt;/h2&gt;
+&lt;p&gt;A financial technology firm is auditing trades across a globally distributed microservice architecture. A transaction spans three datacenters: New York (A), London (B), and Tokyo (C).&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;Server A logs &amp;lsquo;Trade Initiated&amp;rsquo; at exactly 10:04:00.015. Server B logs &amp;lsquo;Trade Validated&amp;rsquo; at 10:04:00.012. A junior developer looks at the timestamps and concludes Server B validated the trade before A even initiated it, indicating a severe security breach. Are they correct?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ Not necessarily. The developer is assuming the existence of a globally synchronized, absolute physical clock, which does not exist in distributed systems. Even if servers synchronize via NTP (Network Time Protocol), physical quartz oscillators experience &amp;ldquo;clock drift&amp;rdquo; based on temperature and hardware variations. Network latency variations also mean NTP cannot guarantee microsecond or even millisecond precision across continents. What the developer is seeing is simply physical clock skew, not a time-traveling security breach.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;If physical timestamps are unreliable, how do we definitively prove that Event A (Initiation) caused Event B (Validation) without relying on wall-clock time?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;We abandon physical time and use &lt;strong&gt;Logical Clocks&lt;/strong&gt;, such as Lamport Clocks.&lt;/p&gt;</description></item></channel></rss>

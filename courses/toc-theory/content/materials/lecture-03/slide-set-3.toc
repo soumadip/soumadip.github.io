@@ -1,0 +1,13 @@
+\beamer@sectionintoc {1}{Regular Expressions (RE)}{4}{0}{1}
+\beamer@sectionintoc {2}{RE to NFA (Thompson Construction)}{17}{0}{2}
+\beamer@sectionintoc {3}{FA to RE (State Elimination)}{33}{0}{3}
+\beamer@sectionintoc {4}{Regular Grammars}{45}{0}{4}
+\beamer@sectionintoc {5}{The Big Picture \& Applications}{74}{0}{5}
+\beamer@sectionintoc {6}{Review and Exercises}{79}{0}{6}
+\beamer@sectionintoc {7}{Appendix: Further Constructions and Worked Solutions}{87}{1}{7}
+\beamer@subsectionintoc {7}{1}{Supplementary Explanations}{88}{1}{7}
+\beamer@subsectionintoc {7}{2}{Practice and Solutions}{102}{1}{7}
+\beamer@subsectionintoc {7}{3}{Algebraic Methods}{116}{1}{7}
+\beamer@subsectionintoc {7}{4}{Worked Design and Conversion Challenges}{125}{1}{7}
+\beamer@subsectionintoc {7}{5}{Alternative Constructions and Further Observations}{147}{1}{7}
+\beamer@subsectionintoc {7}{6}{References}{161}{1}{7}

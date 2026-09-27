@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Memory on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/memory/</link><description>Recent content in Memory on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/memory/index.xml" rel="self" type="application/rss+xml"/><item><title>Deconstructing Stack Traces &amp; Core Dumps</title><link>https://soumadip.github.io/handbook/volume-1/stack-traces-core-dumps/</link><pubDate>Sat, 22 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/stack-traces-core-dumps/</guid><description>&lt;h2 id="the-anatomy-of-a-crash"&gt;The Anatomy of a Crash&lt;/h2&gt;
+&lt;p&gt;When a program encounters an unrecoverable error (like a segmentation fault or an unhandled exception), the operating system forcibly terminates it. A professional engineer does not guess what happened; they read the autopsy report.&lt;/p&gt;
+&lt;p&gt;The two primary diagnostic tools generated during a crash are the &lt;strong&gt;Stack Trace&lt;/strong&gt; and the &lt;strong&gt;Core Dump&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Stack Trace:&lt;/strong&gt; A textual representation of the call stack at the exact moment the exception was thrown. It shows the precise sequence of nested function calls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core Dump:&lt;/strong&gt; A complete file containing the recorded state of the program&amp;rsquo;s working memory at the time of the crash.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+&lt;div style="display: flex; gap: 1rem; background: #fffbeb; border: 1px solid #fde68a; color: #92400e; padding: 1rem 1.5rem; border-radius: 8px; margin: 1.5rem 0;"&gt;
+ &lt;div style="font-size: 1.25rem; line-height: 1.2; user-select: none;"&gt;⚠️&lt;/div&gt;
+ &lt;div style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.1rem; width: 100%;"&gt;
+ &lt;strong&gt;Production Risk:&lt;/strong&gt; Core dumps capture raw memory, which may include sensitive user data, plaintext passwords, or cryptographic keys. Never share unredacted production core dumps in public forums or unencrypted channels.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="visualizing-the-call-stack"&gt;Visualizing the Call Stack&lt;/h2&gt;
+&lt;p&gt;The call stack operates as a Last-In-First-Out (LIFO) data structure. When reading a stack trace, you are looking back in time. The top of the trace is where the system died; the bottom is where the execution began.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Message Brokers on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/message-brokers/</link><description>Recent content in Message Brokers on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/message-brokers/index.xml" rel="self" type="application/rss+xml"/><item><title>The Floodgates: Systems Under Stress and Backpressure</title><link>https://soumadip.github.io/viva/the-floodgates-systems-under-stress-and-backpressure/</link><pubDate>Fri, 25 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-floodgates-systems-under-stress-and-backpressure/</guid><description>&lt;h2 id="scenario-the-fast-producer-and-the-slow-consumer"&gt;Scenario: The Fast Producer and the Slow Consumer&lt;/h2&gt;
+&lt;p&gt;A data engineering team is ingesting telemetry from 100,000 smart meters. The ingestion gateway (the producer) receives data at a rate of 50,000 messages per second. It places these messages into an in-memory queue to be processed by an AI anomaly detection service (the consumer), which can only process 10,000 messages per second.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;The developer proudly states they are using an asynchronous, unbounded in-memory queue to decouple the services so the gateway never blocks. What happens to the server after 10 minutes?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;The server crashes violently with an Out-of-Memory (OOM) exception.&lt;/p&gt;</description></item></channel></rss>

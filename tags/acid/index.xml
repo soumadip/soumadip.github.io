@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ACID on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/acid/</link><description>Recent content in ACID on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/acid/index.xml" rel="self" type="application/rss+xml"/><item><title>Relational Guarantees &amp; Schema Design</title><link>https://soumadip.github.io/handbook/volume-5/relational-guarantees-and-schema/</link><pubDate>Fri, 11 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-5/relational-guarantees-and-schema/</guid><description>&lt;h2 id="why-databases-exist"&gt;Why Databases Exist&lt;/h2&gt;
+&lt;p&gt;A naive approach to saving application state is writing a JSON object to a text file. This works perfectly until two separate web requests attempt to modify the same file at the exact same millisecond, corrupting the file permanently.&lt;/p&gt;
+&lt;p&gt;Databases exist to solve the chaotic reality of concurrent access and hardware failure. A relational database management system (RDBMS) like PostgreSQL or MySQL acts as a rigorous gatekeeper, ensuring that data transitions from one valid state to another, regardless of power outages, network drops, or competing threads.&lt;/p&gt;</description></item><item><title>The Indestructible Payment Gateway</title><link>https://soumadip.github.io/system-design/the-indestructible-payment-gateway/</link><pubDate>Thu, 24 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/system-design/the-indestructible-payment-gateway/</guid><description>&lt;h2 id="1-problem-statement--scope"&gt;1. Problem Statement &amp;amp; Scope&lt;/h2&gt;
+&lt;p&gt;Building a payment gateway is fundamentally different from building a social network. If a tweet drops, nobody cares; if a user is double-charged for a massive block of Nifty 500 stocks during an IPO allotment, you face catastrophic financial and legal ruin. The engineering focus shifts entirely from eventual consistency and raw throughput to absolute, immutable correctness.&lt;/p&gt;
+&lt;h3 id="functional-requirements"&gt;Functional Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Payment Execution:&lt;/strong&gt; Process credit cards, net banking, and UPI transactions securely.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Idempotency:&lt;/strong&gt; Guarantee that a duplicated request across a flaky network never results in a double charge.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Asynchronous Webhooks:&lt;/strong&gt; Notify merchants reliably when a transaction clears, fails, or is refunded.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="non-functional-requirements"&gt;Non-Functional Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Strict ACID Compliance:&lt;/strong&gt; Financial ledgers cannot tolerate race conditions or lost updates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Immutability:&lt;/strong&gt; Data can never be &lt;code&gt;UPDATED&lt;/code&gt; or &lt;code&gt;DELETED&lt;/code&gt;. Errors are corrected via compensating transactions (append-only).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;High Availability:&lt;/strong&gt; The gateway must continue accepting payment intents even if downstream banking networks are experiencing downtime.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-back-of-the-envelope-estimation"&gt;2. Back-of-the-Envelope Estimation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Throughput:&lt;/strong&gt; 10,000 Transactions Per Second (TPS) peak.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Payload Size:&lt;/strong&gt; ~2KB per transaction record (including metadata, cryptographic signatures, and routing info).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage:&lt;/strong&gt; 10,000 TPS $\times$ 2KB $\times$ 86,400 seconds = ~1.7 TB/day. Over a year, this is roughly 600 TB. We will need cold-storage archiving for auditing, but hot storage must be exceptionally fast.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Latency:&lt;/strong&gt; The gateway must respond to the client in $&lt; 200$ms, even if the actual bank settlement takes days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="3-high-level-design-hld"&gt;3. High-Level Design (HLD)&lt;/h2&gt;
+&lt;div class="mermaid"&gt;
+ 
+graph TD
+ Client[Merchant Client] --&gt;|POST /v1/charges| API[API Gateway / WAF]
+ API --&gt; Auth[Auth &amp; Rate Limiter]
+ Auth --&gt; PO[Payment Orchestrator]
+ 
+ PO --&gt;|1. Check Idempotency Key| Redis[(Idempotency Cache)]
+ PO --&gt;|2. Write Pending State| Ledger[(Primary Ledger DB)]
+ PO --&gt;|3. Forward via Secure Tunnel| PSP[Acquiring Bank / PSP]
+ 
+ PSP -.-&gt;|4. Async Settlement Webhook| WH[Webhook Handler]
+ WH --&gt;|5. Update Ledger State| Ledger
+ WH --&gt;|6. Notify Merchant| Queue[Kafka Notification Queue]
+ Queue --&gt; Worker[Dispatch Workers]
+
+&lt;/div&gt;
+&lt;script type="module"&gt;
+ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+ mermaid.initialize({ 
+ startOnLoad: true, 
+ theme: 'default',
+ securityLevel: 'loose'
+ });
+&lt;/script&gt;
+
+&lt;h2 id="4-deep-dive-component-design"&gt;4. Deep Dive: Component Design&lt;/h2&gt;
+&lt;h3 id="the-idempotency-layer"&gt;The Idempotency Layer&lt;/h3&gt;
+&lt;p&gt;A mobile client sits on a train edge network. They click &amp;ldquo;Buy&amp;rdquo;. The request reaches the server, the database commits the transaction, and the server replies &lt;code&gt;HTTP 200 OK&lt;/code&gt;. However, the train goes through a tunnel, and the client never receives the response. The client reconnects and retries the exact same request. How do you prevent charging them twice?&lt;/p&gt;</description></item><item><title>The Phantom Inventory: Concurrency in Distributed Transactions</title><link>https://soumadip.github.io/viva/the-phantom-inventory-concurrency-in-distributed-transactions/</link><pubDate>Wed, 09 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-phantom-inventory-concurrency-in-distributed-transactions/</guid><description>&lt;h2 id="scenario-the-flash-sale-race-condition"&gt;Scenario: The Flash Sale Race Condition&lt;/h2&gt;
+&lt;p&gt;An e-commerce platform is hosting a flash sale for a limited-edition smartphone. There is exactly one unit left in the database. User A and User B click &amp;ldquo;Checkout&amp;rdquo; at the exact same millisecond.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;If the backend application simply executes a &lt;code&gt;SELECT&lt;/code&gt; to check inventory, sees &amp;lsquo;1&amp;rsquo;, and then executes an &lt;code&gt;UPDATE&lt;/code&gt; to decrement it, what goes wrong here?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ This introduces a classic &lt;strong&gt;Race Condition&lt;/strong&gt; leading to a &amp;ldquo;Lost Update.&amp;rdquo; Because both transactions execute their &lt;code&gt;SELECT&lt;/code&gt; statements concurrently before either executes their &lt;code&gt;UPDATE&lt;/code&gt;, they both read the inventory value as &amp;lsquo;1&amp;rsquo;. Both applications assume the item is available, proceed to process the order, and decrement the database. The inventory drops to &amp;lsquo;-1&amp;rsquo;, and the company has sold an item they do not possess.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;How can you solve this purely at the relational database level without locking the entire inventory table and freezing all other customers?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ You implement &lt;strong&gt;Row-Level Locking&lt;/strong&gt; using a pessimistic concurrency model. In SQL, this is achieved with &lt;code&gt;SELECT ... FOR UPDATE&lt;/code&gt;. When User A&amp;rsquo;s transaction reads the row, the database locks that specific row. When User B attempts to read it, their transaction is forced to wait until User A commits or rolls back. User A buys the phone, the inventory becomes 0, the lock is released, and User B&amp;rsquo;s read now correctly returns 0.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;Locking is slow. The lead architect suggests using &amp;lsquo;Optimistic Concurrency Control&amp;rsquo; instead. How does that work, and what happens to User B?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;Optimistic Concurrency Control assumes conflicts are rare and avoids database locks entirely. Instead, every row gets a &lt;code&gt;version&lt;/code&gt; column.&lt;/p&gt;</description></item></channel></rss>

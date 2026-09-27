@@ -1,0 +1,10 @@
+\beamer@sectionintoc {1}{From Week 5 to Progress Guarantees}{4}{0}{1}
+\beamer@sectionintoc {2}{Starvation and Bounded Service}{6}{0}{2}
+\beamer@sectionintoc {3}{Priority Inversion and Resource Protocols}{12}{0}{3}
+\beamer@sectionintoc {4}{Multilevel Queue Scheduling}{20}{0}{4}
+\beamer@sectionintoc {5}{Multilevel Feedback Queue Scheduling}{31}{0}{5}
+\beamer@sectionintoc {6}{Real-Time Priority Analysis}{42}{0}{6}
+\beamer@sectionintoc {7}{Modern Scheduler Architectures}{48}{0}{7}
+\beamer@sectionintoc {8}{Implementation and Verification}{54}{0}{8}
+\beamer@sectionintoc {9}{Synthesis}{59}{0}{9}
+\beamer@sectionintoc {10}{Appendix}{64}{1}{10}

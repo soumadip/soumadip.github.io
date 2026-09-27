@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Inodes on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/inodes/</link><description>Recent content in Inodes on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/inodes/index.xml" rel="self" type="application/rss+xml"/><item><title>The Filesystem &amp; Access Control</title><link>https://soumadip.github.io/handbook/volume-3/filesystem-and-access-control/</link><pubDate>Wed, 02 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-3/filesystem-and-access-control/</guid><description>&lt;h2 id="the-filesystem-hierarchy-standard-fhs"&gt;The Filesystem Hierarchy Standard (FHS)&lt;/h2&gt;
+&lt;p&gt;Unlike Windows, which assigns individual drive letters (C:, D:), Linux unifies all physical storage devices into a single, contiguous directory tree starting at the root (&lt;code&gt;/&lt;/code&gt;). The Filesystem Hierarchy Standard (FHS) dictates exactly where specific types of data must reside:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/bin&lt;/code&gt; and &lt;code&gt;/usr/bin&lt;/code&gt;: Essential user binaries (executables like &lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;cat&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc&lt;/code&gt;: Host-specific system configuration files (no binary executables belong here).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/var&lt;/code&gt;: Variable data that changes during system operation (logs, databases, spool files).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/home&lt;/code&gt;: User-specific data and personal configuration files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/dev&lt;/code&gt;: Device files representing attached physical and pseudo-hardware.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="inodes-vs-file-names"&gt;Inodes vs. File Names&lt;/h2&gt;
+&lt;p&gt;The most fundamental concept in Linux storage is that &lt;strong&gt;a file name and the file data are two completely separate entities.&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lecture Materials on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/courses/toc-theory/content/materials/</link><description>Recent content in Lecture Materials on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/courses/toc-theory/content/materials/index.xml" rel="self" type="application/rss+xml"/><item><title>Turing Machine, Limits and Complexity</title><link>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-07/</link><pubDate>Sun, 27 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-07/</guid><description>&lt;ol&gt;
+&lt;li&gt;The Standard Turing Machine&lt;/li&gt;
+&lt;li&gt;TM Variants and Robustness&lt;/li&gt;
+&lt;li&gt;Decidability and the Church–Turing Thesis&lt;/li&gt;
+&lt;li&gt;Undecidability and Reductions&lt;/li&gt;
+&lt;li&gt;The Chomsky Hierarchy&lt;/li&gt;
+&lt;li&gt;Computational Complexity: P and NP&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="Lec_Set_7.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exercises and Review&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/toc-theory/content/materials/lecture-07/slide-set-7.pdf" download="slide-set-7.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Pushdown Automata and Deterministic Parsing</title><link>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-06/</link><pubDate>Sun, 20 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-06/</guid><description>&lt;ol&gt;
+&lt;li&gt;Pushdown Automata: Definition and Design&lt;/li&gt;
+&lt;li&gt;Equivalence of CFGs and NPDAs&lt;/li&gt;
+&lt;li&gt;Deterministic PDAs and DCFLs&lt;/li&gt;
+&lt;li&gt;Deterministic Parsing&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="Lec_Set_6.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exercises and Review&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/toc-theory/content/materials/lecture-06/slide-set-6.pdf" download="slide-set-6.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Context-Free Languages and Grammars</title><link>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-05/</link><pubDate>Sun, 13 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-05/</guid><description>&lt;ol&gt;
+&lt;li&gt;Motivation: Recursive Structure&lt;/li&gt;
+&lt;li&gt;Definition and Derivations&lt;/li&gt;
+&lt;li&gt;Parse Trees&lt;/li&gt;
+&lt;li&gt;Ambiguity&lt;/li&gt;
+&lt;li&gt;Simple Grammars (s-Grammars)&lt;/li&gt;
+&lt;li&gt;Normal Forms for CFGs&lt;/li&gt;
+&lt;li&gt;Properties of Context-Free Languages&lt;/li&gt;
+&lt;li&gt;The Pumping Lemma for CFLs&lt;/li&gt;
+&lt;li&gt;Applications and Grammar Notation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="Lec_Set_5.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exercises and Review&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/toc-theory/content/materials/lecture-05/slide-set-5.pdf" download="slide-set-5.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Properties of Regular Languages</title><link>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-04/</link><pubDate>Mon, 17 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-04/</guid><description>&lt;ul&gt;
+&lt;li&gt;Closure Properties&lt;/li&gt;
+&lt;li&gt;Decision Algorithms&lt;/li&gt;
+&lt;li&gt;The Pumping Lemma&lt;/li&gt;
+&lt;li&gt;Proving Non-Regularity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="Lec_Set_4.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exercises and Review&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/toc-theory/content/materials/lecture-04/slide-set-4.pdf" download="slide-set-4.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Finite Automata</title><link>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-02/</link><pubDate>Mon, 10 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-02/</guid><description>&lt;ol&gt;
+&lt;li&gt;Deterministic Finite Automata (DFA)&lt;/li&gt;
+&lt;li&gt;Designing DFAs&lt;/li&gt;
+&lt;li&gt;Nondeterministic Finite Automata (NFA)&lt;/li&gt;
+&lt;li&gt;Equivalence of DFA and NFA&lt;/li&gt;
+&lt;li&gt;DFA Minimization (State Reduction)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="Lec_Set_2.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exercises and Review&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/toc-theory/content/materials/lecture-02/slide-set-2.pdf" download="slide-set-2.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Regular Expressions and Regular Grammars</title><link>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-03/</link><pubDate>Mon, 10 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-03/</guid><description>&lt;ol&gt;
+&lt;li&gt;Regular Expressions (RE)&lt;/li&gt;
+&lt;li&gt;RE to NFA (Kleene Construction)&lt;/li&gt;
+&lt;li&gt;FA to RE (State Elimination)&lt;/li&gt;
+&lt;li&gt;Regular Grammars&lt;/li&gt;
+&lt;li&gt;The ”Big Picture” &amp;amp; Applicati&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="Lec_Set_3.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exercises and Review&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/toc-theory/content/materials/lecture-03/slide-set-3.pdf" download="slide-set-3.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Mathematical Foundations and Preliminaries</title><link>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-01/</link><pubDate>Fri, 17 Jul 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/materials/lecture-01/</guid><description>&lt;ul&gt;
+&lt;li&gt;Overview of Computation&lt;/li&gt;
+&lt;li&gt;Sets, Sequences, and Tuples&lt;/li&gt;
+&lt;li&gt;Functions and Relations&lt;/li&gt;
+&lt;li&gt;Graphs and Trees&lt;/li&gt;
+&lt;li&gt;Strings and Languages&lt;/li&gt;
+&lt;li&gt;Grammars and Automata&lt;/li&gt;
+&lt;li&gt;Proof Techniques&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="Lec_Set_1.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exercises and Review&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/toc-theory/content/materials/lecture-01/slide-set-1.pdf" download="slide-set-1.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item></channel></rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TCP/IP on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/tcp/ip/</link><description>Recent content in TCP/IP on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/tcp/ip/index.xml" rel="self" type="application/rss+xml"/><item><title>The 800-Kilometer Radius: A Physical Limit on Digital Routing</title><link>https://soumadip.github.io/puzzles/the-800-kilometer-radius-a-physical-limit-on-digital-routing/</link><pubDate>Fri, 25 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/puzzles/the-800-kilometer-radius-a-physical-limit-on-digital-routing/</guid><description>&lt;h2 id="the-puzzle"&gt;The Puzzle&lt;/h2&gt;
+&lt;p&gt;A network administrator at a reputed engineering college in India receives a bizarre bug report from the computer science faculty: following a major OS upgrade on the campus email and edge servers, researchers can no longer establish connections to any external servers located more than 800 kilometers away.&lt;/p&gt;
+&lt;p&gt;The admin dismisses it as a joke. Software protocols like TCP/IP do not understand geographic distance; they only understand IP addresses and routing hops. A server in Mumbai should be as reachable as a server in New York, provided the routing tables are intact.&lt;/p&gt;</description></item><item><title>The Cost of a Handshake: Database Connection Pooling</title><link>https://soumadip.github.io/viva/the-cost-of-a-handshake-database-connection-pooling/</link><pubDate>Thu, 24 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-cost-of-a-handshake-database-connection-pooling/</guid><description>&lt;h2 id="scenario-the-one-connection-per-request-disaster"&gt;Scenario: The &amp;ldquo;One Connection Per Request&amp;rdquo; Disaster&lt;/h2&gt;
+&lt;p&gt;A junior developer is building a REST API in Node.js. To ensure data isolation, they instantiate a brand new database connection to PostgreSQL at the start of every incoming HTTP request, execute the query, and close the connection.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;The API works perfectly in local testing. However, under a modest load of 50 requests per second in production, the API latency spikes to several seconds, and the database server CPU maxes out. Why is opening a connection so computationally expensive?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;Because a database connection is not just a software abstraction; it is a heavy, multi-layered network operation.&lt;/p&gt;</description></item><item><title>The Anatomy of a TCP Handshake</title><link>https://soumadip.github.io/viva/the-anatomy-of-a-tcp-handshake/</link><pubDate>Mon, 24 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-anatomy-of-a-tcp-handshake/</guid><description>&lt;h2 id="scenario-the-interrupted-tcp-handshake"&gt;Scenario: The Interrupted TCP Handshake&lt;/h2&gt;
+&lt;p&gt;A client attempts to establish a reliable connection to a web server to download a file. The application layer initiates a socket connection, prompting the OS to begin the standard TCP 3-way handshake.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;The client sends the initial SYN packet. The server receives it and replies with a SYN-ACK, but a misconfigured router drops the SYN-ACK packet. What happens next from the client&amp;rsquo;s perspective?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ The client is entirely unaware that the server received the initial SYN. It is currently in the &lt;code&gt;SYN-SENT&lt;/code&gt; state. It will rely on a Retransmission Timeout (RTO). When the timer expires without receiving a SYN-ACK, the client will assume the packet was lost in transit and will retransmit the original SYN packet.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;While the client is waiting to timeout, what is the server doing? Does the server also retransmit anything?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ Yes. Upon receiving the initial SYN and sending the SYN-ACK, the server transitions to the &lt;code&gt;SYN-RECEIVED&lt;/code&gt; state. It allocates a slot in its &amp;ldquo;SYN backlog queue&amp;rdquo; (a memory structure) to keep track of this half-open connection. Because TCP is a reliable protocol, the server also has a timer for its SYN-ACK. If it doesn&amp;rsquo;t receive the final ACK from the client, the server will retransmit the SYN-ACK, typically using an exponential backoff strategy (e.g., waiting 1s, then 2s, then 4s) before giving up and dropping the connection.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;You mentioned the server allocates memory in a &amp;lsquo;SYN backlog queue&amp;rsquo; for this half-open connection. What happens if an attacker maliciously sends millions of SYN packets with spoofed IP addresses and never replies to the SYN-ACKs?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ This is a classic SYN Flood attack, a type of Denial of Service (DoS). The server will allocate memory for every single spoofed request, filling up its SYN backlog queue. Once the queue is full, the kernel will start dropping all new incoming SYN packets, completely locking out legitimate users. The server becomes paralyzed simply waiting for connections that will never complete.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;If memory exhaustion is the fundamental flaw, how can the operating system be modified to accept connections without allocating any memory for half-open states?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;The OS can implement &lt;strong&gt;SYN Cookies&lt;/strong&gt;. Instead of storing the connection state in RAM, the server cryptographically encodes the state (including the MSS and a secret key) into the Initial Sequence Number (ISN) of the SYN-ACK packet it sends back to the client. The server then immediately forgets the connection exists.&lt;/p&gt;</description></item></channel></rss>

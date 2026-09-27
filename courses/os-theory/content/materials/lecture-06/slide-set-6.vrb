@@ -1,0 +1,18 @@
+\frametitle{Event-driven queue scheduler skeleton (pseudocode)}
+\begin{lstlisting}[language=Python]
+while unfinished:
+    expired = settle_completion_and_budgets(now)
+    enqueue_arrivals(now)
+    enqueue_expired_or_demoted(expired)
+    apply_due_aging_or_global_boost(now)
+    preserve_and_preempt_if_higher_queue_ready()
+    running = retain_current_or_select_head()
+    if running is None:
+        now = next_arrival_time()  # record the idle interval
+        continue
+    event = min(next_arrival, completion, quantum_end,
+                allotment_end, boost_time, aging_time)
+    execute_and_charge_all_budgets(running, event - now)
+    now = event
+\end{lstlisting}
+  \smallnote{For MLFQ, store level, remaining quantum, remaining allotment, first start, and last boost epoch explicitly.}

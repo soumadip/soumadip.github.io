@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Idempotency on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/idempotency/</link><description>Recent content in Idempotency on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/idempotency/index.xml" rel="self" type="application/rss+xml"/><item><title>The Architectural Contract &amp; HTTP Semantics</title><link>https://soumadip.github.io/handbook/volume-4/architectural-contracts-and-http/</link><pubDate>Sun, 06 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-4/architectural-contracts-and-http/</guid><description>&lt;h2 id="apis-as-distributed-state-machines"&gt;APIs as Distributed State Machines&lt;/h2&gt;
+&lt;p&gt;The acronym REST stands for &lt;strong&gt;Representational State Transfer&lt;/strong&gt;. When engineered correctly, a RESTful API operates similarly to a formal state machine (like a Pushdown Automaton) operating across a network.&lt;/p&gt;
+&lt;p&gt;The server holds the canonical state of a resource. The client cannot manipulate the server&amp;rsquo;s database directly. Instead, the server transfers a &lt;em&gt;representation&lt;/em&gt; of that state (usually a JSON document) to the client. The client modifies its local representation and sends it back, requesting a state transition.&lt;/p&gt;</description></item><item><title>The Indestructible Payment Gateway</title><link>https://soumadip.github.io/system-design/the-indestructible-payment-gateway/</link><pubDate>Thu, 24 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/system-design/the-indestructible-payment-gateway/</guid><description>&lt;h2 id="1-problem-statement--scope"&gt;1. Problem Statement &amp;amp; Scope&lt;/h2&gt;
+&lt;p&gt;Building a payment gateway is fundamentally different from building a social network. If a tweet drops, nobody cares; if a user is double-charged for a massive block of Nifty 500 stocks during an IPO allotment, you face catastrophic financial and legal ruin. The engineering focus shifts entirely from eventual consistency and raw throughput to absolute, immutable correctness.&lt;/p&gt;
+&lt;h3 id="functional-requirements"&gt;Functional Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Payment Execution:&lt;/strong&gt; Process credit cards, net banking, and UPI transactions securely.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Idempotency:&lt;/strong&gt; Guarantee that a duplicated request across a flaky network never results in a double charge.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Asynchronous Webhooks:&lt;/strong&gt; Notify merchants reliably when a transaction clears, fails, or is refunded.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="non-functional-requirements"&gt;Non-Functional Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Strict ACID Compliance:&lt;/strong&gt; Financial ledgers cannot tolerate race conditions or lost updates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Immutability:&lt;/strong&gt; Data can never be &lt;code&gt;UPDATED&lt;/code&gt; or &lt;code&gt;DELETED&lt;/code&gt;. Errors are corrected via compensating transactions (append-only).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;High Availability:&lt;/strong&gt; The gateway must continue accepting payment intents even if downstream banking networks are experiencing downtime.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-back-of-the-envelope-estimation"&gt;2. Back-of-the-Envelope Estimation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Throughput:&lt;/strong&gt; 10,000 Transactions Per Second (TPS) peak.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Payload Size:&lt;/strong&gt; ~2KB per transaction record (including metadata, cryptographic signatures, and routing info).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage:&lt;/strong&gt; 10,000 TPS $\times$ 2KB $\times$ 86,400 seconds = ~1.7 TB/day. Over a year, this is roughly 600 TB. We will need cold-storage archiving for auditing, but hot storage must be exceptionally fast.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Latency:&lt;/strong&gt; The gateway must respond to the client in $&lt; 200$ms, even if the actual bank settlement takes days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="3-high-level-design-hld"&gt;3. High-Level Design (HLD)&lt;/h2&gt;
+&lt;div class="mermaid"&gt;
+ 
+graph TD
+ Client[Merchant Client] --&gt;|POST /v1/charges| API[API Gateway / WAF]
+ API --&gt; Auth[Auth &amp; Rate Limiter]
+ Auth --&gt; PO[Payment Orchestrator]
+ 
+ PO --&gt;|1. Check Idempotency Key| Redis[(Idempotency Cache)]
+ PO --&gt;|2. Write Pending State| Ledger[(Primary Ledger DB)]
+ PO --&gt;|3. Forward via Secure Tunnel| PSP[Acquiring Bank / PSP]
+ 
+ PSP -.-&gt;|4. Async Settlement Webhook| WH[Webhook Handler]
+ WH --&gt;|5. Update Ledger State| Ledger
+ WH --&gt;|6. Notify Merchant| Queue[Kafka Notification Queue]
+ Queue --&gt; Worker[Dispatch Workers]
+
+&lt;/div&gt;
+&lt;script type="module"&gt;
+ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+ mermaid.initialize({ 
+ startOnLoad: true, 
+ theme: 'default',
+ securityLevel: 'loose'
+ });
+&lt;/script&gt;
+
+&lt;h2 id="4-deep-dive-component-design"&gt;4. Deep Dive: Component Design&lt;/h2&gt;
+&lt;h3 id="the-idempotency-layer"&gt;The Idempotency Layer&lt;/h3&gt;
+&lt;p&gt;A mobile client sits on a train edge network. They click &amp;ldquo;Buy&amp;rdquo;. The request reaches the server, the database commits the transaction, and the server replies &lt;code&gt;HTTP 200 OK&lt;/code&gt;. However, the train goes through a tunnel, and the client never receives the response. The client reconnects and retries the exact same request. How do you prevent charging them twice?&lt;/p&gt;</description></item></channel></rss>

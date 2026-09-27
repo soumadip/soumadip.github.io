@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Virtual Memory on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/virtual-memory/</link><description>Recent content in Virtual Memory on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/virtual-memory/index.xml" rel="self" type="application/rss+xml"/><item><title>The Illusion of Contiguous Memory: Arrays to Page Faults</title><link>https://soumadip.github.io/viva/the-illusion-of-contiguous-memory-arrays-to-page-faults/</link><pubDate>Sun, 30 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-illusion-of-contiguous-memory-arrays-to-page-faults/</guid><description>&lt;h2 id="scenario-the-2d-array-matrix-traversal"&gt;Scenario: The 2D Array Matrix Traversal&lt;/h2&gt;
+&lt;p&gt;A junior engineer is writing a C program for image processing. They allocate a massive 2D array of integers to represent pixel data and write a nested loop to process the matrix column-by-column rather than row-by-row.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;The engineer notices the language guarantees $O(1)$ access time for arrays. Does this mean the 1GB array they just allocated is occupying a single, contiguous block of physical RAM on the motherboard?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ No. From the process&amp;rsquo;s perspective, the memory appears perfectly contiguous. However, this is an illusion created by the OS called &lt;strong&gt;Virtual Memory&lt;/strong&gt;. In reality, the physical RAM is broken up into small blocks called &amp;ldquo;frames&amp;rdquo; (typically 4KB). The contiguous virtual memory pages are mapped to scattered, fragmented physical frames across the actual RAM chips.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;If the physical memory is scattered, how does the CPU actually find the correct physical frame when the program requests &lt;code&gt;array[x][y]&lt;/code&gt;?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ Every time the CPU requests a memory address, the &lt;strong&gt;Memory Management Unit (MMU)&lt;/strong&gt;—a hardware component—intercepts it. The MMU looks up the virtual address in a data structure maintained by the Operating System called the &lt;strong&gt;Page Table&lt;/strong&gt;, which contains the exact mapping from the virtual page to the physical frame.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;The Page Table is stored in RAM. Doesn&amp;rsquo;t that mean every single array access requires two memory reads—one to check the Page Table, and one to read the actual data? Wouldn&amp;rsquo;t that cut execution speed in half?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ Theoretically, yes. To prevent this massive performance penalty, the CPU utilizes a specialized, ultra-fast hardware cache located directly inside the MMU called the &lt;strong&gt;Translation Lookaside Buffer (TLB)&lt;/strong&gt;. The TLB caches the most recently used virtual-to-physical address translations. If the mapping is in the TLB (a TLB hit), the CPU skips reading the Page Table entirely.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;Back to the engineer&amp;rsquo;s code: they are processing the 2D array column-by-column. The program&amp;rsquo;s execution time is suddenly 100x slower than processing it row-by-row. Why?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;In C, 2D arrays are stored in &lt;strong&gt;row-major order&lt;/strong&gt; in memory. When iterating row-by-row, the CPU accesses memory sequentially, taking advantage of spatial locality. The TLB and the L1/L2 data caches efficiently pre-fetch the next elements.&lt;/p&gt;</description></item></channel></rss>

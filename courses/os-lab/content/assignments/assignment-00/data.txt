@@ -1,0 +1,4 @@
+Operating Systems serve as the foundational software that manages computer hardware and software resources.
+They provide common services for computer programs.
+Time-sharing operating systems schedule tasks for efficient use of the system.
+Understanding memory management, process scheduling, and file systems is critical for this course.

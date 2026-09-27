@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Debugging on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/debugging/</link><description>Recent content in Debugging on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/debugging/index.xml" rel="self" type="application/rss+xml"/><item><title>Isolating State: The Scientific Method of Debugging</title><link>https://soumadip.github.io/handbook/volume-1/scientific-method-debugging/</link><pubDate>Fri, 21 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/scientific-method-debugging/</guid><description>&lt;h2 id="the-illusion-of-randomness"&gt;The Illusion of Randomness&lt;/h2&gt;
+&lt;p&gt;When an application fails, the most common beginner instinct is to assume the computer did something unpredictable. In professional engineering, we operate on a strict axiom: &lt;strong&gt;Computers are entirely deterministic.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Unless you are dealing with uninitialized memory in C, hardware degradation, or specific race conditions in distributed environments, a bug is simply the logical execution of flawed instructions. If a program&amp;rsquo;s output is incorrect, its internal state diverged from the expected state at a specific, quantifiable moment in time.&lt;/p&gt;</description></item><item><title>Deconstructing Stack Traces &amp; Core Dumps</title><link>https://soumadip.github.io/handbook/volume-1/stack-traces-core-dumps/</link><pubDate>Sat, 22 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/stack-traces-core-dumps/</guid><description>&lt;h2 id="the-anatomy-of-a-crash"&gt;The Anatomy of a Crash&lt;/h2&gt;
+&lt;p&gt;When a program encounters an unrecoverable error (like a segmentation fault or an unhandled exception), the operating system forcibly terminates it. A professional engineer does not guess what happened; they read the autopsy report.&lt;/p&gt;
+&lt;p&gt;The two primary diagnostic tools generated during a crash are the &lt;strong&gt;Stack Trace&lt;/strong&gt; and the &lt;strong&gt;Core Dump&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Stack Trace:&lt;/strong&gt; A textual representation of the call stack at the exact moment the exception was thrown. It shows the precise sequence of nested function calls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core Dump:&lt;/strong&gt; A complete file containing the recorded state of the program&amp;rsquo;s working memory at the time of the crash.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+&lt;div style="display: flex; gap: 1rem; background: #fffbeb; border: 1px solid #fde68a; color: #92400e; padding: 1rem 1.5rem; border-radius: 8px; margin: 1.5rem 0;"&gt;
+ &lt;div style="font-size: 1.25rem; line-height: 1.2; user-select: none;"&gt;⚠️&lt;/div&gt;
+ &lt;div style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.1rem; width: 100%;"&gt;
+ &lt;strong&gt;Production Risk:&lt;/strong&gt; Core dumps capture raw memory, which may include sensitive user data, plaintext passwords, or cryptographic keys. Never share unredacted production core dumps in public forums or unencrypted channels.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="visualizing-the-call-stack"&gt;Visualizing the Call Stack&lt;/h2&gt;
+&lt;p&gt;The call stack operates as a Last-In-First-Out (LIFO) data structure. When reading a stack trace, you are looking back in time. The top of the trace is where the system died; the bottom is where the execution began.&lt;/p&gt;</description></item><item><title>Instrumentation &amp; Execution Control</title><link>https://soumadip.github.io/handbook/volume-1/instrumentation-and-xecution-control/</link><pubDate>Mon, 24 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/instrumentation-and-xecution-control/</guid><description>&lt;h2 id="the-limits-of-print-debugging"&gt;The Limits of Print Debugging&lt;/h2&gt;
+&lt;p&gt;The most universal debugging tool is standard output (e.g., &lt;code&gt;print()&lt;/code&gt;, &lt;code&gt;console.log()&lt;/code&gt;, &lt;code&gt;printf()&lt;/code&gt;). While useful for quick sanity checks, relying on print statements for complex system failures is an anti-pattern.&lt;/p&gt;
+&lt;p&gt;Print debugging suffers from three major flaws:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Temporal Distortion:&lt;/strong&gt; I/O operations are slow. Injecting print statements changes the timing of the program. In multithreaded environments, this can artificially mask race conditions—creating a &amp;ldquo;Heisenbug&amp;rdquo; that disappears when observed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State Pollution:&lt;/strong&gt; You must manually guess which variables matter. If you guess wrong, you must rewrite the code, recompile, and restart the process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ephemeral Tooling:&lt;/strong&gt; Print statements are often accidentally committed to version control, cluttering production logs and wasting I/O bandwidth.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="execution-control-the-step-through-debugger"&gt;Execution Control: The Step-Through Debugger&lt;/h2&gt;
+&lt;p&gt;Professional debugging relies on controlling the flow of time within the CPU. By using a debugger (&lt;code&gt;gdb&lt;/code&gt;, &lt;code&gt;lldb&lt;/code&gt;, &lt;code&gt;pdb&lt;/code&gt;, or modern IDE equivalents), you set &lt;strong&gt;breakpoints&lt;/strong&gt;—explicit instructions that tell the operating system to pause process execution right before a specific line of code is evaluated.&lt;/p&gt;</description></item><item><title>Failure Modes &amp; Applied Labs</title><link>https://soumadip.github.io/handbook/volume-3/failure-modes-and-applied-labs/</link><pubDate>Sat, 05 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-3/failure-modes-and-applied-labs/</guid><description>&lt;h2 id="catastrophic-state-the-kernel-panic"&gt;Catastrophic State: The Kernel Panic&lt;/h2&gt;
+&lt;p&gt;As discussed in Module 1, User Space applications are sandboxed. If a web server or a database crashes, it generates a core dump, but the operating system continues running.&lt;/p&gt;
+&lt;p&gt;However, if an unrecoverable error occurs in &lt;strong&gt;Kernel Space&lt;/strong&gt; (Ring 0)—such as a flawed hardware driver attempting to access unmapped physical memory, or a critical data structure becoming corrupted—the kernel cannot safely proceed. To prevent silent data corruption on the disk, Linux intentionally halts the entire system. This is a &lt;strong&gt;Kernel Panic&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>The 800-Kilometer Radius: A Physical Limit on Digital Routing</title><link>https://soumadip.github.io/puzzles/the-800-kilometer-radius-a-physical-limit-on-digital-routing/</link><pubDate>Fri, 25 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/puzzles/the-800-kilometer-radius-a-physical-limit-on-digital-routing/</guid><description>&lt;h2 id="the-puzzle"&gt;The Puzzle&lt;/h2&gt;
+&lt;p&gt;A network administrator at a reputed engineering college in India receives a bizarre bug report from the computer science faculty: following a major OS upgrade on the campus email and edge servers, researchers can no longer establish connections to any external servers located more than 800 kilometers away.&lt;/p&gt;
+&lt;p&gt;The admin dismisses it as a joke. Software protocols like TCP/IP do not understand geographic distance; they only understand IP addresses and routing hops. A server in Mumbai should be as reachable as a server in New York, provided the routing tables are intact.&lt;/p&gt;</description></item><item><title>The Linux PCB and the /proc Filesystem</title><link>https://soumadip.github.io/blog/2026/08/the-linux-pcb-and-the-/proc-filesystem/</link><pubDate>Thu, 20 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/08/the-linux-pcb-and-the-/proc-filesystem/</guid><description>Master Linux process management by looking under the hood of the kernel&amp;rsquo;s task_struct. This deep dive explores how to leverage the /proc virtual filesystem to track memory leaks, decode process states, and debug production systems using nothing but native CLI tools.</description></item></channel></rss>

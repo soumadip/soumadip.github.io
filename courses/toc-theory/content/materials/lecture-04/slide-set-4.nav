@@ -1,0 +1,135 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@sectionpages {1}{3}}
+\headcommand {\beamer@subsectionpages {1}{3}}
+\headcommand {\sectionentry {1}{Closure Properties}{4}{Closure Properties}{0}}
+\headcommand {\slideentry {1}{0}{1}{4/6}{}{0}}
+\headcommand {\beamer@framepages {4}{6}}
+\headcommand {\slideentry {1}{0}{2}{7/9}{}{0}}
+\headcommand {\beamer@framepages {7}{9}}
+\headcommand {\slideentry {1}{0}{3}{10/13}{}{0}}
+\headcommand {\beamer@framepages {10}{13}}
+\headcommand {\slideentry {1}{0}{4}{14/16}{}{0}}
+\headcommand {\beamer@framepages {14}{16}}
+\headcommand {\slideentry {1}{0}{5}{17/21}{}{0}}
+\headcommand {\beamer@framepages {17}{21}}
+\headcommand {\slideentry {1}{0}{6}{22/23}{}{0}}
+\headcommand {\beamer@framepages {22}{23}}
+\headcommand {\beamer@sectionpages {4}{23}}
+\headcommand {\beamer@subsectionpages {4}{23}}
+\headcommand {\sectionentry {2}{Decision Algorithms}{24}{Decision Algorithms}{0}}
+\headcommand {\slideentry {2}{0}{1}{24/26}{}{0}}
+\headcommand {\beamer@framepages {24}{26}}
+\headcommand {\slideentry {2}{0}{2}{27/28}{}{0}}
+\headcommand {\beamer@framepages {27}{28}}
+\headcommand {\slideentry {2}{0}{3}{29/31}{}{0}}
+\headcommand {\beamer@framepages {29}{31}}
+\headcommand {\slideentry {2}{0}{4}{32/33}{}{0}}
+\headcommand {\beamer@framepages {32}{33}}
+\headcommand {\beamer@sectionpages {24}{33}}
+\headcommand {\beamer@subsectionpages {24}{33}}
+\headcommand {\sectionentry {3}{The Pumping Lemma}{34}{The Pumping Lemma}{0}}
+\headcommand {\slideentry {3}{0}{1}{34/36}{}{0}}
+\headcommand {\beamer@framepages {34}{36}}
+\headcommand {\slideentry {3}{0}{2}{37/38}{}{0}}
+\headcommand {\beamer@framepages {37}{38}}
+\headcommand {\slideentry {3}{0}{3}{39/39}{}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {3}{0}{4}{40/41}{}{0}}
+\headcommand {\beamer@framepages {40}{41}}
+\headcommand {\slideentry {3}{0}{5}{42/47}{}{0}}
+\headcommand {\beamer@framepages {42}{47}}
+\headcommand {\beamer@sectionpages {34}{47}}
+\headcommand {\beamer@subsectionpages {34}{47}}
+\headcommand {\sectionentry {4}{Proving Non-Regularity}{48}{Proving Non-Regularity}{0}}
+\headcommand {\slideentry {4}{0}{1}{48/53}{}{0}}
+\headcommand {\beamer@framepages {48}{53}}
+\headcommand {\slideentry {4}{0}{2}{54/59}{}{0}}
+\headcommand {\beamer@framepages {54}{59}}
+\headcommand {\slideentry {4}{0}{3}{60/63}{}{0}}
+\headcommand {\beamer@framepages {60}{63}}
+\headcommand {\slideentry {4}{0}{4}{64/65}{}{0}}
+\headcommand {\beamer@framepages {64}{65}}
+\headcommand {\beamer@sectionpages {48}{65}}
+\headcommand {\beamer@subsectionpages {48}{65}}
+\headcommand {\sectionentry {5}{Review and Exercises}{66}{Review and Exercises}{0}}
+\headcommand {\slideentry {5}{0}{1}{66/68}{}{0}}
+\headcommand {\beamer@framepages {66}{68}}
+\headcommand {\slideentry {5}{0}{2}{69/70}{}{0}}
+\headcommand {\beamer@framepages {69}{70}}
+\headcommand {\slideentry {5}{0}{3}{71/72}{}{0}}
+\headcommand {\beamer@framepages {71}{72}}
+\headcommand {\gdef \insertmainframenumber {25}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{72}}
+\headcommand {\beamer@sectionpages {66}{72}}
+\headcommand {\beamer@subsectionpages {66}{72}}
+\headcommand {\beamer@appendixpages {73}}
+\headcommand {\beamer@sectionpages {73}{72}}
+\headcommand {\beamer@subsectionpages {73}{72}}
+\headcommand {\sectionentry {6}{Appendix: Extended Problems and Theory}{73}{Appendix: Extended Problems and Theory}{1}}
+\headcommand {\slideentry {6}{0}{1}{73/73}{}{1}}
+\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\beamer@subsectionpages {73}{73}}
+\headcommand {\beamer@subsectionentry {1}{6}{1}{74}{Additional Pumping-Lemma Games}}
+\headcommand {\slideentry {6}{1}{1}{74/74}{Additional Pumping-Lemma Games}{1}}
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\slideentry {6}{1}{2}{75/75}{Additional Pumping-Lemma Games}{1}}
+\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\slideentry {6}{1}{3}{76/76}{Additional Pumping-Lemma Games}{1}}
+\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\slideentry {6}{1}{4}{77/77}{Additional Pumping-Lemma Games}{1}}
+\headcommand {\beamer@framepages {77}{77}}
+\headcommand {\slideentry {6}{1}{5}{78/78}{Additional Pumping-Lemma Games}{1}}
+\headcommand {\beamer@framepages {78}{78}}
+\headcommand {\beamer@subsectionpages {74}{78}}
+\headcommand {\beamer@subsectionentry {1}{6}{2}{79}{Homomorphism and Right Quotient}}
+\headcommand {\slideentry {6}{2}{1}{79/79}{Homomorphism and Right Quotient}{1}}
+\headcommand {\beamer@framepages {79}{79}}
+\headcommand {\slideentry {6}{2}{2}{80/80}{Homomorphism and Right Quotient}{1}}
+\headcommand {\beamer@framepages {80}{80}}
+\headcommand {\slideentry {6}{2}{3}{81/81}{Homomorphism and Right Quotient}{1}}
+\headcommand {\beamer@framepages {81}{81}}
+\headcommand {\slideentry {6}{2}{4}{82/82}{Homomorphism and Right Quotient}{1}}
+\headcommand {\beamer@framepages {82}{82}}
+\headcommand {\beamer@subsectionpages {79}{82}}
+\headcommand {\beamer@subsectionentry {1}{6}{3}{83}{Solved Book-Style Challenges}}
+\headcommand {\slideentry {6}{3}{1}{83/83}{Solved Book-Style Challenges}{1}}
+\headcommand {\beamer@framepages {83}{83}}
+\headcommand {\slideentry {6}{3}{2}{84/84}{Solved Book-Style Challenges}{1}}
+\headcommand {\beamer@framepages {84}{84}}
+\headcommand {\slideentry {6}{3}{3}{85/85}{Solved Book-Style Challenges}{1}}
+\headcommand {\beamer@framepages {85}{85}}
+\headcommand {\slideentry {6}{3}{4}{86/86}{Solved Book-Style Challenges}{1}}
+\headcommand {\beamer@framepages {86}{86}}
+\headcommand {\slideentry {6}{3}{5}{87/87}{Solved Book-Style Challenges}{1}}
+\headcommand {\beamer@framepages {87}{87}}
+\headcommand {\slideentry {6}{3}{6}{88/88}{Solved Book-Style Challenges}{1}}
+\headcommand {\beamer@framepages {88}{88}}
+\headcommand {\beamer@subsectionpages {83}{88}}
+\headcommand {\beamer@subsectionentry {1}{6}{4}{89}{Advanced Theorems and Observations}}
+\headcommand {\slideentry {6}{4}{1}{89/91}{Advanced Theorems and Observations}{1}}
+\headcommand {\beamer@framepages {89}{91}}
+\headcommand {\slideentry {6}{4}{2}{92/94}{Advanced Theorems and Observations}{1}}
+\headcommand {\beamer@framepages {92}{94}}
+\headcommand {\slideentry {6}{4}{3}{95/96}{Advanced Theorems and Observations}{1}}
+\headcommand {\beamer@framepages {95}{96}}
+\headcommand {\slideentry {6}{4}{4}{97/99}{Advanced Theorems and Observations}{1}}
+\headcommand {\beamer@framepages {97}{99}}
+\headcommand {\slideentry {6}{4}{5}{100/102}{Advanced Theorems and Observations}{1}}
+\headcommand {\beamer@framepages {100}{102}}
+\headcommand {\slideentry {6}{4}{6}{103/105}{Advanced Theorems and Observations}{1}}
+\headcommand {\beamer@framepages {103}{105}}
+\headcommand {\slideentry {6}{4}{7}{106/110}{Advanced Theorems and Observations}{1}}
+\headcommand {\beamer@framepages {106}{110}}
+\headcommand {\slideentry {6}{4}{8}{111/111}{Advanced Theorems and Observations}{1}}
+\headcommand {\beamer@framepages {111}{111}}
+\headcommand {\beamer@partpages {73}{111}}
+\headcommand {\beamer@subsectionpages {89}{111}}
+\headcommand {\beamer@sectionpages {73}{111}}
+\headcommand {\beamer@documentpages {111}}
+\headcommand {\gdef \inserttotalframenumber {49}}

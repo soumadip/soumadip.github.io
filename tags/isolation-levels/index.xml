@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Isolation Levels on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/isolation-levels/</link><description>Recent content in Isolation Levels on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/isolation-levels/index.xml" rel="self" type="application/rss+xml"/><item><title>The Phantom Inventory: Concurrency in Distributed Transactions</title><link>https://soumadip.github.io/viva/the-phantom-inventory-concurrency-in-distributed-transactions/</link><pubDate>Wed, 09 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-phantom-inventory-concurrency-in-distributed-transactions/</guid><description>&lt;h2 id="scenario-the-flash-sale-race-condition"&gt;Scenario: The Flash Sale Race Condition&lt;/h2&gt;
+&lt;p&gt;An e-commerce platform is hosting a flash sale for a limited-edition smartphone. There is exactly one unit left in the database. User A and User B click &amp;ldquo;Checkout&amp;rdquo; at the exact same millisecond.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;If the backend application simply executes a &lt;code&gt;SELECT&lt;/code&gt; to check inventory, sees &amp;lsquo;1&amp;rsquo;, and then executes an &lt;code&gt;UPDATE&lt;/code&gt; to decrement it, what goes wrong here?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ This introduces a classic &lt;strong&gt;Race Condition&lt;/strong&gt; leading to a &amp;ldquo;Lost Update.&amp;rdquo; Because both transactions execute their &lt;code&gt;SELECT&lt;/code&gt; statements concurrently before either executes their &lt;code&gt;UPDATE&lt;/code&gt;, they both read the inventory value as &amp;lsquo;1&amp;rsquo;. Both applications assume the item is available, proceed to process the order, and decrement the database. The inventory drops to &amp;lsquo;-1&amp;rsquo;, and the company has sold an item they do not possess.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;How can you solve this purely at the relational database level without locking the entire inventory table and freezing all other customers?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ You implement &lt;strong&gt;Row-Level Locking&lt;/strong&gt; using a pessimistic concurrency model. In SQL, this is achieved with &lt;code&gt;SELECT ... FOR UPDATE&lt;/code&gt;. When User A&amp;rsquo;s transaction reads the row, the database locks that specific row. When User B attempts to read it, their transaction is forced to wait until User A commits or rolls back. User A buys the phone, the inventory becomes 0, the lock is released, and User B&amp;rsquo;s read now correctly returns 0.
+ &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;Locking is slow. The lead architect suggests using &amp;lsquo;Optimistic Concurrency Control&amp;rsquo; instead. How does that work, and what happens to User B?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;Optimistic Concurrency Control assumes conflicts are rare and avoids database locks entirely. Instead, every row gets a &lt;code&gt;version&lt;/code&gt; column.&lt;/p&gt;</description></item></channel></rss>

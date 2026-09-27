@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{Mechanism, Policy, and Control Transfer}{4}{0}{1}
+\beamer@sectionintoc {2}{What a Context Switch Changes}{9}{0}{2}
+\beamer@sectionintoc {3}{Preemption, Interrupts, and Kernel Execution}{16}{0}{3}
+\beamer@sectionintoc {4}{Latency Decomposition and Performance}{21}{0}{4}
+\beamer@sectionintoc {5}{Multicore Dispatch and System Load}{28}{0}{5}
+\beamer@sectionintoc {6}{Implementation and Observability}{34}{0}{6}
+\beamer@sectionintoc {7}{Synthesis}{41}{0}{7}
+\beamer@sectionintoc {8}{Appendix}{47}{1}{8}

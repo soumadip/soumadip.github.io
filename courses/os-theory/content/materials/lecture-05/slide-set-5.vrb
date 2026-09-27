@@ -1,0 +1,14 @@
+\frametitle{Policy-independent metric calculation}
+\begin{lstlisting}[language=Python]
+for job in jobs:
+    turnaround = job.completion - job.arrival
+    response   = job.first_start - job.arrival
+    waiting    = turnaround - job.service  # CPU-only model
+    assert turnaround >= job.service
+    assert response >= 0
+\end{lstlisting}
+  \begin{itemize}
+    \item Calculate metrics from recorded timestamps, not by visually guessing the chart.
+    \item For CPU/I/O traces, accumulate ready-queue residence directly rather than using $T_i-b_i$.
+    \item Preserve exact rational values until presentation; round only final reported statistics.
+  \end{itemize}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Connection Pool on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/connection-pool/</link><description>Recent content in Connection Pool on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/connection-pool/index.xml" rel="self" type="application/rss+xml"/><item><title>The Cost of a Handshake: Database Connection Pooling</title><link>https://soumadip.github.io/viva/the-cost-of-a-handshake-database-connection-pooling/</link><pubDate>Thu, 24 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-cost-of-a-handshake-database-connection-pooling/</guid><description>&lt;h2 id="scenario-the-one-connection-per-request-disaster"&gt;Scenario: The &amp;ldquo;One Connection Per Request&amp;rdquo; Disaster&lt;/h2&gt;
+&lt;p&gt;A junior developer is building a REST API in Node.js. To ensure data isolation, they instantiate a brand new database connection to PostgreSQL at the start of every incoming HTTP request, execute the query, and close the connection.&lt;/p&gt;
+&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;The API works perfectly in local testing. However, under a modest load of 50 requests per second in production, the API latency spikes to several seconds, and the database server CPU maxes out. Why is opening a connection so computationally expensive?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;Because a database connection is not just a software abstraction; it is a heavy, multi-layered network operation.&lt;/p&gt;</description></item></channel></rss>

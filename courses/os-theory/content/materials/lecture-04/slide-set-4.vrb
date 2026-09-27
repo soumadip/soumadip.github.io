@@ -1,0 +1,14 @@
+\frametitle{Optional tracing commands}
+\begin{lstlisting}[language=bash]
+# Per-thread switches and migrations once per second
+pidstat -w -t 1
+
+# Scheduler timeline for one command
+perf sched record -- ./workload
+perf sched timehist
+
+# Counters (names/support vary by platform)
+perf stat -e task-clock,context-switches,cpu-migrations,page-faults \
+  -- ./workload
+\end{lstlisting}
+  \smallnote{Run only with appropriate permissions. Trace buffers, symbol access, and event availability vary by kernel and security policy.}

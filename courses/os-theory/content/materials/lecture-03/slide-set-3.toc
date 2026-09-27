@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{The Process Abstraction}{4}{0}{1}
+\beamer@sectionintoc {2}{Lifecycle, Creation, and Relationships}{10}{0}{2}
+\beamer@sectionintoc {3}{Kernel Records and Scheduling State}{20}{0}{3}
+\beamer@sectionintoc {4}{Multicore Placement and Resource Control}{28}{0}{4}
+\beamer@sectionintoc {5}{Observing Processes on Linux}{33}{0}{5}
+\beamer@sectionintoc {6}{Synthesis}{39}{0}{6}
+\beamer@sectionintoc {7}{Appendix}{45}{1}{7}
