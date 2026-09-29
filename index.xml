@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/</link><description>Recent content in Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Physics &amp; Reliability Engineering</title><link>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</link><pubDate>Mon, 21 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</guid><description>&lt;h2 id="the-cloud-execution-model"&gt;The Cloud Execution Model&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/</link><description>Recent content in Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Physics &amp; Reliability Engineering</title><link>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</link><pubDate>Mon, 21 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</guid><description>&lt;h2 id="the-cloud-execution-model"&gt;The Cloud Execution Model&lt;/h2&gt;
 &lt;p&gt;In traditional infrastructure, servers are capital expenditures (CapEx)—expensive, static physical assets. The &lt;strong&gt;Cloud Execution Model&lt;/strong&gt; shifts compute to an operational expenditure (OpEx), offering the illusion of infinite, on-demand resources.&lt;/p&gt;
 &lt;p&gt;However, &amp;ldquo;the cloud&amp;rdquo; is ultimately just someone else&amp;rsquo;s computer. It is built on massive fleets of cheap, commodity hardware that is statistically guaranteed to fail. The architectural shift is moving from &lt;strong&gt;Scale-Up&lt;/strong&gt; (buying a massive $100,000 server that never goes down) to &lt;strong&gt;Scale-Out&lt;/strong&gt; (renting 1,000 cheap servers and architecting the software to survive when 50 of them catch fire).&lt;/p&gt;</description></item><item><title>The Fallacies of Distributed Computing &amp; Time</title><link>https://soumadip.github.io/handbook/volume-6/fallacies-and-time/</link><pubDate>Wed, 16 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-6/fallacies-and-time/</guid><description>&lt;h2 id="the-deployment-problem"&gt;The Deployment Problem&lt;/h2&gt;
 &lt;p&gt;When code runs on a single machine, the physical realities of the system are highly predictable. Memory access is effectively instantaneous, failures are usually binary (the process is either running or dead), and events are strictly ordered by a single CPU clock.&lt;/p&gt;
@@ -195,7 +195,7 @@ block-beta
 &lt;h3 id="lab-1-escaping-the-detached-head-state"&gt;Lab 1: Escaping the &amp;ldquo;Detached HEAD&amp;rdquo; State&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;The Scenario:&lt;/strong&gt; You wanted to see what the code looked like two weeks ago. You found the commit hash (&lt;code&gt;a1b2c3d&lt;/code&gt;) and ran &lt;code&gt;git checkout a1b2c3d&lt;/code&gt;. You made some experimental changes and committed them. Suddenly, Git warns you that you are in a &amp;ldquo;detached HEAD&amp;rdquo; state, and if you switch branches, your new commits will be lost.&lt;/p&gt;</description></item><item><title>Concurrency &amp; Distributed Faults</title><link>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</link><pubDate>Tue, 25 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</guid><description>&lt;h2 id="the-illusion-of-sequential-execution"&gt;The Illusion of Sequential Execution&lt;/h2&gt;
 &lt;p&gt;Up to this point, our debugging methodologies have assumed a deterministic, sequential flow of execution. However, modern systems are inherently asynchronous. Whether you are managing multiple threads on a single CPU core or coordinating state across a dense cluster of edge servers, execution happens concurrently.&lt;/p&gt;
-&lt;p&gt;When multiple actors attempt to read, write, or modify shared state simultaneously without strict orchestration, you encounter the hardest class of software bugs: &lt;strong&gt;Concurrency Faults&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>The Continuous NAND Gate: A Mathematical Deconstruction of the EML Function</title><link>https://soumadip.github.io/blog/2026/09/the-continuous-nand-gate-a-mathematical-deconstruction-of-the-eml-function/</link><pubDate>Tue, 29 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/09/the-continuous-nand-gate-a-mathematical-deconstruction-of-the-eml-function/</guid><description>“What if the entirety of continuous mathematics could be reduced to a single binary operation and the number 1?”</description></item><item><title>The Seamless Illusion: Live Process Migration at the Edge</title><link>https://soumadip.github.io/viva/the-seamless-illusion-live-process-migration-at-the-edge/</link><pubDate>Tue, 29 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-seamless-illusion-live-process-migration-at-the-edge/</guid><description>&lt;h2 id="scenario-the-zero-downtime-edge-handover"&gt;Scenario: The Zero-Downtime Edge Handover&lt;/h2&gt;
+&lt;p&gt;When multiple actors attempt to read, write, or modify shared state simultaneously without strict orchestration, you encounter the hardest class of software bugs: &lt;strong&gt;Concurrency Faults&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>The Calculus of Scale: A Unified Dictionary of System Design Theorems</title><link>https://soumadip.github.io/blog/2026/09/the-calculus-of-scale-a-unified-dictionary-of-system-design-theorems/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/09/the-calculus-of-scale-a-unified-dictionary-of-system-design-theorems/</guid><description>“Architecture is not about drawing boxes on a whiteboard; it is about navigating unforgiving mathematical boundaries.”</description></item><item><title>The Statistical Mirage and the Universal Topology of Graphs</title><link>https://soumadip.github.io/blog/2026/09/the-statistical-mirage-and-the-universal-topology-of-graphs/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/09/the-statistical-mirage-and-the-universal-topology-of-graphs/</guid><description>“Summary statistics are a compression algorithm. And like all lossy compression, they discard the truth to save space.”</description></item><item><title>The Continuous NAND Gate: A Mathematical Deconstruction of the EML Function</title><link>https://soumadip.github.io/blog/2026/09/the-continuous-nand-gate-a-mathematical-deconstruction-of-the-eml-function/</link><pubDate>Tue, 29 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/09/the-continuous-nand-gate-a-mathematical-deconstruction-of-the-eml-function/</guid><description>“What if the entirety of continuous mathematics could be reduced to a single binary operation and the number 1?”</description></item><item><title>The Seamless Illusion: Live Process Migration at the Edge</title><link>https://soumadip.github.io/viva/the-seamless-illusion-live-process-migration-at-the-edge/</link><pubDate>Tue, 29 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-seamless-illusion-live-process-migration-at-the-edge/</guid><description>&lt;h2 id="scenario-the-zero-downtime-edge-handover"&gt;Scenario: The Zero-Downtime Edge Handover&lt;/h2&gt;
 &lt;p&gt;A student is architecting a load-balancing system for a dense LTE/5G network. When an edge computing server at Cell Tower A becomes overloaded, the orchestrator must migrate a user&amp;rsquo;s actively running backend process (e.g., a real-time object detection stream) to Cell Tower B. The student claims they will achieve &amp;ldquo;zero downtime&amp;rdquo; by simply pausing the container, copying it over the backhaul, and unpausing it.&lt;/p&gt;
 &lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
  &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
@@ -849,6 +849,56 @@ block-beta
 &lt;div class="changelog-feed" id="changelog-feed" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.03);"&gt;
  
  
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="Blog" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Sep 30
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ Blog
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ The Statistical Mirage and the Universal Topology of Graphs
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;a href="./blog/2026/09/the-statistical-mirage-and-the-universal-topology-of-graphs/" style="color: #94a3b8; text-decoration: none;"&gt;open &amp;rarr;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;/details&gt;
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="Blog" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Sep 30
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ Blog
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ The Calculus of Scale: A Unified Dictionary of System Design Theorems
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;a href="./blog/2026/09/the-calculus-of-scale-a-unified-dictionary-of-system-design-theorems/" style="color: #94a3b8; text-decoration: none;"&gt;open &amp;rarr;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;/details&gt;
  
  
  
