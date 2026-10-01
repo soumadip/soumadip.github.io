@@ -107,8 +107,8 @@ INPUT ./helper-cmds.tex
 INPUT ./helper-cmds.tex
 INPUT ./helper-cmds.tex
 INPUT helper-cmds.tex
-INPUT /opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def
+INPUT /opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def
 INPUT ./cv.aux
 INPUT ./cv.aux
 INPUT cv.aux

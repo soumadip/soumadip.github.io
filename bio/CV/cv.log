@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.1)  30 SEP 2026 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.1)  1 OCT 2026 22:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **cv.tex
 (./cv.tex
 LaTeX2e <2026-06-01>
-L3 programming layer <2026-06-18>
+L3 programming layer <2026-09-09>
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/size10.clo
@@ -268,8 +268,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package hyperref Info: Option `colorlinks' set `true' on input line 107.
 Package hyperref Info: Option `breaklinks' set `true' on input line 107.
 ) (./helper-cmds.tex)
-(/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+(/opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-09-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count305
 )
 (./cv.aux)
@@ -467,17 +467,17 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./cv.aux)
  ***********
 LaTeX2e <2026-06-01>
-L3 programming layer <2026-06-18>
+L3 programming layer <2026-09-09>
  ***********
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: 523DC2270D6540FC8FE62697B95E028E;1142.
  ) 
 Here is how much of TeX's memory you used:
- 10048 strings out of 467168
- 159755 string characters out of 5411585
- 600340 words of memory out of 5000000
- 39159 multiletter control sequences out of 15000+600000
- 632106 words of font info for 54 fonts, out of 8000000 for 9000
+ 10054 strings out of 467050
+ 159919 string characters out of 5408429
+ 601961 words of memory out of 5000000
+ 39284 multiletter control sequences out of 15000+600000
+ 632874 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,13n,93p,546b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.1)  27 SEP 2026 10:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.1)  1 OCT 2026 22:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,9 +6,9 @@ entering extended mode
 **slide-set-5.tex
 (./slide-set-5.tex
 LaTeX2e <2026-06-01>
-L3 programming layer <2026-06-18>
+L3 programming layer <2026-09-09>
 (/opt/texlive/texdir/texmf-dist/tex/latex/beamer/beamer.cls
-Document Class: beamer 2026/01/22 v3.77 A class for typesetting presentations
+Document Class: beamer 2026/08/20 v3.78 A class for typesetting presentations
 (/opt/texlive/texdir/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
 (/opt/texlive/texdir/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
@@ -112,7 +112,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+Package: pgfrcs 2026-08-01 v3.1.12 (3.1.12)
 ))
 (/opt/texlive/texdir/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
@@ -194,7 +194,7 @@ File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+Package: pgfsys 2026-08-01 v3.1.12 (3.1.12)
 \pgf@x=\dimen187
 \pgf@y=\dimen188
 \pgf@xa=\dimen189
@@ -217,26 +217,26 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@sys@id@count=\count315
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+File: pgf.cfg 2026-08-01 v3.1.12 (3.1.12)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfsys-pdftex.def 2026-08-01 v3.1.12 (3.1.12)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.d
 ef
-File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfsys-common-pdf.def 2026-08-01 v3.1.12 (3.1.12)
 )))
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code
 .tex
-File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfsyssoftpath.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfsyssoftpath@smallbuffer@items=\count316
 \pgfsyssoftpath@bigbuffer@items=\count317
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code
 .tex
-File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfsysprotocol.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )) (/opt/texlive/texdir/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
@@ -257,12 +257,12 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+Package: pgfcore 2026-08-01 v3.1.12 (3.1.12)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.t
 ex
-File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorepoints.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@picminx=\dimen197
 \pgf@picmaxx=\dimen198
 \pgf@picminy=\dimen199
@@ -280,19 +280,19 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct
 .code.tex
-File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorepathconstruct.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@path@lastx=\dimen267
 \pgf@path@lasty=\dimen268
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.cod
 e.tex
-File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorepathusage.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@shorten@end@additional=\dimen269
 \pgf@shorten@start@additional=\dimen270
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.t
 ex
-File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorescopes.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfpic=\box64
 \pgf@hbox=\box65
 \pgf@layerbox@main=\box66
@@ -300,63 +300,63 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.
 code.tex
-File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcoregraphicstate.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgflinewidth=\dimen271
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformatio
 ns.code.tex
-File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcoretransformations.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@pt@x=\dimen272
 \pgf@pt@y=\dimen273
 \pgf@pt@temp=\dimen274
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.te
 x
-File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorequick.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.
 tex
-File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcoreobjects.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessin
 g.code.tex
-File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorepathprocessing.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.t
 ex
-File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorearrows.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfarrowsep=\dimen275
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.te
 x
-File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcoreshade.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@max=\dimen276
 \pgf@sys@shading@range@num=\count319
 \pgf@shadingcount=\count320
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.te
 x
-File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcoreimage.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code
 .tex
-File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcoreexternal.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfexternal@startupbox=\box67
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.t
 ex
-File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorelayers.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.
 code.tex
-File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcoretransparency.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code
 .tex
-File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorepatterns.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfcorerdf.code.tex 2026-08-01 v3.1.12 (3.1.12)
 ))) (/opt/texlive/texdir/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count321
@@ -834,28 +834,28 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/opt/texlive/texdir/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+Package: pgf 2026-08-01 v3.1.12 (3.1.12)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
 x
-File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfmoduleshapes.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfnodeparttextbox=\box83
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfmoduleplot.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-6
 5.sty
-Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+Package: pgfcomp-version-0-65 2026-08-01 v3.1.12 (3.1.12)
 \pgf@nodesepstart=\dimen338
 \pgf@nodesepend=\dimen339
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-1
 8.sty
-Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+Package: pgfcomp-version-1-18 2026-08-01 v3.1.12 (3.1.12)
 )) (/opt/texlive/texdir/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+Package: pgffor 2026-08-01 v3.1.12 (3.1.12)
 \pgffor@iter=\dimen340
 \pgffor@skip=\dimen341
 \pgffor@stack=\toks49
@@ -863,11 +863,11 @@ Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 ))
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.te
 x
-Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+Package: tikz 2026-08-01 v3.1.12 (3.1.12)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandler
 s.code.tex
-File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgflibraryplothandlers.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@plot@mark@count=\count376
 \pgfplotmarksize=\dimen342
 )
@@ -890,7 +890,7 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.te
 x
-File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgfmodulematrix.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfmatrixcurrentrow=\count381
 \pgfmatrixcurrentcolumn=\count382
 \pgf@matrix@numberofcolumns=\count383
@@ -899,7 +899,7 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
 kzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: tikzlibrarytopaths.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )))
 (/opt/texlive/texdir/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2026/05/28 version 6.10.0 text color boxes
@@ -992,11 +992,11 @@ Library (tcolorbox): 'tcbvignette.code.tex' version '6.10.0'
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
 kzlibraryfadings.code.tex
-File: tikzlibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: tikzlibraryfadings.code.tex 2026-08-01 v3.1.12 (3.1.12)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.cod
 e.tex
-File: pgflibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgflibraryfadings.code.tex 2026-08-01 v3.1.12 (3.1.12)
 ))) (/opt/texlive/texdir/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '6.10.0'
 ))
@@ -1004,7 +1004,7 @@ Library (tcolorbox): 'tcbposter.code.tex' version '6.10.0'
 amer.sty)
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta
 .code.tex
-File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgflibraryarrows.meta.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfarrowinset=\dimen357
 \pgfarrowlength=\dimen358
 \pgfarrowwidth=\dimen359
@@ -1012,7 +1012,7 @@ File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
 kzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: tikzlibrarycalc.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
 kzlibrarydecorations.pathreplacing.code.tex
@@ -1035,23 +1035,23 @@ de.tex
 ydecorations.pathreplacing.code.tex))
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
 kzlibraryfit.code.tex
-File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: tikzlibraryfit.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
 kzlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: tikzlibrarymatrix.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
 kzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: tikzlibrarypositioning.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
 kzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: tikzlibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshap
 es.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+File: pgflibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
 ))
 (/opt/texlive/texdir/texmf-dist/tex/latex/beamer/beamerthemeBoadilla.sty
 (/opt/texlive/texdir/texmf-dist/tex/latex/beamer/beamercolorthemerose.sty)
@@ -1064,8 +1064,8 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 (/opt/texlive/texdir/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-(/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+(/opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-09-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count395
 )
 (./slide-set-5.aux)
@@ -1497,17 +1497,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (./slide-set-5.aux)
  ***********
 LaTeX2e <2026-06-01>
-L3 programming layer <2026-06-18>
+L3 programming layer <2026-09-09>
  ***********
 Package rerunfilecheck Info: File `slide-set-5.out' has not changed.
 (rerunfilecheck)             Checksum: 00B740B8DBAC0414DFF6309C1031F689;1496.
  ) 
 Here is how much of TeX's memory you used:
- 35420 strings out of 467168
- 747639 string characters out of 5411585
- 1425539 words of memory out of 5000000
- 63815 multiletter control sequences out of 15000+600000
- 733124 words of font info for 108 fonts, out of 8000000 for 9000
+ 35662 strings out of 467050
+ 755601 string characters out of 5408429
+ 1426223 words of memory out of 5000000
+ 64183 multiletter control sequences out of 15000+600000
+ 733892 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,123p,441b,1395s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/texliv
@@ -1523,7 +1523,7 @@ blic/lm/lmsso12.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/lm/lmsso
 xlive/texdir/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></opt/texlive/texdir/te
 xmf-dist/fonts/type1/public/lm/lmtk10.pfb></opt/texlive/texdir/texmf-dist/fonts
 /type1/public/lm/lmtt8.pfb>
-Output written on slide-set-5.pdf (69 pages, 410118 bytes).
+Output written on slide-set-5.pdf (69 pages, 409576 bytes).
 PDF statistics:
  1194 PDF objects out of 1200 (max. 8388607)
  769 compressed objects within 8 object streams
