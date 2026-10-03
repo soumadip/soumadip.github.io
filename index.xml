@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/</link><description>Recent content in Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Physics &amp; Reliability Engineering</title><link>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</link><pubDate>Mon, 21 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</guid><description>&lt;h2 id="the-cloud-execution-model"&gt;The Cloud Execution Model&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/</link><description>Recent content in Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Physics &amp; Reliability Engineering</title><link>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</link><pubDate>Mon, 21 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</guid><description>&lt;h2 id="the-cloud-execution-model"&gt;The Cloud Execution Model&lt;/h2&gt;
 &lt;p&gt;In traditional infrastructure, servers are capital expenditures (CapEx)—expensive, static physical assets. The &lt;strong&gt;Cloud Execution Model&lt;/strong&gt; shifts compute to an operational expenditure (OpEx), offering the illusion of infinite, on-demand resources.&lt;/p&gt;
 &lt;p&gt;However, &amp;ldquo;the cloud&amp;rdquo; is ultimately just someone else&amp;rsquo;s computer. It is built on massive fleets of cheap, commodity hardware that is statistically guaranteed to fail. The architectural shift is moving from &lt;strong&gt;Scale-Up&lt;/strong&gt; (buying a massive $100,000 server that never goes down) to &lt;strong&gt;Scale-Out&lt;/strong&gt; (renting 1,000 cheap servers and architecting the software to survive when 50 of them catch fire).&lt;/p&gt;</description></item><item><title>The Fallacies of Distributed Computing &amp; Time</title><link>https://soumadip.github.io/handbook/volume-6/fallacies-and-time/</link><pubDate>Wed, 16 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-6/fallacies-and-time/</guid><description>&lt;h2 id="the-deployment-problem"&gt;The Deployment Problem&lt;/h2&gt;
 &lt;p&gt;When code runs on a single machine, the physical realities of the system are highly predictable. Memory access is effectively instantaneous, failures are usually binary (the process is either running or dead), and events are strictly ordered by a single CPU clock.&lt;/p&gt;
@@ -195,7 +195,10 @@ block-beta
 &lt;h3 id="lab-1-escaping-the-detached-head-state"&gt;Lab 1: Escaping the &amp;ldquo;Detached HEAD&amp;rdquo; State&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;The Scenario:&lt;/strong&gt; You wanted to see what the code looked like two weeks ago. You found the commit hash (&lt;code&gt;a1b2c3d&lt;/code&gt;) and ran &lt;code&gt;git checkout a1b2c3d&lt;/code&gt;. You made some experimental changes and committed them. Suddenly, Git warns you that you are in a &amp;ldquo;detached HEAD&amp;rdquo; state, and if you switch branches, your new commits will be lost.&lt;/p&gt;</description></item><item><title>Concurrency &amp; Distributed Faults</title><link>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</link><pubDate>Tue, 25 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</guid><description>&lt;h2 id="the-illusion-of-sequential-execution"&gt;The Illusion of Sequential Execution&lt;/h2&gt;
 &lt;p&gt;Up to this point, our debugging methodologies have assumed a deterministic, sequential flow of execution. However, modern systems are inherently asynchronous. Whether you are managing multiple threads on a single CPU core or coordinating state across a dense cluster of edge servers, execution happens concurrently.&lt;/p&gt;
-&lt;p&gt;When multiple actors attempt to read, write, or modify shared state simultaneously without strict orchestration, you encounter the hardest class of software bugs: &lt;strong&gt;Concurrency Faults&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>The Ghost in the Architecture</title><link>https://soumadip.github.io/blog/2026/10/the-ghost-in-the-architecture/</link><pubDate>Sat, 03 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/10/the-ghost-in-the-architecture/</guid><description>“In a distributed system, the most difficult problem is knowing whether a node is dead or just incredibly slow.”</description></item><item><title>The Silent Autopsy: Forensics in a Post-Crash Server</title><link>https://soumadip.github.io/viva/the-silent-autopsy-forensics-in-a-post-crash-server/</link><pubDate>Sat, 03 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-silent-autopsy-forensics-in-a-post-crash-server/</guid><description>&lt;h2 id="scenario-the-missing-gigabytes"&gt;Scenario: The Missing Gigabytes&lt;/h2&gt;
+&lt;p&gt;When multiple actors attempt to read, write, or modify shared state simultaneously without strict orchestration, you encounter the hardest class of software bugs: &lt;strong&gt;Concurrency Faults&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Assignment 08: File Systems: Allocation and Organization</title><link>https://soumadip.github.io/courses/os-lab/content/assignments/assignment-08/</link><pubDate>Sun, 04 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-lab/content/assignments/assignment-08/</guid><description>&lt;h2 id="i-objective--theoretical-framework"&gt;I. Objective &amp;amp; Theoretical Framework&lt;/h2&gt;
+&lt;p&gt;A file is a logical entity that divides data into meaningful groups, but as a physical entity, it must be carefully organized and allocated on a storage disk. The term &amp;ldquo;file organization&amp;rdquo; refers to the way data is stored and the methods by which it can be accessed.&lt;/p&gt;
+&lt;p&gt;In this laboratory, you will simulate two critical aspects of file system design:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. File Allocation Strategies:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>The Ghost in the Architecture</title><link>https://soumadip.github.io/blog/2026/10/the-ghost-in-the-architecture/</link><pubDate>Sat, 03 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/10/the-ghost-in-the-architecture/</guid><description>“In a distributed system, the most difficult problem is knowing whether a node is dead or just incredibly slow.”</description></item><item><title>The Silent Autopsy: Forensics in a Post-Crash Server</title><link>https://soumadip.github.io/viva/the-silent-autopsy-forensics-in-a-post-crash-server/</link><pubDate>Sat, 03 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/the-silent-autopsy-forensics-in-a-post-crash-server/</guid><description>&lt;h2 id="scenario-the-missing-gigabytes"&gt;Scenario: The Missing Gigabytes&lt;/h2&gt;
 &lt;p&gt;You place the interviewee in a terminal simulation. A critical Linux production server went completely offline 15 minutes ago. It has since rebooted and the application is running normally again. The CTO demands a post-mortem to understand exactly why the server died. The candidate has root access but no APM (Application Performance Monitoring) dashboards—only the raw Linux command line.&lt;/p&gt;
 &lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
  &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
@@ -862,6 +865,46 @@ block-beta
 &lt;div class="changelog-feed" id="changelog-feed" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.03);"&gt;
  
  
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="Os Lab" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Oct 04
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ Os Lab
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ A8: File Systems
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;span style="color: #3b82f6;"&gt;+ details&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;div style="padding: 0.5rem 1.25rem 1rem 1.25rem; background: #f8fafc; border-top: 1px dashed #e2e8f0;"&gt;
+ &lt;div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;"&gt;
+ 
+ &lt;span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600;"&gt;
+ Due: Oct 27, 2026
+ &lt;/span&gt;
+ 
+ 
+ &lt;/div&gt;
+ 
+ &lt;a href="./courses/os-lab/content/assignments/assignment-08/" style="font-size: 0.8rem; color: #2563eb; text-decoration: none; font-weight: 600;"&gt;
+ View Full Page &amp;rarr;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ 
+ &lt;/details&gt;
  
  
  

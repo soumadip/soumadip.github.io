@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1790980100.00573 "slide-set-3.tex" "slide-set-3.pdf" "slide-set-3" 1790980108.5656 0
+["pdflatex"] 1791063592.3501 "slide-set-3.tex" "slide-set-3.pdf" "slide-set-3" 1791063601.30338 0
   "/opt/texlive/texdir/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -243,11 +243,11 @@
   "/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1790873945 5609345 1b2b3adc34073d267b8a5f51210ec97d ""
   "/opt/texlive/texdir/texmf-var/web2c/pdftex/pdflatex.fmt" 1790873998 3668356 0ddcaf1aa60edaf799737828f6537715 ""
   "/opt/texlive/texdir/texmf.cnf" 1790873936 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "slide-set-3.aux" 1790980108.34829 14094 f2bb582091347aed60841df2bb608d0e "pdflatex"
-  "slide-set-3.nav" 1790980108.35029 9180 65e8f1a93c8d9843f0dd33faa689895e "pdflatex"
-  "slide-set-3.out" 1790980108.35029 2706 253e865c6c4c71a780991a28d90740f1 "pdflatex"
+  "slide-set-3.aux" 1791063601.09566 14094 f2bb582091347aed60841df2bb608d0e "pdflatex"
+  "slide-set-3.nav" 1791063601.09766 9180 65e8f1a93c8d9843f0dd33faa689895e "pdflatex"
+  "slide-set-3.out" 1791063601.09766 2706 253e865c6c4c71a780991a28d90740f1 "pdflatex"
   "slide-set-3.tex" 1790505967.28392 65151 07a6bdef6063544465f5551b4249045b ""
-  "slide-set-3.toc" 1790980108.35129 889 da8eb321121c620955c8c19af82218f8 "pdflatex"
+  "slide-set-3.toc" 1791063601.09766 889 da8eb321121c620955c8c19af82218f8 "pdflatex"
   (generated)
   "slide-set-3.aux"
   "slide-set-3.log"
