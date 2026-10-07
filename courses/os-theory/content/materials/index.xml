@@ -1,4 +1,116 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lecture Materials on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/courses/os-theory/content/materials/</link><description>Recent content in Lecture Materials on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 07 Sep 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/courses/os-theory/content/materials/index.xml" rel="self" type="application/rss+xml"/><item><title>Lecture 06: Priority Scheduling and Multilevel Queues</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-06/</link><pubDate>Mon, 07 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-06/</guid><description>&lt;ol&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lecture Materials on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/courses/os-theory/content/materials/</link><description>Recent content in Lecture Materials on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/courses/os-theory/content/materials/index.xml" rel="self" type="application/rss+xml"/><item><title>Real-Time Scheduling and Case Studies</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-07/</link><pubDate>Wed, 07 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-07/</guid><description>&lt;ul&gt;
+&lt;li&gt;First topic overview&lt;/li&gt;
+&lt;li&gt;Second topic detail&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="slides.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exercises and Review&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/os-theory/content/materials/lecture-07/slide-set-7.pdf" download="slide-set-7.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Threads and Multithreading Models</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-08/</link><pubDate>Wed, 07 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-08/</guid><description>&lt;ul&gt;
+&lt;li&gt;First topic overview&lt;/li&gt;
+&lt;li&gt;Second topic detail&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="slide-deck"&gt;Slide Deck&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"&gt;
+ &lt;iframe src="slides.pdf" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; font-size: 0.85em;"&gt;
+ 
+&lt;/div&gt;
+
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exercises and Review&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+&lt;div style="background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #0056b3; margin-top: 20px; margin-bottom: 20px;"&gt;
+ &lt;h4 style="margin-top: 0; color: #333;"&gt;📎 Attached Resources&lt;/h4&gt;
+ &lt;ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li style="margin-bottom: 8px;"&gt;
+ &lt;a href="../../../../courses/os-theory/content/materials/lecture-08/slide-set-8.pdf" download="slide-set-8.pdf" style="text-decoration: none; font-weight: bold; color: #0056b3;"&gt;
+		&gt;&gt; Detailed slides set
+ &lt;/a&gt;
+ &lt;span style="color: #666; font-size: 0.85em;"&gt;(application)&lt;/span&gt;
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
+&lt;/div&gt;</description></item><item><title>Lecture 06: Priority Scheduling and Multilevel Queues</title><link>https://soumadip.github.io/courses/os-theory/content/materials/lecture-06/</link><pubDate>Mon, 07 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-theory/content/materials/lecture-06/</guid><description>&lt;ol&gt;
 &lt;li&gt;Priority Scheduling (Prioritizing critical tasks)&lt;/li&gt;
 &lt;li&gt;Starvation &amp;amp; Aging (The challenge of fairness)&lt;/li&gt;
 &lt;li&gt;Multilevel Queue Scheduling (Organizing diverse workloads)&lt;/li&gt;

@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Split the query into an array of words
-    const searchWords = rawQuery.split(/\s+/).filter(word => word.length > 0);
+    const searchWords = rawQuery.split(/\s+/).filter((word) => word.length > 0);
 
     // Await the index (will resolve instantly if already cached)
     const data = await getSearchIndex();
@@ -99,7 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const title = item.title ? item.title.toLowerCase() : "";
       const content = item.content ? item.content.toLowerCase() : "";
 
-      return searchWords.every(word => title.includes(word) || content.includes(word));
+      return searchWords.every(
+        (word) => title.includes(word) || content.includes(word),
+      );
     });
 
     if (filtered.length === 0) {
@@ -127,5 +129,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     searchResults.classList.add("active");
   });
-
 });

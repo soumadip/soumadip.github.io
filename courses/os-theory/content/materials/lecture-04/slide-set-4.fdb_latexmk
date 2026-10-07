@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1791326818.09774 "slide-set-4.tex" "slide-set-4.pdf" "slide-set-4" 1791326820.74986 0
+["pdflatex"] 1791401777.67219 "slide-set-4.tex" "slide-set-4.pdf" "slide-set-4" 1791401781.10262 0
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -282,12 +282,12 @@
   "/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1790873945 5609345 1b2b3adc34073d267b8a5f51210ec97d ""
   "/opt/texlive/texdir/texmf-var/web2c/pdftex/pdflatex.fmt" 1790873998 3668356 0ddcaf1aa60edaf799737828f6537715 ""
   "/opt/texlive/texdir/texmf.cnf" 1790873936 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "slide-set-4.aux" 1791326820.59274 10661 5d76f71e1c1b3874db59dc5ec18a2d38 "pdflatex"
-  "slide-set-4.nav" 1791326820.59474 7085 b4979ff581990a7327932007e9b14e5f "pdflatex"
-  "slide-set-4.out" 1791326820.59374 1656 470fb915cdbccd77bf828ac23e86cb7a "pdflatex"
+  "slide-set-4.aux" 1791401780.87272 10661 5d76f71e1c1b3874db59dc5ec18a2d38 "pdflatex"
+  "slide-set-4.nav" 1791401780.87372 7085 b4979ff581990a7327932007e9b14e5f "pdflatex"
+  "slide-set-4.out" 1791401780.87372 1656 470fb915cdbccd77bf828ac23e86cb7a "pdflatex"
   "slide-set-4.tex" 1790505967.27592 47862 fd8c98c0cd640f8b0f9c6b49ce9b0ce7 ""
-  "slide-set-4.toc" 1791326820.59474 526 62cb8db142c04d6981f9c386ec6226b7 "pdflatex"
-  "slide-set-4.vrb" 1791326820.54974 522 45622f380fc8e40e0ebd6965f2a95dbe "pdflatex"
+  "slide-set-4.toc" 1791401780.87372 526 62cb8db142c04d6981f9c386ec6226b7 "pdflatex"
+  "slide-set-4.vrb" 1791401780.81272 522 45622f380fc8e40e0ebd6965f2a95dbe "pdflatex"
   (generated)
   "slide-set-4.aux"
   "slide-set-4.log"

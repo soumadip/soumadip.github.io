@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Processes, Threads, and Execution State}{4}{0}{1}
+\beamer@sectionintoc {2}{Thread Lifecycle and POSIX Threads}{11}{0}{2}
+\beamer@sectionintoc {3}{User and Kernel Thread Mappings}{21}{0}{3}
+\beamer@sectionintoc {4}{Pools, Scheduling, and Scalability}{29}{0}{4}
+\beamer@sectionintoc {5}{Memory Semantics and Performance Hazards}{35}{0}{5}
+\beamer@sectionintoc {6}{Design, Debugging, and Observation}{42}{0}{6}
+\beamer@sectionintoc {7}{Synthesis}{47}{0}{7}
+\beamer@sectionintoc {8}{Appendix: Code and Exploration}{51}{1}{8}
+\beamer@subsectionintoc {8}{1}{Code examples}{57}{1}{8}
+\beamer@subsectionintoc {8}{2}{Exploratory topics}{60}{1}{8}
+\beamer@subsectionintoc {8}{3}{Debugging exercises: deliberate faults}{62}{1}{8}

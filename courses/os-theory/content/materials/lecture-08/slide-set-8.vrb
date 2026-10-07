@@ -1,0 +1,21 @@
+\frametitle{Exercise: condition-variable predicate bug}
+\scriptsize
+\begin{lstlisting}[language=C]
+/* mutex is held on entry; count is the number of queued items */
+static void consume_one(void) {
+    if (count == 0)
+        pthread_cond_wait(&ready, &mutex);
+    --count;                 /* claim one item */
+    pthread_mutex_unlock(&mutex);
+}
+/* Producer adds one item while holding mutex, then: */
+pthread_cond_broadcast(&ready);
+\end{lstlisting}
+  \begin{enumerate}
+    \item With two consumers waiting and one item added, describe a legal execution that breaks the queue invariant.
+    \item Explain what the condition-variable notification does—and what it does not promise.
+    \item Identify another wakeup case the consumer must be prepared to handle.
+  \end{enumerate}
+  \begin{tcolorbox}[title=Hint,colback=osorange!5,colframe=osorange!70]
+    Treat the shared predicate as the truth; a wakeup is only a reason to re-check it. Consider both competing consumers and spurious wakeups.
+  \end{tcolorbox}

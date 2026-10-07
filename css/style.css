@@ -34,18 +34,17 @@ body {
 
 /* Force code blocks to wrap text and prevent overflow */
 pre {
-    white-space: pre-wrap !important;       /* CSS 3 */
-    word-wrap: break-word !important;       /* IE 5.5+ */
-    overflow-x: auto !important;            /* Adds a scrollbar if it still overflows */
-    max-width: 100% !important;             /* Ensures it doesn't push past the main content column */
+  white-space: pre-wrap !important; /* CSS 3 */
+  word-wrap: break-word !important; /* IE 5.5+ */
+  overflow-x: auto !important; /* Adds a scrollbar if it still overflows */
+  max-width: 100% !important; /* Ensures it doesn't push past the main content column */
 }
 
 /* Control font size for all code blocks */
 pre code {
-    font-size: 0.85em !important;           /* Adjust this value (e.g., 12px or 0.8em) to fit your preference */
-    line-height: 1.5 !important;            /* Improves readability for wrapped lines */
+  font-size: 0.85em !important; /* Adjust this value (e.g., 12px or 0.8em) to fit your preference */
+  line-height: 1.5 !important; /* Improves readability for wrapped lines */
 }
-
 
 /* AI Prompt Injection Trap */
 /* Ensure the parent code block container can anchor the trap */
@@ -1290,7 +1289,19 @@ details.changelog-item summary::-webkit-details-marker {
   }
 
   /* 4. Prevent awkward page breaks in the middle of elements */
-  p, h1, h2, h3, h4, h5, img, pre, blockquote, .changelog-item, .category-card, .callout, .material-card {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  img,
+  pre,
+  blockquote,
+  .changelog-item,
+  .category-card,
+  .callout,
+  .material-card {
     page-break-inside: avoid;
     break-inside: avoid;
   }

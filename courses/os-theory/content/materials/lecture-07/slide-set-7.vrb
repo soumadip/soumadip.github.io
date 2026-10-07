@@ -1,0 +1,23 @@
+\frametitle{Hands-on Linux: inspect scheduler behavior}
+\small
+  \begin{itemize}
+    \item Inspect per-thread policy, priority, nice value, state, and last CPU.
+    \item Compare nice weights only under comparable fair-class workloads; affinity, cgroups, quotas, and other runnable work affect measured shares.
+  \end{itemize}
+  \begin{lstlisting}[language=bash]
+# Per-thread view (Linux procps)
+ps -eLo pid,tid,cls,rtprio,pri,ni,psr,stat,comm
+
+# Inspect policy/parameters for one process or thread
+chrt -p "$PID"
+
+# Short-lived CPU-bound comparison; stop both jobs afterward
+yes >/dev/null & a=$!
+nice -n 10 yes >/dev/null & b=$!
+sleep 5
+ps -p "$a,$b" -o pid,ni,cls,pri,pcpu,comm
+kill "$a" "$b"
+wait "$a" "$b" 2>/dev/null
+  \end{lstlisting}
+  \smallnote{Optional, if installed/permitted: use \code{perf sched record} and \code{perf sched timehist} to inspect scheduling delays. Kernel debug interfaces vary by configuration and version.}
+  \note{This is an observation exercise, not a precise share measurement. Positive nice lowers a task's fair-class weight. The shell starts two background jobs; kill and wait for them before leaving the exercise.}

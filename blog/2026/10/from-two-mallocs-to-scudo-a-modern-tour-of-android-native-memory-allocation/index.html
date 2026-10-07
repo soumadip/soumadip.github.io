@@ -1,0 +1,110 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>From Two Mallocs to Scudo: A Modern Tour of Android Native Memory Allocation | Dr. Soumadip Biswas</title><link rel=stylesheet href=../../../../css/style.css><link rel=apple-touch-icon sizes=180x180 href=../../../../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../../../../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../../../../favicon-16x16.png><link rel="shortcut icon" href=../../../../favicon.ico></head><body><div class=site-wrapper><header class=site-header><div class=header-content><a href=https://soumadip.github.io/ class=header-title>Dr. Soumadip Biswas<br><span style=color:#94a3b8;font-size:.75rem;font-weight:500;margin-top:.2rem;letter-spacing:.2px>Computer Science & Engineering | Student | Researcher | Educator</span></a><div class=search-container><input type=text id=search-input placeholder="Search courses, puzzles, surveys..." autocomplete=off><div id=search-results class=search-dropdown data-index-url=../../../../index.json></div></div><nav class=header-nav><a href=https://soumadip.github.io/>Dashboard</a>
+<a href=../../../../courses>Courses</a>
+<a href=../../../../portfolio style=margin-right:.8rem>SDB</a></nav></div></header><main class=site-main><div id=progress-container style="position:fixed;top:0;left:0;width:100%;height:3px;background:0 0;z-index:9999"><div id=progress-bar style="height:100%;width:0%;background:#0f172a;transition:width .1s"></div></div><div style="max-width:800px;margin:0 auto;padding:2rem 0"><header style="margin-bottom:2.5rem;text-align:center;padding:3rem 1rem;background-image:radial-gradient(#cbd5e1 1px,transparent 1px);background-size:24px 24px;border-bottom:1px solid #e2e8f0;border-radius:8px"><h1 style=font-size:2.75rem;color:#0f172a;margin-bottom:1rem;font-weight:800;letter-spacing:-.02em>From Two Mallocs to Scudo: A Modern Tour of Android Native Memory Allocation</h1><div style=color:#64748b;font-size:.95rem;margin-bottom:1.5rem;font-family:monospace>PUBLISHED: 2026-10-08
+// 7 MIN READ</div><div style=display:flex;flex-direction:column;gap:.75rem;align-items:center><div style=display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center><span style="background:#0f172a;color:#f8fafc;padding:.3rem .6rem;border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em">Systems Engineering</span>
+<span style="background:#0f172a;color:#f8fafc;padding:.3rem .6rem;border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em">Security</span></div><div style=display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center><span style="background:#f1f5f9;color:#475569;padding:.3rem .6rem;border-radius:4px;font-size:.75rem;font-weight:600">#Android</span>
+<span style="background:#f1f5f9;color:#475569;padding:.3rem .6rem;border-radius:4px;font-size:.75rem;font-weight:600">#Memory Allocation</span>
+<span style="background:#f1f5f9;color:#475569;padding:.3rem .6rem;border-radius:4px;font-size:.75rem;font-weight:600">#Scudo</span>
+<span style="background:#f1f5f9;color:#475569;padding:.3rem .6rem;border-radius:4px;font-size:.75rem;font-weight:600">#jemalloc</span>
+<span style="background:#f1f5f9;color:#475569;padding:.3rem .6rem;border-radius:4px;font-size:.75rem;font-weight:600">#Exploitation</span></div></div></header><div style="margin:0 auto 3rem;padding:1.5rem 2rem;border-left:4px solid #0f172a;background:#f8fafc;font-style:italic;color:#334155;font-size:1.15rem;line-height:1.6">“If you want to understand native memory corruption, you have to realize the allocator is no longer just finding free RAM—it is your frontline security boundary.”</div><article class=post-content style=text-align:justify;color:#1e293b;line-height:1.85;font-size:1.125rem><style>.post-content h2{margin-top:2.5rem;color:#0f172a;font-weight:700;border-bottom:2px solid #f1f5f9;padding-bottom:.5rem}.post-content p{margin-bottom:1.5rem}.post-content blockquote{border-left:3px solid #cbd5e1;margin-left:0;padding-left:1.5rem;color:#475569}.post-content pre{background:#0f172a;color:#f8fafc;padding:2.5rem 1.25rem 1.25rem;border-radius:8px;overflow-x:auto;position:relative;box-shadow:0 10px 15px -3px rgb(0 0 0/.1);text-align:left}.post-content pre::before{content:'';position:absolute;top:12px;left:15px;width:10px;height:10px;border-radius:50%;background:#ef4444;box-shadow:18px 0 #eab308,36px 0 #22c55e}</style><h2 id=welcome-to-the-native-heap>Welcome to the Native Heap</h2><p>If you are just getting into Android internals, you probably view <code>malloc()</code> as a magic black box: you ask for memory, and the system hands you a pointer. But as an internals developer, you need to understand that the physical reality behind that abstract C pointer dictates the entire security and performance profile of the OS.</p><p>In 2018, the Android native heap was largely a story about understanding the differences between two allocators: Doug Lea&rsquo;s <strong>dlmalloc</strong> and Android&rsquo;s <strong>jemalloc</strong>. But that landscape has changed massively. Android 11 made <strong>Scudo</strong> the default native allocator for all devices except those with low-memory configurations.</p><p>To debug a native crash, a memory leak, or a use-after-free (UAF) vulnerability today, you need to upgrade your mental model from &ldquo;how does the system find free memory?&rdquo; to &ldquo;how does the system prevent corrupted memory from becoming a usable exploit?&rdquo;.</p><div class=mermaid>flowchart LR
+subgraph Historical["The 2018 Mental Model"]
+D["dlmalloc"]
+D1["Chunks"]
+D2["Boundary metadata"]
+D3["Bins"]
+D4["Coalescing"]
+J["Old jemalloc"]
+J1["Arenas"]
+J2["Chunks"]
+J3["Runs & Regions"]
+J4["Thread caches"]
+D --> D1 & D2 & D3 & D4
+J --> J1 & J2 & J3 & J4
+end
+subgraph Modern["Your New Mental Model"]
+S["Scudo"]
+P["Primary"]
+Q["Secondary"]
+SC["Size classes"]
+TC["Thread caches"]
+LM["Large mappings"]
+GP["Guard pages"]
+QU["Quarantine"]
+IC["Integrity checks"]
+MT["Optional MTE tagging"]
+S --> P & Q & QU & IC & MT
+P --> SC & TC
+Q --> LM & GP
+end
+Historical --> Modern</div><script type=module>
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+      startOnLoad: true, 
+      theme: 'default',
+      securityLevel: 'loose'
+  });
+</script><p>Let&rsquo;s walk through exactly how we got here, and what you need to know to navigate the modern Android heap.</p><h2 id=generation-i-dlmalloc-and-the-variable-chunk>Generation I: dlmalloc and the Variable Chunk</h2><p>To understand why Scudo exists, you have to understand what it fixed. The first major era of Android used dlmalloc, which is a <strong>variable-sized chunk allocator</strong>.</p><p>When an application requested memory, dlmalloc created a chunk. Crucially, the allocator metadata (like the chunk&rsquo;s size, allocation flags, and information about the previous chunk) lived right next to the user&rsquo;s allocated data.</p><div class=mermaid>block-beta
+columns 1
+P["Previous-size information"]
+S["Size and flags"]
+U["User data"]</div><script type=module>
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+      startOnLoad: true, 
+      theme: 'default',
+      securityLevel: 'loose'
+  });
+</script><p>This &ldquo;boundary tag&rdquo; design allowed dlmalloc to perform efficient <strong>coalescing</strong>. If chunk A was freed, and chunk B next to it was also free, the allocator would combine them into one larger chunk to fight fragmentation. It kept track of these free chunks using multiple structures; the Android implementation historically used 32 small bins and 32 tree bins, managed via bitmaps.</p><p><strong>The Security Flaw:</strong> Because allocator metadata sat directly between application objects, a simple buffer overflow could easily corrupt chunk sizes or free-list links. Attackers routinely turned this metadata corruption into powerful arbitrary memory-write primitives.</p><h2 id=generation-ii--iii-jemalloc-and-the-size-class-paradigm>Generation II & III: jemalloc and the Size Class Paradigm</h2><p>To scale better and fix some of dlmalloc&rsquo;s metadata exposure, Android moved to jemalloc. Instead of treating the heap as a sequence of arbitrary chunks, jemalloc organized memory hierarchically into arenas, chunks, runs, regions, and thread caches.</p><p>If you asked for 17 bytes, jemalloc wouldn&rsquo;t build a 17-byte object; it mapped your request into a predefined <strong>size class</strong> and gave you a block (perhaps 32 bytes) from a homogeneous region.</p><div class=mermaid>flowchart LR
+R["17-byte request"] --> N["Normalize request"]
+N --> SC["Select size class"]
+SC --> B["Allocate block, perhaps 32 bytes"]</div><script type=module>
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+      startOnLoad: true, 
+      theme: 'default',
+      securityLevel: 'loose'
+  });
+</script><p><strong>The Trade-off:</strong> By packing similar-sized objects into regions, allocator metadata no longer sat between every user object. However, this meant application objects were now directly contiguous. A linear overflow would seamlessly corrupt a neighboring application object rather than allocator metadata, which attackers quickly adapted to. Furthermore, jemalloc relied heavily on thread caches. If you freed an object and quickly requested the same size again, you were almost guaranteed to get the exact same memory address back, making use-after-free (UAF) bugs incredibly reliable to exploit.</p><blockquote><p><strong>The Insight:</strong> Do not assume &ldquo;Android uses Scudo everywhere.&rdquo; Current AOSP source code explicitly retains jemalloc 5 (<code>libjemalloc5</code>) for low-memory (&ldquo;svelte&rdquo;) configurations. You must always verify the build configuration of the specific device you are debugging.</p></blockquote><h2 id=generation-iv-scudo-and-the-hardened-heap>Generation IV: Scudo and the Hardened Heap</h2><p>With Android 11, the engineering philosophy shifted dramatically. Scudo was introduced as a hardened user-space allocator specifically designed to provide resilience against heap-based vulnerabilities. It operates as an active mitigation layer.</p><p>Scudo splits allocations into two domains:</p><ol><li><p><strong>The Primary Allocator:</strong> Handles small and medium allocations by carving reserved regions (currently described as 256 MiB regions on 64-bit Android) into identical size-class blocks.</p></li><li><p><strong>The Secondary Allocator:</strong> Handles large allocations by mapping them directly via the operating system and surrounding them with unmapped <strong>guard pages</strong>. If a large buffer overflows, it hits the guard page and safely crashes the process instead of silently corrupting neighboring data.</p></li></ol><h3 id=weaponizing-entropy-randomization-and-quarantine>Weaponizing Entropy: Randomization and Quarantine</h3><p>Old allocators were deterministic; modern Scudo is deliberately chaotic.</p><p>Scudo randomizes region offsets, block ordering, and cache assignments to destroy predictable address patterns. Instead of handing out blocks in a linear sequence (B0, B1, B2), the Primary allocator actively shuffles available blocks.</p><p>Even more importantly, Scudo introduces a <strong>quarantine</strong>.</p><div class=mermaid>flowchart LR
+F["free(p)"] --> Q["Quarantine"]
+Q --> D["Delayed recycling"]
+D --> M["Later malloc(128)"]
+M --> R["Reuse only after quarantine policy permits"]</div><script type=module>
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+      startOnLoad: true, 
+      theme: 'default',
+      securityLevel: 'loose'
+  });
+</script><p>Android configures Scudo with both global and thread-local quarantines, defaulting to 256 KiB for 64-bit configurations and 64 KiB for 32-bit configurations. When you call <code>free()</code>, the memory is held in quarantine and is not immediately reusable. This shatters the immediate <code>free → malloc → same address</code> loop, forcing an attacker to control the allocator state perfectly to defeat the quarantine delay, size-class restrictions, and randomization all at once.</p><h2 id=the-hardware-frontier-memory-tagging-and-gwp-asan>The Hardware Frontier: Memory Tagging and GWP-ASan</h2><p>The most profound shift you will face as a modern Android developer is that allocator security is no longer just a software concept. It is now hardware-enforced via ARM&rsquo;s Memory Tagging Extension (MTE).</p><p>MTE assigns a tag to both the pointer and the physical memory granule. Android implements this directly through Scudo, which explicitly updates memory tags on every <code>malloc</code> and <code>free</code>.</p><div class=mermaid>flowchart TD
+P["Pointer"] --> A["Address"]
+P --> T["Pointer tag"]
+M["Memory"] --> MA["Addressable granule"]
+M --> MT["Memory tag"]
+A --> C["Hardware tag check"]
+T --> C
+MA --> C
+MT --> C
+C --> R{"Valid access?"}
+R -->|Yes| X["Read or write"]
+R -->|No| F["Memory-tagging fault"]</div><script type=module>
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+      startOnLoad: true, 
+      theme: 'default',
+      securityLevel: 'loose'
+  });
+</script><p>If Scudo frees a block (Tag A) and eventually reuses it for a new allocation (Tag B), the old, stale pointer still holds Tag A. When that stale pointer is used, the hardware detects the tag mismatch and triggers a fault. <strong>A stale pointer can now be invalid even when the underlying virtual address has been legitimately reused</strong>.</p><h3 id=clarifying-the-debugging-ecosystem>Clarifying the Debugging Ecosystem</h3><p>As a developer, you need to understand the difference between the tools at your disposal:</p><ul><li><p><strong>Scudo:</strong> Always-on allocator mitigation focused on heap integrity, quarantine, and layout randomization.</p></li><li><p><strong>GWP-ASan:</strong> A sampled memory-error detector integrated via headers/wrappers alongside Scudo in Bionic. It runs in production to catch actual memory errors with low overhead.</p></li><li><p><strong>ASan / HWASan:</strong> Heavyweight development and testing instrumentation meant to comprehensively find memory bugs before release.</p></li></ul><h2 id=a-pragmatic-methodology-for-modern-analysis>A Pragmatic Methodology for Modern Analysis</h2><p>When you read older exploit writeups, you will see assumptions that are fundamentally false today.</p><ul><li><p><code>malloc(x); malloc(x);</code> does not guarantee adjacent objects anymore.</p></li><li><p><code>free(x); malloc(x);</code> does not guarantee the same address.</p></li><li><p>Corrupting metadata is no longer the easiest path to an exploit because Scudo&rsquo;s integrity checks will often detect it and abort the process.</p></li></ul><p>If you are investigating a native memory crash today, you must follow this sequence:</p><ol><li><p><strong>Identify the Allocator:</strong> Check the Android release, ABI, and build config (Scudo vs. low-memory jemalloc).</p></li><li><p><strong>Identify the Path:</strong> Did it go to the Primary (small/medium) or Secondary (large) allocator?</p></li><li><p><strong>Determine the Size Class:</strong> Calculate the allocator&rsquo;s rounding behavior to find the actual block size.</p></li><li><p><strong>Determine Context:</strong> Which thread, cache, or arena was active?</p></li><li><p><strong>Determine Reuse Behavior:</strong> Account for the quarantine size limits and block shuffling.</p></li><li><p><strong>Identify Defenses:</strong> Did a Scudo integrity check, a guard page, GWP-ASan, or an MTE tag fault catch the bug?</p></li><li><p><strong>Reason About Layout:</strong> <em>Only after answering all of the above</em> can you attempt to reason about physical memory adjacency.</p></li></ol><div class=mermaid>flowchart LR
+A["Allocator"] --> S["Size class"]
+S --> P["Allocation path"]
+P --> T["Cache or TSD state"]
+T --> R["Randomization"]
+R --> Q["Reuse policy"]
+Q --> L["Physical adjacency"]</div><script type=module>
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+      startOnLoad: true, 
+      theme: 'default',
+      securityLevel: 'loose'
+  });
+</script><h2 id=down-the-rabbit-hole>Down the Rabbit Hole</h2><p>To master Android internals, you have to accept that memory safety emerges from a layered defense. The C/C++ object interacts with Bionic, which routes through Scudo, which manages quarantines and tags, which are finally enforced by ARM hardware. Dive into the actual source code to see how these theories are implemented in practice.</p><ul><li><p><strong><a href="https://www.google.com/search?q=https://source.android.com/docs/core/architecture/kernel/scudo">Android Open Source Project — Scudo</a>:</strong> Android&rsquo;s current documentation describing Scudo&rsquo;s deployment, role, and configuration.</p></li><li><p><strong><a href=https://llvm.org/docs/ScudoHardenedAllocator.html>LLVM/Scudo Allocator Architecture</a>:</strong> Describes the core Primary/Secondary architecture, thread-specific data, randomization, and block shuffling.</p></li><li><p><strong><a href=https://source.android.com/docs/security/test/memory-safety/arm-mte>AOSP Bionic MTE Documentation</a>:</strong> Documents the precise integration between Scudo and the ARM Memory Tagging Extension.</p></li><li><p><strong><a href=https://source.android.com/docs/core/tests/debug/native-memory>Android Native-Memory Debugging</a>:</strong> Explicitly lists heapprofd, malloc debugging, libmemunreachable, and sanitizer approaches.</p></li></ul></article></div><script>window.onscroll=function(){var e=document.body.scrollTop||document.documentElement.scrollTop,t=document.documentElement.scrollHeight-document.documentElement.clientHeight,n=e/t*100;document.getElementById("progress-bar").style.width=n+"%"}</script></main><footer class=site-footer>&copy; 2026 SDB. All materials provided for academic use.</footer><img src=../../../../apple-touch-icon.png alt="SDB Watermark" style=position:fixed;bottom:30px;right:30px;width:45px;height:45px;opacity:.04;pointer-events:none;z-index:9999;filter:grayscale(100%)>
+<script src=../../../../js/portal.js></script><script>document.addEventListener("DOMContentLoaded",()=>{const t=document.querySelectorAll(".ai-trap");function e(){t.forEach(e=>{const n=window.getComputedStyle(e.parentElement),t=n.backgroundColor.match(/\d+/g);if(t&&t.length>=3){let s=parseInt(t[0],10),o=parseInt(t[1],10),i=parseInt(t[2],10);const a=.299*s+.587*o+.114*i,n=a>128?-6:6;e.style.setProperty("color",`rgb(${s+n}, ${o+n}, ${i+n})`,"important"),e.style.setProperty("opacity","0.04","important")}})}e(),setInterval(e,1500)})</script></div></body></html>
