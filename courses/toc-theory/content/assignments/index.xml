@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Assignments &amp; Labs on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/</link><description>Recent content in Assignments &amp; Labs on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/courses/toc-theory/content/assignments/index.xml" rel="self" type="application/rss+xml"/><item><title>Assignment 4: Properties of Regular Languages</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-04/</link><pubDate>Wed, 26 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-04/</guid><description>&lt;h1 id="slide-set-4-assignment-properties-of-regular-languages"&gt;Slide Set 4 Assignment: Properties of Regular Languages&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Assignments &amp; Labs on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/</link><description>Recent content in Assignments &amp; Labs on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 13 Oct 2026 13:37:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/courses/toc-theory/content/assignments/index.xml" rel="self" type="application/rss+xml"/><item><title>Assignment 8: Simplification, Normal Forms, and Properties of CFLs</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-08/</link><pubDate>Tue, 13 Oct 2026 13:37:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-08/</guid><description>&lt;p&gt;This assignment evaluates and deepens your understanding of Context-Free Grammar (CFG) simplification, normal forms (Chomsky and Greibach), the CYK parsing algorithm, the CFL Pumping Lemma, and closure/decision properties, synthesizing &lt;strong&gt;Michael Sipser (Chapter 2.1 &amp;amp; 2.3)&lt;/strong&gt; and &lt;strong&gt;Peter Linz (Chapters 6 &amp;amp; 8)&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;For each question, select &lt;strong&gt;True&lt;/strong&gt; or &lt;strong&gt;False&lt;/strong&gt; and provide a rigorous mathematical justification.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="question-1"&gt;Question 1&lt;/h3&gt;
+&lt;p&gt;If a Context-Free Grammar \(G = (V, T, S, P)\) is in Chomsky Normal Form (CNF), then for any non-empty string \(w \in L(G)\) of length \(n = |w| \ge 1\), every derivation of \(w\) in \(G\) takes exactly \(2n - 1\) steps.&lt;/p&gt;</description></item><item><title>Assignment 7: Turing Machines, Decidability, the Chomsky Hierarchy, and Computational Complexity</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-07/</link><pubDate>Tue, 13 Oct 2026 13:26:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-07/</guid><description>&lt;p&gt;This assignment evaluates and deepens your understanding of &lt;strong&gt;Turing Machines (TMs)&lt;/strong&gt;, TM variants, the Church-Turing Thesis, decidability versus recognizability, Cantor&amp;rsquo;s diagonalization, mapping reducibility, the extended Chomsky Hierarchy, and the fundamentals of computational complexity (\(P\) vs \(NP\)), synthesizing the core principles from &lt;strong&gt;Michael Sipser (Parts 2 &amp;amp; 3)&lt;/strong&gt; and &lt;strong&gt;Peter Linz (Chapters 9–12, 14)&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;For each question, select &lt;strong&gt;True&lt;/strong&gt; or &lt;strong&gt;False&lt;/strong&gt; and provide a rigorous mathematical justification.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Assignment 6: Pushdown Automata and Deterministic Parsing</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-06/</link><pubDate>Tue, 13 Oct 2026 13:25:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-06/</guid><description>&lt;p&gt;This assignment evaluates and deepens your understanding of &lt;strong&gt;Pushdown Automata (PDAs)&lt;/strong&gt;, nondeterministic versus deterministic computation, equivalence with Context-Free Grammars (CFGs), Deterministic Context-Free Languages (DCFLs), and deterministic parsing principles, synthesizing &lt;strong&gt;Michael Sipser (Chapters 2.2 &amp;amp; 2.4)&lt;/strong&gt; and &lt;strong&gt;Peter Linz (Chapter 7)&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;For each question, select &lt;strong&gt;True&lt;/strong&gt; or &lt;strong&gt;False&lt;/strong&gt; and provide a rigorous mathematical justification.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="question-1"&gt;Question 1&lt;/h3&gt;
+&lt;p&gt;In a Pushdown Automaton (PDA), acceptance by final state and acceptance by empty stack are equivalent in power for nondeterministic PDAs (NPDAs). However, for Deterministic PDAs (DPDAs) without an explicit endmarker, acceptance by empty stack recognizes a strictly smaller class of languages than acceptance by final state (specifically, prefix-free DCFLs).&lt;/p&gt;</description></item><item><title>Assignment 5: Context-Free Languages and Grammars</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-05/</link><pubDate>Tue, 13 Oct 2026 13:24:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-05/</guid><description>&lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;For each question, select &lt;strong&gt;True&lt;/strong&gt; or &lt;strong&gt;False&lt;/strong&gt; and provide a rigorous mathematical justification.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="question-1"&gt;Question 1&lt;/h3&gt;
+&lt;p&gt;If a context-free grammar $G$ is unambiguous, then for every string $w \in L(G)$, there exists exactly one leftmost derivation and exactly one rightmost derivation, and both derivations correspond to the same unique parse tree.&lt;/p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ &lt;div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; margin-bottom: 1.5rem; padding: 1rem; color: #b45309; text-align: center; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"&gt;
+ &lt;div style="font-weight: 700; margin-bottom: 0.25rem; font-size: 1.05rem;"&gt;🔒 Solution Locked&lt;/div&gt;
+ &lt;div style="font-size: 0.9rem; color: #d97706;"&gt;
+ This solution will automatically unlock on &lt;strong&gt;Oct 21, 2026 at 23:59 &amp;#43;0530&lt;/strong&gt; &lt;br&gt;
+ &lt;span style="font-size: 0.8rem; opacity: 0.8;"&gt;(24 hours after the assignment due date).&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ 
+
+
+&lt;hr&gt;
+&lt;h3 id="question-2"&gt;Question 2&lt;/h3&gt;
+&lt;p&gt;The family of regular languages is a proper subset of context-free languages. Consequently, every right-linear grammar is context-free, but not every context-free grammar is regular.&lt;/p&gt;</description></item><item><title>Assignment 4: Properties of Regular Languages</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-04/</link><pubDate>Wed, 26 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-04/</guid><description>&lt;h1 id="slide-set-4-assignment-properties-of-regular-languages"&gt;Slide Set 4 Assignment: Properties of Regular Languages&lt;/h1&gt;
 &lt;p&gt;This assignment is designed to evaluate and consolidate your mastery of the closure properties of regular languages, decision algorithms (elementary questions), and the Pumping Lemma, synthesizing the rigorous theoretical frameworks of &lt;strong&gt;Michael Sipser (Chapter 1.4)&lt;/strong&gt; with the constructive algorithmic proofs of &lt;strong&gt;Peter Linz (Chapter 4)&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;

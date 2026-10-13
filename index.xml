@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/</link><description>Recent content in Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Physics &amp; Reliability Engineering</title><link>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</link><pubDate>Mon, 21 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</guid><description>&lt;h2 id="the-cloud-execution-model"&gt;The Cloud Execution Model&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/</link><description>Recent content in Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 13 Oct 2026 13:37:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Physics &amp; Reliability Engineering</title><link>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</link><pubDate>Mon, 21 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</guid><description>&lt;h2 id="the-cloud-execution-model"&gt;The Cloud Execution Model&lt;/h2&gt;
 &lt;p&gt;In traditional infrastructure, servers are capital expenditures (CapEx)—expensive, static physical assets. The &lt;strong&gt;Cloud Execution Model&lt;/strong&gt; shifts compute to an operational expenditure (OpEx), offering the illusion of infinite, on-demand resources.&lt;/p&gt;
 &lt;p&gt;However, &amp;ldquo;the cloud&amp;rdquo; is ultimately just someone else&amp;rsquo;s computer. It is built on massive fleets of cheap, commodity hardware that is statistically guaranteed to fail. The architectural shift is moving from &lt;strong&gt;Scale-Up&lt;/strong&gt; (buying a massive $100,000 server that never goes down) to &lt;strong&gt;Scale-Out&lt;/strong&gt; (renting 1,000 cheap servers and architecting the software to survive when 50 of them catch fire).&lt;/p&gt;</description></item><item><title>The Fallacies of Distributed Computing &amp; Time</title><link>https://soumadip.github.io/handbook/volume-6/fallacies-and-time/</link><pubDate>Wed, 16 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-6/fallacies-and-time/</guid><description>&lt;h2 id="the-deployment-problem"&gt;The Deployment Problem&lt;/h2&gt;
 &lt;p&gt;When code runs on a single machine, the physical realities of the system are highly predictable. Memory access is effectively instantaneous, failures are usually binary (the process is either running or dead), and events are strictly ordered by a single CPU clock.&lt;/p&gt;
@@ -195,7 +195,50 @@ block-beta
 &lt;h3 id="lab-1-escaping-the-detached-head-state"&gt;Lab 1: Escaping the &amp;ldquo;Detached HEAD&amp;rdquo; State&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;The Scenario:&lt;/strong&gt; You wanted to see what the code looked like two weeks ago. You found the commit hash (&lt;code&gt;a1b2c3d&lt;/code&gt;) and ran &lt;code&gt;git checkout a1b2c3d&lt;/code&gt;. You made some experimental changes and committed them. Suddenly, Git warns you that you are in a &amp;ldquo;detached HEAD&amp;rdquo; state, and if you switch branches, your new commits will be lost.&lt;/p&gt;</description></item><item><title>Concurrency &amp; Distributed Faults</title><link>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</link><pubDate>Tue, 25 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</guid><description>&lt;h2 id="the-illusion-of-sequential-execution"&gt;The Illusion of Sequential Execution&lt;/h2&gt;
 &lt;p&gt;Up to this point, our debugging methodologies have assumed a deterministic, sequential flow of execution. However, modern systems are inherently asynchronous. Whether you are managing multiple threads on a single CPU core or coordinating state across a dense cluster of edge servers, execution happens concurrently.&lt;/p&gt;
-&lt;p&gt;When multiple actors attempt to read, write, or modify shared state simultaneously without strict orchestration, you encounter the hardest class of software bugs: &lt;strong&gt;Concurrency Faults&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>The Barber's Dilemma: The Limits of Self-Reference</title><link>https://soumadip.github.io/puzzles/the-barbers-dilemma-the-limits-of-self-reference/</link><pubDate>Mon, 12 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/puzzles/the-barbers-dilemma-the-limits-of-self-reference/</guid><description>&lt;h2 id="the-puzzle-the-classic"&gt;The Puzzle (The Classic)&lt;/h2&gt;
+&lt;p&gt;When multiple actors attempt to read, write, or modify shared state simultaneously without strict orchestration, you encounter the hardest class of software bugs: &lt;strong&gt;Concurrency Faults&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Assignment 8: Simplification, Normal Forms, and Properties of CFLs</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-08/</link><pubDate>Tue, 13 Oct 2026 13:37:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-08/</guid><description>&lt;p&gt;This assignment evaluates and deepens your understanding of Context-Free Grammar (CFG) simplification, normal forms (Chomsky and Greibach), the CYK parsing algorithm, the CFL Pumping Lemma, and closure/decision properties, synthesizing &lt;strong&gt;Michael Sipser (Chapter 2.1 &amp;amp; 2.3)&lt;/strong&gt; and &lt;strong&gt;Peter Linz (Chapters 6 &amp;amp; 8)&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;For each question, select &lt;strong&gt;True&lt;/strong&gt; or &lt;strong&gt;False&lt;/strong&gt; and provide a rigorous mathematical justification.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="question-1"&gt;Question 1&lt;/h3&gt;
+&lt;p&gt;If a Context-Free Grammar \(G = (V, T, S, P)\) is in Chomsky Normal Form (CNF), then for any non-empty string \(w \in L(G)\) of length \(n = |w| \ge 1\), every derivation of \(w\) in \(G\) takes exactly \(2n - 1\) steps.&lt;/p&gt;</description></item><item><title>Assignment 7: Turing Machines, Decidability, the Chomsky Hierarchy, and Computational Complexity</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-07/</link><pubDate>Tue, 13 Oct 2026 13:26:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-07/</guid><description>&lt;p&gt;This assignment evaluates and deepens your understanding of &lt;strong&gt;Turing Machines (TMs)&lt;/strong&gt;, TM variants, the Church-Turing Thesis, decidability versus recognizability, Cantor&amp;rsquo;s diagonalization, mapping reducibility, the extended Chomsky Hierarchy, and the fundamentals of computational complexity (\(P\) vs \(NP\)), synthesizing the core principles from &lt;strong&gt;Michael Sipser (Parts 2 &amp;amp; 3)&lt;/strong&gt; and &lt;strong&gt;Peter Linz (Chapters 9–12, 14)&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;For each question, select &lt;strong&gt;True&lt;/strong&gt; or &lt;strong&gt;False&lt;/strong&gt; and provide a rigorous mathematical justification.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Assignment 6: Pushdown Automata and Deterministic Parsing</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-06/</link><pubDate>Tue, 13 Oct 2026 13:25:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-06/</guid><description>&lt;p&gt;This assignment evaluates and deepens your understanding of &lt;strong&gt;Pushdown Automata (PDAs)&lt;/strong&gt;, nondeterministic versus deterministic computation, equivalence with Context-Free Grammars (CFGs), Deterministic Context-Free Languages (DCFLs), and deterministic parsing principles, synthesizing &lt;strong&gt;Michael Sipser (Chapters 2.2 &amp;amp; 2.4)&lt;/strong&gt; and &lt;strong&gt;Peter Linz (Chapter 7)&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;For each question, select &lt;strong&gt;True&lt;/strong&gt; or &lt;strong&gt;False&lt;/strong&gt; and provide a rigorous mathematical justification.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="question-1"&gt;Question 1&lt;/h3&gt;
+&lt;p&gt;In a Pushdown Automaton (PDA), acceptance by final state and acceptance by empty stack are equivalent in power for nondeterministic PDAs (NPDAs). However, for Deterministic PDAs (DPDAs) without an explicit endmarker, acceptance by empty stack recognizes a strictly smaller class of languages than acceptance by final state (specifically, prefix-free DCFLs).&lt;/p&gt;</description></item><item><title>Assignment 5: Context-Free Languages and Grammars</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-05/</link><pubDate>Tue, 13 Oct 2026 13:24:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-05/</guid><description>&lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;For each question, select &lt;strong&gt;True&lt;/strong&gt; or &lt;strong&gt;False&lt;/strong&gt; and provide a rigorous mathematical justification.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="question-1"&gt;Question 1&lt;/h3&gt;
+&lt;p&gt;If a context-free grammar $G$ is unambiguous, then for every string $w \in L(G)$, there exists exactly one leftmost derivation and exactly one rightmost derivation, and both derivations correspond to the same unique parse tree.&lt;/p&gt;
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ &lt;div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; margin-bottom: 1.5rem; padding: 1rem; color: #b45309; text-align: center; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"&gt;
+ &lt;div style="font-weight: 700; margin-bottom: 0.25rem; font-size: 1.05rem;"&gt;🔒 Solution Locked&lt;/div&gt;
+ &lt;div style="font-size: 0.9rem; color: #d97706;"&gt;
+ This solution will automatically unlock on &lt;strong&gt;Oct 21, 2026 at 23:59 &amp;#43;0530&lt;/strong&gt; &lt;br&gt;
+ &lt;span style="font-size: 0.8rem; opacity: 0.8;"&gt;(24 hours after the assignment due date).&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+
+ 
+
+
+&lt;hr&gt;
+&lt;h3 id="question-2"&gt;Question 2&lt;/h3&gt;
+&lt;p&gt;The family of regular languages is a proper subset of context-free languages. Consequently, every right-linear grammar is context-free, but not every context-free grammar is regular.&lt;/p&gt;</description></item><item><title>The Barber's Dilemma: The Limits of Self-Reference</title><link>https://soumadip.github.io/puzzles/the-barbers-dilemma-the-limits-of-self-reference/</link><pubDate>Mon, 12 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/puzzles/the-barbers-dilemma-the-limits-of-self-reference/</guid><description>&lt;h2 id="the-puzzle-the-classic"&gt;The Puzzle (The Classic)&lt;/h2&gt;
 &lt;p&gt;Introduced by Bertrand Russell in 1901 to illustrate a fundamental flaw in early set theory, this paradox centers on a fictional town with only one barber.&lt;/p&gt;
 &lt;p&gt;The town has a strict, unbreakable rule: &lt;strong&gt;The barber shaves all those, and only those, men in town who do not shave themselves.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The puzzle poses a single question that brings the town&amp;rsquo;s logic crashing down: &lt;em&gt;Does the barber shave himself?&lt;/em&gt;&lt;/p&gt;</description></item><item><title>The Undecidable Codebase: Rice’s Theorem and the Limits of Static Analysis</title><link>https://soumadip.github.io/blog/2026/10/the-undecidable-codebase-rices-theorem-and-the-limits-of-static-analysis/</link><pubDate>Mon, 12 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/10/the-undecidable-codebase-rices-theorem-and-the-limits-of-static-analysis/</guid><description>“We demand our tooling definitively prove our code is bug-free, blissfully ignoring that mathematics forbade this a century ago.”</description></item><item><title>Assignment 09: Disk Scheduling Operations</title><link>https://soumadip.github.io/courses/os-lab/content/assignments/assignment-09/</link><pubDate>Sun, 11 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/os-lab/content/assignments/assignment-09/</guid><description>&lt;h2 id="i-objective--theoretical-framework"&gt;I. Objective &amp;amp; Theoretical Framework&lt;/h2&gt;
@@ -1059,6 +1102,166 @@ Signals are generated in response to an event (such as pressing a keyboard inter
 &lt;div class="changelog-feed" id="changelog-feed" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.03);"&gt;
  
  
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="Assignment" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Oct 13
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ Assignment
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ Assignment 8: Simplification, Normal Forms, and Properties of CFLs
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;span style="color: #3b82f6;"&gt;+ details&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;div style="padding: 0.5rem 1.25rem 1rem 1.25rem; background: #f8fafc; border-top: 1px dashed #e2e8f0;"&gt;
+ &lt;div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;"&gt;
+ 
+ &lt;span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600;"&gt;
+ Due: Oct 26, 2026
+ &lt;/span&gt;
+ 
+ 
+ &lt;/div&gt;
+ 
+ &lt;a href="./courses/toc-theory/content/assignments/assignment-08/" style="font-size: 0.8rem; color: #2563eb; text-decoration: none; font-weight: 600;"&gt;
+ View Full Page &amp;rarr;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ 
+ &lt;/details&gt;
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="Assignment" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Oct 13
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ Assignment
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ Assignment 7: Turing Machines, Decidability, the Chomsky Hierarchy, and Computational Complexity
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;span style="color: #3b82f6;"&gt;+ details&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;div style="padding: 0.5rem 1.25rem 1rem 1.25rem; background: #f8fafc; border-top: 1px dashed #e2e8f0;"&gt;
+ &lt;div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;"&gt;
+ 
+ &lt;span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600;"&gt;
+ Due: Oct 24, 2026
+ &lt;/span&gt;
+ 
+ 
+ &lt;/div&gt;
+ 
+ &lt;a href="./courses/toc-theory/content/assignments/assignment-07/" style="font-size: 0.8rem; color: #2563eb; text-decoration: none; font-weight: 600;"&gt;
+ View Full Page &amp;rarr;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ 
+ &lt;/details&gt;
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="Assignment" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Oct 13
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ Assignment
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ Assignment 6: Pushdown Automata and Deterministic Parsing
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;span style="color: #3b82f6;"&gt;+ details&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;div style="padding: 0.5rem 1.25rem 1rem 1.25rem; background: #f8fafc; border-top: 1px dashed #e2e8f0;"&gt;
+ &lt;div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;"&gt;
+ 
+ &lt;span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600;"&gt;
+ Due: Oct 23, 2026
+ &lt;/span&gt;
+ 
+ 
+ &lt;/div&gt;
+ 
+ &lt;a href="./courses/toc-theory/content/assignments/assignment-06/" style="font-size: 0.8rem; color: #2563eb; text-decoration: none; font-weight: 600;"&gt;
+ View Full Page &amp;rarr;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ 
+ &lt;/details&gt;
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="Assignment" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Oct 13
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ Assignment
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ Assignment 5: Context-Free Languages and Grammars
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;span style="color: #3b82f6;"&gt;+ details&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;div style="padding: 0.5rem 1.25rem 1rem 1.25rem; background: #f8fafc; border-top: 1px dashed #e2e8f0;"&gt;
+ &lt;div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;"&gt;
+ 
+ &lt;span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600;"&gt;
+ Due: Oct 20, 2026
+ &lt;/span&gt;
+ 
+ 
+ &lt;/div&gt;
+ 
+ &lt;a href="./courses/toc-theory/content/assignments/assignment-05/" style="font-size: 0.8rem; color: #2563eb; text-decoration: none; font-weight: 600;"&gt;
+ View Full Page &amp;rarr;
+ &lt;/a&gt;
+ &lt;/div&gt;
+ 
+ &lt;/details&gt;
  
  
  
