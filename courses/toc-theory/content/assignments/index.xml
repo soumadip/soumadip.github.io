@@ -26,22 +26,14 @@
 
  
  
-
  
- &lt;div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; margin-bottom: 1.5rem; padding: 1rem; color: #b45309; text-align: center; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"&gt;
- &lt;div style="font-weight: 700; margin-bottom: 0.25rem; font-size: 1.05rem;"&gt;🔒 Solution Locked&lt;/div&gt;
- &lt;div style="font-size: 0.9rem; color: #d97706;"&gt;
- This solution will automatically unlock on &lt;strong&gt;Oct 21, 2026 at 23:59 &amp;#43;0530&lt;/strong&gt; &lt;br&gt;
- &lt;span style="font-size: 0.8rem; opacity: 0.8;"&gt;(24 hours after the assignment due date).&lt;/span&gt;
- &lt;/div&gt;
- &lt;/div&gt;
-
  
-
-
-&lt;hr&gt;
-&lt;h3 id="question-2"&gt;Question 2&lt;/h3&gt;
-&lt;p&gt;The family of regular languages is a proper subset of context-free languages. Consequently, every right-linear grammar is context-free, but not every context-free grammar is regular.&lt;/p&gt;</description></item><item><title>Assignment 4: Properties of Regular Languages</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-04/</link><pubDate>Wed, 26 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-04/</guid><description>&lt;h1 id="slide-set-4-assignment-properties-of-regular-languages"&gt;Slide Set 4 Assignment: Properties of Regular Languages&lt;/h1&gt;
+ &lt;details style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 1.5rem; padding: 0.5rem 1rem; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"&gt;
+ &lt;summary style="font-weight: 600; cursor: pointer; color: #334155; margin: -0.5rem -1rem; padding: 0.75rem 1rem; outline: none;"&gt;
+ 💡 View Solution
+ &lt;/summary&gt;
+ &lt;div style="margin-top: 1rem; border-top: 1px dashed #cbd5e1; padding-top: 1rem; font-size: 0.95em;"&gt;
+ &lt;p&gt;&lt;strong&gt;Answer: True&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Assignment 4: Properties of Regular Languages</title><link>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-04/</link><pubDate>Wed, 26 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/courses/toc-theory/content/assignments/assignment-04/</guid><description>&lt;h1 id="slide-set-4-assignment-properties-of-regular-languages"&gt;Slide Set 4 Assignment: Properties of Regular Languages&lt;/h1&gt;
 &lt;p&gt;This assignment is designed to evaluate and consolidate your mastery of the closure properties of regular languages, decision algorithms (elementary questions), and the Pumping Lemma, synthesizing the rigorous theoretical frameworks of &lt;strong&gt;Michael Sipser (Chapter 1.4)&lt;/strong&gt; with the constructive algorithmic proofs of &lt;strong&gt;Peter Linz (Chapter 4)&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="section-a-true-or-false-questions"&gt;Section A: True or False Questions&lt;/h2&gt;
