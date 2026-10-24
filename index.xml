@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/</link><description>Recent content in Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Physics &amp; Reliability Engineering</title><link>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</link><pubDate>Mon, 21 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</guid><description>&lt;h2 id="the-cloud-execution-model"&gt;The Cloud Execution Model&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/</link><description>Recent content in Academic Portal | Dr. Soumadip Biswas on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Physics &amp; Reliability Engineering</title><link>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</link><pubDate>Mon, 21 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-7/cloud-physics-and-reliability/</guid><description>&lt;h2 id="the-cloud-execution-model"&gt;The Cloud Execution Model&lt;/h2&gt;
 &lt;p&gt;In traditional infrastructure, servers are capital expenditures (CapEx)—expensive, static physical assets. The &lt;strong&gt;Cloud Execution Model&lt;/strong&gt; shifts compute to an operational expenditure (OpEx), offering the illusion of infinite, on-demand resources.&lt;/p&gt;
 &lt;p&gt;However, &amp;ldquo;the cloud&amp;rdquo; is ultimately just someone else&amp;rsquo;s computer. It is built on massive fleets of cheap, commodity hardware that is statistically guaranteed to fail. The architectural shift is moving from &lt;strong&gt;Scale-Up&lt;/strong&gt; (buying a massive $100,000 server that never goes down) to &lt;strong&gt;Scale-Out&lt;/strong&gt; (renting 1,000 cheap servers and architecting the software to survive when 50 of them catch fire).&lt;/p&gt;</description></item><item><title>The Fallacies of Distributed Computing &amp; Time</title><link>https://soumadip.github.io/handbook/volume-6/fallacies-and-time/</link><pubDate>Wed, 16 Sep 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-6/fallacies-and-time/</guid><description>&lt;h2 id="the-deployment-problem"&gt;The Deployment Problem&lt;/h2&gt;
 &lt;p&gt;When code runs on a single machine, the physical realities of the system are highly predictable. Memory access is effectively instantaneous, failures are usually binary (the process is either running or dead), and events are strictly ordered by a single CPU clock.&lt;/p&gt;
@@ -195,7 +195,68 @@ block-beta
 &lt;h3 id="lab-1-escaping-the-detached-head-state"&gt;Lab 1: Escaping the &amp;ldquo;Detached HEAD&amp;rdquo; State&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;The Scenario:&lt;/strong&gt; You wanted to see what the code looked like two weeks ago. You found the commit hash (&lt;code&gt;a1b2c3d&lt;/code&gt;) and ran &lt;code&gt;git checkout a1b2c3d&lt;/code&gt;. You made some experimental changes and committed them. Suddenly, Git warns you that you are in a &amp;ldquo;detached HEAD&amp;rdquo; state, and if you switch branches, your new commits will be lost.&lt;/p&gt;</description></item><item><title>Concurrency &amp; Distributed Faults</title><link>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</link><pubDate>Tue, 25 Aug 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/handbook/volume-1/concurrency-and-istributed-faults/</guid><description>&lt;h2 id="the-illusion-of-sequential-execution"&gt;The Illusion of Sequential Execution&lt;/h2&gt;
 &lt;p&gt;Up to this point, our debugging methodologies have assumed a deterministic, sequential flow of execution. However, modern systems are inherently asynchronous. Whether you are managing multiple threads on a single CPU core or coordinating state across a dense cluster of edge servers, execution happens concurrently.&lt;/p&gt;
-&lt;p&gt;When multiple actors attempt to read, write, or modify shared state simultaneously without strict orchestration, you encounter the hardest class of software bugs: &lt;strong&gt;Concurrency Faults&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>The Geometry of Nature (Part 1): The Compression Algorithms of the Physical World</title><link>https://soumadip.github.io/blog/2026/10/the-geometry-of-nature-part-1-the-compression-algorithms-of-the-physical-world/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/10/the-geometry-of-nature-part-1-the-compression-algorithms-of-the-physical-world/</guid><description>“Nature does not store the physical coordinates of a trillion leaves. It stores a recursive algorithm, executing a continuous loop of self-similarity.”</description></item><item><title>The Load Balancer's Gambit: A Probabilistic Illusion</title><link>https://soumadip.github.io/puzzles/the-load-balancers-gambit-a-probabilistic-illusion/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/puzzles/the-load-balancers-gambit-a-probabilistic-illusion/</guid><description>&lt;h2 id="the-puzzle-the-classic"&gt;The Puzzle (The Classic)&lt;/h2&gt;
+&lt;p&gt;When multiple actors attempt to read, write, or modify shared state simultaneously without strict orchestration, you encounter the hardest class of software bugs: &lt;strong&gt;Concurrency Faults&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Incident 0x4F: The Cascading Connection Collapse</title><link>https://soumadip.github.io/viva/incident-0x4f-the-cascading-connection-collapse/</link><pubDate>Sun, 25 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/incident-0x4f-the-cascading-connection-collapse/</guid><description>&lt;h2 id="scenario-the-502-bad-gateway-spike"&gt;Scenario: The 502 Bad Gateway Spike&lt;/h2&gt;
+&lt;p&gt;At 14:10 UTC, alerts fire across the edge layer: API Gateway is returning &lt;code&gt;HTTP 502 Bad Gateway&lt;/code&gt; on 40% of inbound traffic. The backend application servers report low CPU (12%) and low memory (2.1GB / 16GB).&lt;/p&gt;
+&lt;p&gt;The candidate is provided with actual shell terminal snapshots captured during the incident.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Snapshot 1: Application Health Check&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ curl -I &lt;span style="color:#f92672"&gt;[&lt;/span&gt;http://127.0.0.1:8080/health&lt;span style="color:#f92672"&gt;](&lt;/span&gt;http://127.0.0.1:8080/health&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;HTTP/1.1 &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Content-Length: &lt;span style="color:#ae81ff"&gt;15&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Snapshot 2: Kernel Network Buffer Metrics&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ cat /proc/net/sockstat
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sockets: used &lt;span style="color:#ae81ff"&gt;68240&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;TCP: inuse &lt;span style="color:#ae81ff"&gt;120&lt;/span&gt; orphan &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt; tw &lt;span style="color:#ae81ff"&gt;65400&lt;/span&gt; alloc &lt;span style="color:#ae81ff"&gt;68100&lt;/span&gt; mem &lt;span style="color:#ae81ff"&gt;42&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RAW: inuse &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;FRAG: inuse &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt; memory &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Snapshot 3: Socket States Breakdown&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ ss -s
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Total: &lt;span style="color:#ae81ff"&gt;68420&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;TCP: &lt;span style="color:#ae81ff"&gt;68120&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;estab 84, closed 65420, orphaned 4, timewait 65400&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Snapshot 4: Application System Logs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ tail -n &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt; /var/log/app/backend.log
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;2026-09-25 14:10:02 ERROR &lt;span style="color:#f92672"&gt;[&lt;/span&gt;client.py:44&lt;span style="color:#f92672"&gt;]&lt;/span&gt; Cannot assign requested address
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;2026-09-25 14:10:02 ERROR &lt;span style="color:#f92672"&gt;[&lt;/span&gt;client.py:44&lt;span style="color:#f92672"&gt;]&lt;/span&gt; Cannot assign requested address
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;2026-09-25 14:10:03 ERROR &lt;span style="color:#f92672"&gt;[&lt;/span&gt;client.py:44&lt;span style="color:#f92672"&gt;]&lt;/span&gt; Cannot assign requested address
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;Examine Snapshot 2 and 3. There are over 65,000 sockets in &lt;code&gt;TIME_WAIT&lt;/code&gt; (&lt;code&gt;tw 65400&lt;/code&gt;). What causes a socket to enter the &lt;code&gt;TIME_WAIT&lt;/code&gt; state, and which side of the connection enters it?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;The endpoint that performs the &lt;strong&gt;Active Close&lt;/strong&gt; (initiating the TCP connection teardown by sending the first &lt;code&gt;FIN&lt;/code&gt; packet) enters the &lt;code&gt;TIME_WAIT&lt;/code&gt; state after completing the four-way handshake.&lt;/p&gt;</description></item><item><title>The Geometry of Nature (Part 2): The Infinite Perimeter and Fractional Dimensions</title><link>https://soumadip.github.io/blog/2026/10/the-geometry-of-nature-part-2-the-infinite-perimeter-and-fractional-dimensions/</link><pubDate>Sun, 25 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/10/the-geometry-of-nature-part-2-the-infinite-perimeter-and-fractional-dimensions/</guid><description>“How can a shape possess an infinitely long boundary, yet fit perfectly within the palm of your hand?”</description></item><item><title>The Living Map (Dynamic Pathfinding &amp; Telemetry)</title><link>https://soumadip.github.io/system-design/the-living-map-dynamic-pathfinding-telemetry/</link><pubDate>Sun, 25 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/system-design/the-living-map-dynamic-pathfinding-telemetry/</guid><description>&lt;h2 id="1-problem-statement--scope"&gt;1. Problem Statement &amp;amp; Scope&lt;/h2&gt;
+&lt;p&gt;Building a static mapping application is a solved computer science problem. You load a graph into memory and run A* Search. However, building a &lt;em&gt;living&lt;/em&gt; map—one that ingests continuous telemetry from millions of moving vehicles to dynamically adjust edge weights and recalculate active routes in real-time—is a monumental exercise in stream processing, parallel computing, and advanced graph theory.&lt;/p&gt;
+&lt;h3 id="functional-requirements"&gt;Functional Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Spatial Resolution:&lt;/strong&gt; Map raw GPS coordinates (latitude/longitude) to the nearest logical road segment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Pathfinding:&lt;/strong&gt; Calculate the optimal route between two points based on &lt;em&gt;current&lt;/em&gt; traffic conditions, not just static speed limits.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Active Re-routing:&lt;/strong&gt; Continuously monitor active trips and proactively push new routes to clients if a faster path emerges due to sudden congestion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="non-functional-requirements"&gt;Non-Functional Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Massive Write Ingestion:&lt;/strong&gt; The system must swallow millions of GPS telemetry pings per second without bottlenecking.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sub-Second Latency:&lt;/strong&gt; Route calculation must complete in $&lt; 100$ms, even for cross-country queries.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eventual Consistency for Traffic:&lt;/strong&gt; A sudden highway closure should reflect in the routing engine&amp;rsquo;s weights within seconds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-back-of-the-envelope-estimation"&gt;2. Back-of-the-Envelope Estimation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Active Users:&lt;/strong&gt; 10 million concurrent drivers actively navigating.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Telemetry Ingestion:&lt;/strong&gt; Each client pings their GPS location every 5 seconds.
+&lt;ul&gt;
+&lt;li&gt;$10,000,000 / 5 = 2,000,000$ write QPS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Routing Requests:&lt;/strong&gt; Most users just drive; they only request a full route calculation at the start of a trip or upon missing a turn. Assume 20,000 QPS for pathfinding.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graph Size in RAM:&lt;/strong&gt; The entire road network of a large country (e.g., India or the US) contains tens of millions of nodes (intersections) and edges (road segments). Storing this graph with basic metadata (speed limits, segment IDs) requires roughly 20GB to 50GB of RAM. This easily fits into the memory of a single modern server, meaning the graph can be highly replicated rather than sharded.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="3-high-level-design-hld"&gt;3. High-Level Design (HLD)&lt;/h2&gt;
+&lt;p&gt;To handle the dichotomy between massive write-heavy telemetry and read-heavy graph traversal, we completely decouple the ingestion pipeline from the routing engine using a stream processing architecture.&lt;/p&gt;</description></item><item><title>The Geometry of Nature (Part 1): The Compression Algorithms of the Physical World</title><link>https://soumadip.github.io/blog/2026/10/the-geometry-of-nature-part-1-the-compression-algorithms-of-the-physical-world/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/blog/2026/10/the-geometry-of-nature-part-1-the-compression-algorithms-of-the-physical-world/</guid><description>“Nature does not store the physical coordinates of a trillion leaves. It stores a recursive algorithm, executing a continuous loop of self-similarity.”</description></item><item><title>The Load Balancer's Gambit: A Probabilistic Illusion</title><link>https://soumadip.github.io/puzzles/the-load-balancers-gambit-a-probabilistic-illusion/</link><pubDate>Sat, 24 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/puzzles/the-load-balancers-gambit-a-probabilistic-illusion/</guid><description>&lt;h2 id="the-puzzle-the-classic"&gt;The Puzzle (The Classic)&lt;/h2&gt;
 &lt;p&gt;Originally based on the American television game show &lt;em&gt;Let&amp;rsquo;s Make a Deal&lt;/em&gt;, this probability puzzle—known as the &lt;strong&gt;Monty Hall Problem&lt;/strong&gt;—famously baffled thousands of readers and even PhD mathematicians when it was popularized in 1990.&lt;/p&gt;
 &lt;p&gt;You are a contestant facing three closed doors. Behind one door is a brand-new car; behind the other two are goats. You randomly choose Door 1.&lt;/p&gt;
 &lt;p&gt;The host, Monty Hall, who knows exactly what is behind every door, does not open Door 1. Instead, he opens Door 3, revealing a goat. He then turns to you and asks: &lt;em&gt;&amp;ldquo;Do you want to keep Door 1, or do you want to switch your choice to Door 2?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description></item><item><title>The Semantic Chunking Engine (Advanced RAG)</title><link>https://soumadip.github.io/system-design/the-semantic-chunking-engine/</link><pubDate>Sat, 17 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/system-design/the-semantic-chunking-engine/</guid><description>&lt;h2 id="1-problem-statement--scope"&gt;1. Problem Statement &amp;amp; Scope&lt;/h2&gt;
@@ -1114,6 +1175,81 @@ Signals are generated in response to an event (such as pressing a keyboard inter
 &lt;div class="changelog-feed" id="changelog-feed" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.03);"&gt;
  
  
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="System Design" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Oct 25
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ System Design
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ The Living Map (Dynamic Pathfinding &amp;amp; Telemetry)
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;a href="./system-design/the-living-map-dynamic-pathfinding-telemetry/" style="color: #94a3b8; text-decoration: none;"&gt;open &amp;rarr;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;/details&gt;
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="Blog" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Oct 25
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ Blog
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ The Geometry of Nature (Part 2): The Infinite Perimeter and Fractional Dimensions
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;a href="./blog/2026/10/the-geometry-of-nature-part-2-the-infinite-perimeter-and-fractional-dimensions/" style="color: #94a3b8; text-decoration: none;"&gt;open &amp;rarr;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;/details&gt;
+ 
+ 
+ 
+
+ 
+ &lt;details class="changelog-item" data-category="Viva" style="border-bottom: 1px solid #f1f5f9;"&gt;
+ &lt;summary style="padding: 0.75rem 1.25rem; cursor: pointer; outline: none; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background-color 0.15s ease;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'"&gt;
+ &lt;div style="display: flex; align-items: center; gap: 1rem; flex: 1; min-width: 0;"&gt;
+ &lt;span style="font-family: monospace; font-size: 0.75rem; color: #64748b; flex-shrink: 0; width: 55px;"&gt;
+ Oct 25
+ &lt;/span&gt;
+ &lt;span style="background: #f1f5f9; color: #475569; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; flex-shrink: 0;"&gt;
+ Viva
+ &lt;/span&gt;
+ &lt;span style="font-weight: 600; color: #0f172a; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"&gt;
+ Incident 0x4F: The Cascading Connection Collapse
+ &lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div style="color: #94a3b8; font-size: 0.75rem; flex-shrink: 0; font-family: monospace;"&gt;
+ &lt;a href="./viva/incident-0x4f-the-cascading-connection-collapse/" style="color: #94a3b8; text-decoration: none;"&gt;open &amp;rarr;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/summary&gt;
+
+ 
+ &lt;/details&gt;
  
  
  

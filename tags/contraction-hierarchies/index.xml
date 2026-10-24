@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contraction Hierarchies on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/contraction-hierarchies/</link><description>Recent content in Contraction Hierarchies on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/contraction-hierarchies/index.xml" rel="self" type="application/rss+xml"/><item><title>The Living Map (Dynamic Pathfinding &amp; Telemetry)</title><link>https://soumadip.github.io/system-design/the-living-map-dynamic-pathfinding-telemetry/</link><pubDate>Sun, 25 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/system-design/the-living-map-dynamic-pathfinding-telemetry/</guid><description>&lt;h2 id="1-problem-statement--scope"&gt;1. Problem Statement &amp;amp; Scope&lt;/h2&gt;
+&lt;p&gt;Building a static mapping application is a solved computer science problem. You load a graph into memory and run A* Search. However, building a &lt;em&gt;living&lt;/em&gt; map—one that ingests continuous telemetry from millions of moving vehicles to dynamically adjust edge weights and recalculate active routes in real-time—is a monumental exercise in stream processing, parallel computing, and advanced graph theory.&lt;/p&gt;
+&lt;h3 id="functional-requirements"&gt;Functional Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Spatial Resolution:&lt;/strong&gt; Map raw GPS coordinates (latitude/longitude) to the nearest logical road segment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Pathfinding:&lt;/strong&gt; Calculate the optimal route between two points based on &lt;em&gt;current&lt;/em&gt; traffic conditions, not just static speed limits.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Active Re-routing:&lt;/strong&gt; Continuously monitor active trips and proactively push new routes to clients if a faster path emerges due to sudden congestion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="non-functional-requirements"&gt;Non-Functional Requirements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Massive Write Ingestion:&lt;/strong&gt; The system must swallow millions of GPS telemetry pings per second without bottlenecking.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sub-Second Latency:&lt;/strong&gt; Route calculation must complete in $&lt; 100$ms, even for cross-country queries.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eventual Consistency for Traffic:&lt;/strong&gt; A sudden highway closure should reflect in the routing engine&amp;rsquo;s weights within seconds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-back-of-the-envelope-estimation"&gt;2. Back-of-the-Envelope Estimation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Active Users:&lt;/strong&gt; 10 million concurrent drivers actively navigating.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Telemetry Ingestion:&lt;/strong&gt; Each client pings their GPS location every 5 seconds.
+&lt;ul&gt;
+&lt;li&gt;$10,000,000 / 5 = 2,000,000$ write QPS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Routing Requests:&lt;/strong&gt; Most users just drive; they only request a full route calculation at the start of a trip or upon missing a turn. Assume 20,000 QPS for pathfinding.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graph Size in RAM:&lt;/strong&gt; The entire road network of a large country (e.g., India or the US) contains tens of millions of nodes (intersections) and edges (road segments). Storing this graph with basic metadata (speed limits, segment IDs) requires roughly 20GB to 50GB of RAM. This easily fits into the memory of a single modern server, meaning the graph can be highly replicated rather than sharded.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="3-high-level-design-hld"&gt;3. High-Level Design (HLD)&lt;/h2&gt;
+&lt;p&gt;To handle the dichotomy between massive write-heavy telemetry and read-heavy graph traversal, we completely decouple the ingestion pipeline from the routing engine using a stream processing architecture.&lt;/p&gt;</description></item></channel></rss>

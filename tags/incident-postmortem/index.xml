@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Incident Postmortem on Dr. Soumadip Biswas</title><link>https://soumadip.github.io/tags/incident-postmortem/</link><description>Recent content in Incident Postmortem on Dr. Soumadip Biswas</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0530</lastBuildDate><atom:link href="https://soumadip.github.io/tags/incident-postmortem/index.xml" rel="self" type="application/rss+xml"/><item><title>Incident 0x4F: The Cascading Connection Collapse</title><link>https://soumadip.github.io/viva/incident-0x4f-the-cascading-connection-collapse/</link><pubDate>Sun, 25 Oct 2026 00:00:00 +0530</pubDate><guid>https://soumadip.github.io/viva/incident-0x4f-the-cascading-connection-collapse/</guid><description>&lt;h2 id="scenario-the-502-bad-gateway-spike"&gt;Scenario: The 502 Bad Gateway Spike&lt;/h2&gt;
+&lt;p&gt;At 14:10 UTC, alerts fire across the edge layer: API Gateway is returning &lt;code&gt;HTTP 502 Bad Gateway&lt;/code&gt; on 40% of inbound traffic. The backend application servers report low CPU (12%) and low memory (2.1GB / 16GB).&lt;/p&gt;
+&lt;p&gt;The candidate is provided with actual shell terminal snapshots captured during the incident.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Snapshot 1: Application Health Check&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ curl -I &lt;span style="color:#f92672"&gt;[&lt;/span&gt;http://127.0.0.1:8080/health&lt;span style="color:#f92672"&gt;](&lt;/span&gt;http://127.0.0.1:8080/health&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;HTTP/1.1 &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Content-Type: application/json
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Content-Length: &lt;span style="color:#ae81ff"&gt;15&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Snapshot 2: Kernel Network Buffer Metrics&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ cat /proc/net/sockstat
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sockets: used &lt;span style="color:#ae81ff"&gt;68240&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;TCP: inuse &lt;span style="color:#ae81ff"&gt;120&lt;/span&gt; orphan &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt; tw &lt;span style="color:#ae81ff"&gt;65400&lt;/span&gt; alloc &lt;span style="color:#ae81ff"&gt;68100&lt;/span&gt; mem &lt;span style="color:#ae81ff"&gt;42&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RAW: inuse &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;FRAG: inuse &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt; memory &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Snapshot 3: Socket States Breakdown&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ ss -s
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Total: &lt;span style="color:#ae81ff"&gt;68420&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;TCP: &lt;span style="color:#ae81ff"&gt;68120&lt;/span&gt; &lt;span style="color:#f92672"&gt;(&lt;/span&gt;estab 84, closed 65420, orphaned 4, timewait 65400&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Snapshot 4: Application System Logs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ tail -n &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt; /var/log/app/backend.log
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;2026-09-25 14:10:02 ERROR &lt;span style="color:#f92672"&gt;[&lt;/span&gt;client.py:44&lt;span style="color:#f92672"&gt;]&lt;/span&gt; Cannot assign requested address
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;2026-09-25 14:10:02 ERROR &lt;span style="color:#f92672"&gt;[&lt;/span&gt;client.py:44&lt;span style="color:#f92672"&gt;]&lt;/span&gt; Cannot assign requested address
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;2026-09-25 14:10:03 ERROR &lt;span style="color:#f92672"&gt;[&lt;/span&gt;client.py:44&lt;span style="color:#f92672"&gt;]&lt;/span&gt; Cannot assign requested address
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;details style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s ease;"&gt;
+ &lt;summary style="font-weight: 600; font-size: 1.1rem; color: #0f172a; padding: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;"&gt;
+ &lt;span style="padding-right: 1.5rem; line-height: 1.5;"&gt;
+ &lt;span style="color: #3b82f6; margin-right: 0.5rem;"&gt;Q:&lt;/span&gt;Examine Snapshot 2 and 3. There are over 65,000 sockets in &lt;code&gt;TIME_WAIT&lt;/code&gt; (&lt;code&gt;tw 65400&lt;/code&gt;). What causes a socket to enter the &lt;code&gt;TIME_WAIT&lt;/code&gt; state, and which side of the connection enters it?
+ &lt;/span&gt;
+ &lt;span style="color: #94a3b8; font-size: 0.85rem; flex-shrink: 0;"&gt;Reveal ▾&lt;/span&gt;
+ &lt;/summary&gt;
+ 
+ &lt;div style="padding: 1.25rem; border-top: 1px solid #e2e8f0; color: #334155; line-height: 1.7; background: #f8fafc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"&gt;
+ &lt;p&gt;The endpoint that performs the &lt;strong&gt;Active Close&lt;/strong&gt; (initiating the TCP connection teardown by sending the first &lt;code&gt;FIN&lt;/code&gt; packet) enters the &lt;code&gt;TIME_WAIT&lt;/code&gt; state after completing the four-way handshake.&lt;/p&gt;</description></item></channel></rss>
